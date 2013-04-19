@@ -163,7 +163,7 @@
   searchBar1.tintColor = [UIColor colorWithRed:0.5 green:1.0 blue:0.0 alpha:1.0];
   searchBar1.text = @"";
   searchBar1.placeholder = @"Search tradables";
-  searchBar1.scopeButtonTitles = [NSArray arrayWithObjects:, nil];
+  searchBar1.scopeButtonTitles = [NSArray arrayWithObjects:@"", nil];
   searchBar1.selectedScopeButtonIndex = 0;
   searchBar1.searchTextPositionAdjustment = UIOffsetMake(0, 0);
   searchBar1.searchFieldBackgroundPositionAdjustment = UIOffsetMake(0, 0);

@@ -64,6 +64,13 @@
 		D2B9B07EA3EB8F8155EA7A36 /* ForSaleViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FEC5E439860946A33AAD898B /* ForSaleViewController_Image_1.png */; };
 		DBD800DB0CFE78CC8E57C5EF /* ForSaleViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A27FCF0E606DAC8F1B51BB6 /* ForSaleViewController_Image_2.png */; };
 		DCAABD7A7EC9F7261B127CC4 /* MultiAddScreenWantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 333A9BBCAD3595CA14B7E710 /* MultiAddScreenWantViewController_Image_3.png */; };
+		E37C867C1720DAC2006CA17B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C867B1720DAC2006CA17B /* Default-568h@2x.png */; };
+		E37C867F1720DBEB006CA17B /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C867D1720DBEB006CA17B /* 114x114.png */; };
+		E37C86801720DBEB006CA17B /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C867E1720DBEB006CA17B /* 57x57.png */; };
+		E37C86821720DBF3006CA17B /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C86811720DBF3006CA17B /* 57x57.png */; };
+		E37C86841720DBFB006CA17B /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C86831720DBFB006CA17B /* 114x114.png */; };
+		E37C86871720DC7D006CA17B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C86851720DC7D006CA17B /* Default@2x.png */; };
+		E37C86881720DC7D006CA17B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C86861720DC7D006CA17B /* Default.png */; };
 		E3B072C91314A1C3D63D2184 /* MultiAddScreenViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E382B3C2A22685A5D8716A46 /* MultiAddScreenViewController_Image_2.png */; };
 		EC02EB9BDACFFF407227B09C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE9839FF6043E2B275207E /* WelcomeViewController.m */; };
 		EC36E173D012425951BD0CF8 /* TradeableViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F990CFD2F0CEE5F3D114A7 /* TradeableViewController_Image_1.png */; };
@@ -150,6 +157,13 @@
 		D8B31C15B84DBE709A5EDF82 /* ForSaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForSaleViewController.m; sourceTree = "<group>"; };
 		E0B8C7358CC7DEB671D1E3BB /* MultiAddScreenViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_10.png; sourceTree = "<group>"; };
 		E10B6041F4C051ABDA7F617E /* ForSaleViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_4.png; sourceTree = "<group>"; };
+		E37C867B1720DAC2006CA17B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E37C867D1720DBEB006CA17B /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 114x114.png; path = "Interface Export/114x114.png"; sourceTree = "<group>"; };
+		E37C867E1720DBEB006CA17B /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 57x57.png; path = "Interface Export/57x57.png"; sourceTree = "<group>"; };
+		E37C86811720DBF3006CA17B /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		E37C86831720DBFB006CA17B /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		E37C86851720DC7D006CA17B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E37C86861720DC7D006CA17B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E382B3C2A22685A5D8716A46 /* MultiAddScreenViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_2.png; sourceTree = "<group>"; };
 		EA0B3F3327A57C8070A35D61 /* MultiAddScreenTradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenTradeViewController.h; sourceTree = "<group>"; };
 		EED1BF07C074075076C7C171 /* TradeableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeableViewController.h; sourceTree = "<group>"; };
@@ -184,6 +198,13 @@
 		02C8A2A514C97CA60021F408 = {
 			isa = PBXGroup;
 			children = (
+				E37C86851720DC7D006CA17B /* Default@2x.png */,
+				E37C86861720DC7D006CA17B /* Default.png */,
+				E37C86831720DBFB006CA17B /* 114x114.png */,
+				E37C86811720DBF3006CA17B /* 57x57.png */,
+				E37C867D1720DBEB006CA17B /* 114x114.png */,
+				E37C867E1720DBEB006CA17B /* 57x57.png */,
+				E37C867B1720DAC2006CA17B /* Default-568h@2x.png */,
 				02C8A2BA14C97CA60021F408 /* Interface Export */,
 				02C8A2B314C97CA60021F408 /* Frameworks */,
 				02C8A2B114C97CA60021F408 /* Products */,
@@ -402,6 +423,13 @@
 				A688C8B2A54F65CB0CB61D8A /* ForSaleViewController_Image_3.png in Resources */,
 				ED901D2F36AAE4F77C60111B /* ForSaleViewController_Image_4.png in Resources */,
 				C2136240C4C5E0ABA798C414 /* ForSaleViewController_Image_5.png in Resources */,
+				E37C867C1720DAC2006CA17B /* Default-568h@2x.png in Resources */,
+				E37C867F1720DBEB006CA17B /* 114x114.png in Resources */,
+				E37C86801720DBEB006CA17B /* 57x57.png in Resources */,
+				E37C86821720DBF3006CA17B /* 57x57.png in Resources */,
+				E37C86841720DBFB006CA17B /* 114x114.png in Resources */,
+				E37C86871720DC7D006CA17B /* Default@2x.png in Resources */,
+				E37C86881720DC7D006CA17B /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +527,7 @@
 		02C8A2C914C97CA60021F408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Interface Export/Interface Export-Prefix.pch";
 				INFOPLIST_FILE = "Interface Export/Interface Export-Info.plist";
@@ -510,6 +539,7 @@
 		02C8A2CA14C97CA60021F408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Interface Export/Interface Export-Prefix.pch";
 				INFOPLIST_FILE = "Interface Export/Interface Export-Info.plist";

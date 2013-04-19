@@ -161,6 +161,7 @@
   [mapView1 setCenterCoordinate:CLLocationCoordinate2DMake(37.33181999999998, -122.03117999999999) zoomLevel:6 animated:NO];
   [mapView1 release];
   
+    
   
   // ----------------------------;
   // UISearchBar -> searchBar1;
@@ -174,7 +175,7 @@
   searchBar1.tintColor = [UIColor colorWithRed:1.0 green:1.0 blue:0.4 alpha:1.0];
   searchBar1.text = @"";
   searchBar1.placeholder = @"Search nearby events";
-  searchBar1.scopeButtonTitles = [NSArray arrayWithObjects:, nil];
+  searchBar1.scopeButtonTitles = [NSArray arrayWithObjects:@"", nil];
   searchBar1.selectedScopeButtonIndex = 1;
   searchBar1.searchTextPositionAdjustment = UIOffsetMake(0, 0);
   searchBar1.searchFieldBackgroundPositionAdjustment = UIOffsetMake(0, 0);
