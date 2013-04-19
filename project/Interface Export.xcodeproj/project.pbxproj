@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02AA5E0B14D57AF2004CE70D /* Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E0614D57AF2004CE70D /* Gradient.m */; };
+		02AA5E0C14D57AF2004CE70D /* GradientNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E0814D57AF2004CE70D /* GradientNode.m */; };
+		02AA5E0D14D57AF2004CE70D /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E0A14D57AF2004CE70D /* GradientView.m */; };
+		02AA5E3814D59768004CE70D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AA5E3714D59768004CE70D /* CoreLocation.framework */; };
+		02AA5E3C14D597DB004CE70D /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E3B14D597DB004CE70D /* MKMapView+ZoomLevel.m */; };
+		02C8A2B514C97CA60021F408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2B414C97CA60021F408 /* UIKit.framework */; };
+		02C8A2B714C97CA60021F408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2B614C97CA60021F408 /* Foundation.framework */; };
+		02C8A2B914C97CA60021F408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2B814C97CA60021F408 /* CoreGraphics.framework */; };
+		02C8A2BF14C97CA60021F408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02C8A2BD14C97CA60021F408 /* InfoPlist.strings */; };
+		02C8A2C114C97CA60021F408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8A2C014C97CA60021F408 /* main.m */; };
+		02C8A2C514C97CA60021F408 /* IFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8A2C414C97CA60021F408 /* IFAppDelegate.m */; };
+		02C8A2CC14C97CC00021F408 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2CB14C97CC00021F408 /* MapKit.framework */; };
+		02C8A2CE14C97CC80021F408 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2CD14C97CC80021F408 /* QuartzCore.framework */; };
+		0D16CC02855BD149E92B996D /* TradeableViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F3757454FC556E2C828388 /* TradeableViewController_Image_5.png */; };
+		0EFA463C16082F5D440E4290 /* MultiAddScreenViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = F573304D26353A17C3018C67 /* MultiAddScreenViewController_Image_6.png */; };
+		0FB4DF8DC0BE94ADD49B4835 /* WantViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E40273A82C62A9E1804AFAE /* WantViewController_Image_4.png */; };
+		10C7160AEDB1B60DFB01C4F1 /* MultiAddScreenWantViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A28EE93EC5B9DED319EF02 /* MultiAddScreenWantViewController_Image_1.png */; };
+		150A0731E6384C53B7A87F1B /* WantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18CDCA0D81EC2468A2A2FF8 /* WantViewController.m */; };
+		168C750B44D75C9946460578 /* MultiAddScreenTradeViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CB36BD69178663C9B7C89BF9 /* MultiAddScreenTradeViewController_Image_4.png */; };
+		17B77D5A64EE9ABA08111B55 /* MultiAddScreenTradeViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C47D9A400F7D0ECD55D771 /* MultiAddScreenTradeViewController_Image_2.png */; };
+		21A0DA4AB28074BD983C70B4 /* AreatradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D7CA3B536A564F98272A50 /* AreatradesViewController.m */; };
+		358645EA3062BD81591F16B0 /* MultiAddScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B198F98EFBD7D5715A200 /* MultiAddScreenViewController.m */; };
+		3634D94419AFAC0E0F469C61 /* AreatradesViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4727106B7583222DC54B849 /* AreatradesViewController_Image_2.png */; };
+		39F82D4F8490A51BB4E309E6 /* WantViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF55B13AF95C96FDE11EE05 /* WantViewController_Image_2.png */; };
+		532826F8942EEE84A73BFBB5 /* MultiAddScreenTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7857E0E787104556C0A4803 /* MultiAddScreenTradeViewController.m */; };
+		5804916031C356CED27C04E1 /* WantViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BEAC4514B8CA3E776C8B92 /* WantViewController_Image_5.png */; };
+		5B386835FE025D69653A670C /* AreatradesViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 039998DD4D2CA46EF261E010 /* AreatradesViewController_Image_4.png */; };
+		620D0E5AB13DFC954FDA7484 /* WelcomeViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA2999E0315A20E2FD70BF4 /* WelcomeViewController_Image_3.png */; };
+		67FEFC6BEB01B29239E003FF /* WelcomeViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5D2D9978C45C316E628609 /* WelcomeViewController_Image_2.png */; };
+		69399452012BF525B7753D48 /* AreatradesViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 451F6E9080E313326EADEEBF /* AreatradesViewController_Image_3.png */; };
+		7150A8D1A42EDDA8C64DB5A9 /* WelcomeViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = AA892AD3948CF2267DD7398C /* WelcomeViewController_Image_4.png */; };
+		758A6F41FF6D7270128F1583 /* MultiAddScreenViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6B65023536D48A1C04268E /* MultiAddScreenViewController_Image_5.png */; };
+		75B30BAB680AADA301FBAAD1 /* WelcomeViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E03350A24F958D4A13B5CD /* WelcomeViewController_Image_5.png */; };
+		769E3FAF260CE5965FB2FFA0 /* MultiAddScreenViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1043B9BC16C73F3FBA2229 /* MultiAddScreenViewController_Image_1.png */; };
+		820FB602A74782400B2D54BE /* TradeableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE524483D3D0092F061F949 /* TradeableViewController.m */; };
+		85074C81B01A39F1D9C0FB62 /* MultiAddScreenWantViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5057D8702607CD333F01D1F3 /* MultiAddScreenWantViewController_Image_4.png */; };
+		8B9B9F7269C595BCFF1DD077 /* WelcomeViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFA83C3B440913AC2CE574D /* WelcomeViewController_Image_1.png */; };
+		94E9BEDA36228AF990D65EAC /* MultiAddScreenViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A862E65FFDD7677181BB5FE4 /* MultiAddScreenViewController_Image_4.png */; };
+		9B0C6DC93633A30C8C93AB3B /* MultiAddScreenWantViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5978812FD12687DD19B8F0A9 /* MultiAddScreenWantViewController_Image_2.png */; };
+		A198E5F9D90871BA38ACC8CC /* AreatradesViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A013AD731D668FA31F88E79E /* AreatradesViewController_Image_1.png */; };
+		A388366499C7A2A652228FD7 /* MultiAddScreenViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B8C7358CC7DEB671D1E3BB /* MultiAddScreenViewController_Image_10.png */; };
+		A688C8B2A54F65CB0CB61D8A /* ForSaleViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B27741332070E92B18CBDC /* ForSaleViewController_Image_3.png */; };
+		A6C8FF9EBE5F3832F4F4DD07 /* MultiAddScreenViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFBF9DAD18C23CE064DA227 /* MultiAddScreenViewController_Image_7.png */; };
+		A71031A30ED3B208605F845E /* TradeableViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = A2804CEFBC471AE92C43BA9B /* TradeableViewController_Image_6.png */; };
+		A8DB214B8DA19D3C241F4CDD /* WantViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC11556BCD8A3C5CD6C4F564 /* WantViewController_Image_1.png */; };
+		AAAEF1BECF976B1C18689602 /* AreatradesViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4E78241800DFAE6ACA1559 /* AreatradesViewController_Image_5.png */; };
+		B0F3CBD3A135B18E9657FBC6 /* MultiAddScreenTradeViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A79AF55EBD537CE5831DA4A /* MultiAddScreenTradeViewController_Image_3.png */; };
+		BC85DCB3ABF92750AD1125CA /* MultiAddScreenViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C2B5A5906FCA3FE27DBABE9 /* MultiAddScreenViewController_Image_8.png */; };
+		BE85548EC268433604ADDA30 /* WantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B247CA31FAA1ABF935315CE /* WantViewController_Image_3.png */; };
+		C05BF19111440F37BEE5AB1C /* MultiAddScreenTradeViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FD03D724B878188B6DE5BDA2 /* MultiAddScreenTradeViewController_Image_5.png */; };
+		C2136240C4C5E0ABA798C414 /* ForSaleViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = D647CE66429837D9A874FFB8 /* ForSaleViewController_Image_5.png */; };
+		C4261853A1A87A8CBCDD3E44 /* MultiAddScreenWantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986263748619A92BB3CA69B2 /* MultiAddScreenWantViewController.m */; };
+		C82CB502E3BC2E52FC8BB016 /* MultiAddScreenTradeViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD7482C7E806C90CF253A95 /* MultiAddScreenTradeViewController_Image_1.png */; };
+		C9B0D11DA62C72308709E61A /* MultiAddScreenViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD84FBC122B8837C1CC085F /* MultiAddScreenViewController_Image_11.png */; };
+		D2B9B07EA3EB8F8155EA7A36 /* ForSaleViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FEC5E439860946A33AAD898B /* ForSaleViewController_Image_1.png */; };
+		DBD800DB0CFE78CC8E57C5EF /* ForSaleViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A27FCF0E606DAC8F1B51BB6 /* ForSaleViewController_Image_2.png */; };
+		DCAABD7A7EC9F7261B127CC4 /* MultiAddScreenWantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 333A9BBCAD3595CA14B7E710 /* MultiAddScreenWantViewController_Image_3.png */; };
+		E3B072C91314A1C3D63D2184 /* MultiAddScreenViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E382B3C2A22685A5D8716A46 /* MultiAddScreenViewController_Image_2.png */; };
+		EC02EB9BDACFFF407227B09C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE9839FF6043E2B275207E /* WelcomeViewController.m */; };
+		EC36E173D012425951BD0CF8 /* TradeableViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F990CFD2F0CEE5F3D114A7 /* TradeableViewController_Image_1.png */; };
+		ED901D2F36AAE4F77C60111B /* ForSaleViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E10B6041F4C051ABDA7F617E /* ForSaleViewController_Image_4.png */; };
+		F33B57A696F8B27D133B109D /* MultiAddScreenViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 130349147983F5DD1116F3D5 /* MultiAddScreenViewController_Image_3.png */; };
+		F4F2B339E831ED227BBA1F01 /* MultiAddScreenViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C07A1931CA2E2A58D3D4EF8 /* MultiAddScreenViewController_Image_9.png */; };
+		F5803223AB8D0AA375FB3D36 /* ForSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B31C15B84DBE709A5EDF82 /* ForSaleViewController.m */; };
+		F776389A0D29834B438C4AD6 /* MultiAddScreenWantViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = A82CB4CD894E0A8ACC03E4D8 /* MultiAddScreenWantViewController_Image_5.png */; };
+		F84D87E440B0D25CEC116476 /* TradeableViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A34560D0F18809C2A872AFE1 /* TradeableViewController_Image_3.png */; };
+		FA8594DCFC61A9C56CEA831F /* TradeableViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F7E3CDA1015FDABB94FB20 /* TradeableViewController_Image_2.png */; };
+		FB507F8067D11842F5FAAF5F /* TradeableViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D1382C808655A3C595F9FD48 /* TradeableViewController_Image_4.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02AA5E0514D57AF2004CE70D /* Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gradient.h; sourceTree = "<group>"; };
+		02AA5E0614D57AF2004CE70D /* Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gradient.m; sourceTree = "<group>"; };
+		02AA5E0714D57AF2004CE70D /* GradientNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientNode.h; sourceTree = "<group>"; };
+		02AA5E0814D57AF2004CE70D /* GradientNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientNode.m; sourceTree = "<group>"; };
+		02AA5E0914D57AF2004CE70D /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		02AA5E0A14D57AF2004CE70D /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		02AA5E3714D59768004CE70D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		02AA5E3A14D597DB004CE70D /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		02AA5E3B14D597DB004CE70D /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		02C8A2B014C97CA60021F408 /* Interface Export.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interface Export.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C8A2B414C97CA60021F408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02C8A2B614C97CA60021F408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02C8A2B814C97CA60021F408 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02C8A2BC14C97CA60021F408 /* Interface Export-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Interface Export-Info.plist"; sourceTree = "<group>"; };
+		02C8A2BE14C97CA60021F408 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02C8A2C014C97CA60021F408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02C8A2C214C97CA60021F408 /* Interface Export-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Interface Export-Prefix.pch"; sourceTree = "<group>"; };
+		02C8A2C314C97CA60021F408 /* IFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFAppDelegate.h; sourceTree = "<group>"; };
+		02C8A2C414C97CA60021F408 /* IFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFAppDelegate.m; sourceTree = "<group>"; };
+		02C8A2CB14C97CC00021F408 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		02C8A2CD14C97CC80021F408 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		039998DD4D2CA46EF261E010 /* AreatradesViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_4.png; sourceTree = "<group>"; };
+		04F7E3CDA1015FDABB94FB20 /* TradeableViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_2.png; sourceTree = "<group>"; };
+		130349147983F5DD1116F3D5 /* MultiAddScreenViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_3.png; sourceTree = "<group>"; };
+		1C07A1931CA2E2A58D3D4EF8 /* MultiAddScreenViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_9.png; sourceTree = "<group>"; };
+		2DF55B13AF95C96FDE11EE05 /* WantViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_2.png; sourceTree = "<group>"; };
+		32A28EE93EC5B9DED319EF02 /* MultiAddScreenWantViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_1.png; sourceTree = "<group>"; };
+		333A9BBCAD3595CA14B7E710 /* MultiAddScreenWantViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_3.png; sourceTree = "<group>"; };
+		3439D978AD9539BF3D0EECD6 /* ForSaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForSaleViewController.h; sourceTree = "<group>"; };
+		3B247CA31FAA1ABF935315CE /* WantViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_3.png; sourceTree = "<group>"; };
+		400AA82106AF596E9B5D60F4 /* WantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WantViewController.h; sourceTree = "<group>"; };
+		451F6E9080E313326EADEEBF /* AreatradesViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_3.png; sourceTree = "<group>"; };
+		5057D8702607CD333F01D1F3 /* MultiAddScreenWantViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_4.png; sourceTree = "<group>"; };
+		52E03350A24F958D4A13B5CD /* WelcomeViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_5.png; sourceTree = "<group>"; };
+		553047CE485B49AF04B82DC4 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		55C47D9A400F7D0ECD55D771 /* MultiAddScreenTradeViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_2.png; sourceTree = "<group>"; };
+		5978812FD12687DD19B8F0A9 /* MultiAddScreenWantViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_2.png; sourceTree = "<group>"; };
+		5F4E78241800DFAE6ACA1559 /* AreatradesViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_5.png; sourceTree = "<group>"; };
+		639D393FF7CDF0546F2BA65F /* MultiAddScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenViewController.h; sourceTree = "<group>"; };
+		6A27FCF0E606DAC8F1B51BB6 /* ForSaleViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_2.png; sourceTree = "<group>"; };
+		6B1043B9BC16C73F3FBA2229 /* MultiAddScreenViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_1.png; sourceTree = "<group>"; };
+		6E40273A82C62A9E1804AFAE /* WantViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_4.png; sourceTree = "<group>"; };
+		6E5D2D9978C45C316E628609 /* WelcomeViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_2.png; sourceTree = "<group>"; };
+		799B198F98EFBD7D5715A200 /* MultiAddScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenViewController.m; sourceTree = "<group>"; };
+		7AAE9839FF6043E2B275207E /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		7C2B5A5906FCA3FE27DBABE9 /* MultiAddScreenViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_8.png; sourceTree = "<group>"; };
+		85B27741332070E92B18CBDC /* ForSaleViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_3.png; sourceTree = "<group>"; };
+		86F990CFD2F0CEE5F3D114A7 /* TradeableViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_1.png; sourceTree = "<group>"; };
+		8AD84FBC122B8837C1CC085F /* MultiAddScreenViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_11.png; sourceTree = "<group>"; };
+		94D6C534EBA9FF37FEE56955 /* AreatradesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreatradesViewController.h; sourceTree = "<group>"; };
+		986263748619A92BB3CA69B2 /* MultiAddScreenWantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenWantViewController.m; sourceTree = "<group>"; };
+		9A79AF55EBD537CE5831DA4A /* MultiAddScreenTradeViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_3.png; sourceTree = "<group>"; };
+		A013AD731D668FA31F88E79E /* AreatradesViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_1.png; sourceTree = "<group>"; };
+		A2804CEFBC471AE92C43BA9B /* TradeableViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_6.png; sourceTree = "<group>"; };
+		A34560D0F18809C2A872AFE1 /* TradeableViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_3.png; sourceTree = "<group>"; };
+		A477008A0DE7F37B162A354C /* MultiAddScreenWantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenWantViewController.h; sourceTree = "<group>"; };
+		A82CB4CD894E0A8ACC03E4D8 /* MultiAddScreenWantViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_5.png; sourceTree = "<group>"; };
+		A862E65FFDD7677181BB5FE4 /* MultiAddScreenViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_4.png; sourceTree = "<group>"; };
+		AA892AD3948CF2267DD7398C /* WelcomeViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_4.png; sourceTree = "<group>"; };
+		ABD7482C7E806C90CF253A95 /* MultiAddScreenTradeViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_1.png; sourceTree = "<group>"; };
+		AEA2999E0315A20E2FD70BF4 /* WelcomeViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_3.png; sourceTree = "<group>"; };
+		B4727106B7583222DC54B849 /* AreatradesViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_2.png; sourceTree = "<group>"; };
+		B7857E0E787104556C0A4803 /* MultiAddScreenTradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenTradeViewController.m; sourceTree = "<group>"; };
+		CB36BD69178663C9B7C89BF9 /* MultiAddScreenTradeViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_4.png; sourceTree = "<group>"; };
+		CC11556BCD8A3C5CD6C4F564 /* WantViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_1.png; sourceTree = "<group>"; };
+		D1382C808655A3C595F9FD48 /* TradeableViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_4.png; sourceTree = "<group>"; };
+		D18CDCA0D81EC2468A2A2FF8 /* WantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WantViewController.m; sourceTree = "<group>"; };
+		D1BEAC4514B8CA3E776C8B92 /* WantViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_5.png; sourceTree = "<group>"; };
+		D647CE66429837D9A874FFB8 /* ForSaleViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_5.png; sourceTree = "<group>"; };
+		D8B31C15B84DBE709A5EDF82 /* ForSaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForSaleViewController.m; sourceTree = "<group>"; };
+		E0B8C7358CC7DEB671D1E3BB /* MultiAddScreenViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_10.png; sourceTree = "<group>"; };
+		E10B6041F4C051ABDA7F617E /* ForSaleViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_4.png; sourceTree = "<group>"; };
+		E382B3C2A22685A5D8716A46 /* MultiAddScreenViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_2.png; sourceTree = "<group>"; };
+		EA0B3F3327A57C8070A35D61 /* MultiAddScreenTradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenTradeViewController.h; sourceTree = "<group>"; };
+		EED1BF07C074075076C7C171 /* TradeableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeableViewController.h; sourceTree = "<group>"; };
+		EEFA83C3B440913AC2CE574D /* WelcomeViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_1.png; sourceTree = "<group>"; };
+		EFE524483D3D0092F061F949 /* TradeableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeableViewController.m; sourceTree = "<group>"; };
+		F4D7CA3B536A564F98272A50 /* AreatradesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreatradesViewController.m; sourceTree = "<group>"; };
+		F573304D26353A17C3018C67 /* MultiAddScreenViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_6.png; sourceTree = "<group>"; };
+		F7F3757454FC556E2C828388 /* TradeableViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_5.png; sourceTree = "<group>"; };
+		FA6B65023536D48A1C04268E /* MultiAddScreenViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_5.png; sourceTree = "<group>"; };
+		FD03D724B878188B6DE5BDA2 /* MultiAddScreenTradeViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_5.png; sourceTree = "<group>"; };
+		FEC5E439860946A33AAD898B /* ForSaleViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_1.png; sourceTree = "<group>"; };
+		FEFBF9DAD18C23CE064DA227 /* MultiAddScreenViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_7.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C8A2AD14C97CA60021F408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C8A2CE14C97CC80021F408 /* QuartzCore.framework in Frameworks */,
+				02C8A2CC14C97CC00021F408 /* MapKit.framework in Frameworks */,
+				02C8A2B514C97CA60021F408 /* UIKit.framework in Frameworks */,
+				02C8A2B714C97CA60021F408 /* Foundation.framework in Frameworks */,
+				02C8A2B914C97CA60021F408 /* CoreGraphics.framework in Frameworks */,
+				02AA5E3814D59768004CE70D /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C8A2A514C97CA60021F408 = {
+			isa = PBXGroup;
+			children = (
+				02C8A2BA14C97CA60021F408 /* Interface Export */,
+				02C8A2B314C97CA60021F408 /* Frameworks */,
+				02C8A2B114C97CA60021F408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02C8A2B114C97CA60021F408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C8A2B014C97CA60021F408 /* Interface Export.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02C8A2B314C97CA60021F408 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02AA5E3714D59768004CE70D /* CoreLocation.framework */,
+				02C8A2CD14C97CC80021F408 /* QuartzCore.framework */,
+				02C8A2CB14C97CC00021F408 /* MapKit.framework */,
+				02C8A2B414C97CA60021F408 /* UIKit.framework */,
+				02C8A2B614C97CA60021F408 /* Foundation.framework */,
+				02C8A2B814C97CA60021F408 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02C8A2BA14C97CA60021F408 /* Interface Export */ = {
+			isa = PBXGroup;
+			children = (
+				02C8A2C314C97CA60021F408 /* IFAppDelegate.h */,
+				02C8A2C414C97CA60021F408 /* IFAppDelegate.m */,
+				553047CE485B49AF04B82DC4 /* WelcomeViewController.h */,
+				7AAE9839FF6043E2B275207E /* WelcomeViewController.m */,
+				EA0B3F3327A57C8070A35D61 /* MultiAddScreenTradeViewController.h */,
+				B7857E0E787104556C0A4803 /* MultiAddScreenTradeViewController.m */,
+				94D6C534EBA9FF37FEE56955 /* AreatradesViewController.h */,
+				F4D7CA3B536A564F98272A50 /* AreatradesViewController.m */,
+				639D393FF7CDF0546F2BA65F /* MultiAddScreenViewController.h */,
+				799B198F98EFBD7D5715A200 /* MultiAddScreenViewController.m */,
+				400AA82106AF596E9B5D60F4 /* WantViewController.h */,
+				D18CDCA0D81EC2468A2A2FF8 /* WantViewController.m */,
+				A477008A0DE7F37B162A354C /* MultiAddScreenWantViewController.h */,
+				986263748619A92BB3CA69B2 /* MultiAddScreenWantViewController.m */,
+				EED1BF07C074075076C7C171 /* TradeableViewController.h */,
+				EFE524483D3D0092F061F949 /* TradeableViewController.m */,
+				3439D978AD9539BF3D0EECD6 /* ForSaleViewController.h */,
+				D8B31C15B84DBE709A5EDF82 /* ForSaleViewController.m */,
+				EEFA83C3B440913AC2CE574D /* WelcomeViewController_Image_1.png */,
+				6E5D2D9978C45C316E628609 /* WelcomeViewController_Image_2.png */,
+				AEA2999E0315A20E2FD70BF4 /* WelcomeViewController_Image_3.png */,
+				AA892AD3948CF2267DD7398C /* WelcomeViewController_Image_4.png */,
+				52E03350A24F958D4A13B5CD /* WelcomeViewController_Image_5.png */,
+				ABD7482C7E806C90CF253A95 /* MultiAddScreenTradeViewController_Image_1.png */,
+				55C47D9A400F7D0ECD55D771 /* MultiAddScreenTradeViewController_Image_2.png */,
+				9A79AF55EBD537CE5831DA4A /* MultiAddScreenTradeViewController_Image_3.png */,
+				CB36BD69178663C9B7C89BF9 /* MultiAddScreenTradeViewController_Image_4.png */,
+				FD03D724B878188B6DE5BDA2 /* MultiAddScreenTradeViewController_Image_5.png */,
+				A013AD731D668FA31F88E79E /* AreatradesViewController_Image_1.png */,
+				B4727106B7583222DC54B849 /* AreatradesViewController_Image_2.png */,
+				451F6E9080E313326EADEEBF /* AreatradesViewController_Image_3.png */,
+				039998DD4D2CA46EF261E010 /* AreatradesViewController_Image_4.png */,
+				5F4E78241800DFAE6ACA1559 /* AreatradesViewController_Image_5.png */,
+				6B1043B9BC16C73F3FBA2229 /* MultiAddScreenViewController_Image_1.png */,
+				E382B3C2A22685A5D8716A46 /* MultiAddScreenViewController_Image_2.png */,
+				130349147983F5DD1116F3D5 /* MultiAddScreenViewController_Image_3.png */,
+				A862E65FFDD7677181BB5FE4 /* MultiAddScreenViewController_Image_4.png */,
+				FA6B65023536D48A1C04268E /* MultiAddScreenViewController_Image_5.png */,
+				F573304D26353A17C3018C67 /* MultiAddScreenViewController_Image_6.png */,
+				FEFBF9DAD18C23CE064DA227 /* MultiAddScreenViewController_Image_7.png */,
+				7C2B5A5906FCA3FE27DBABE9 /* MultiAddScreenViewController_Image_8.png */,
+				1C07A1931CA2E2A58D3D4EF8 /* MultiAddScreenViewController_Image_9.png */,
+				E0B8C7358CC7DEB671D1E3BB /* MultiAddScreenViewController_Image_10.png */,
+				8AD84FBC122B8837C1CC085F /* MultiAddScreenViewController_Image_11.png */,
+				CC11556BCD8A3C5CD6C4F564 /* WantViewController_Image_1.png */,
+				2DF55B13AF95C96FDE11EE05 /* WantViewController_Image_2.png */,
+				3B247CA31FAA1ABF935315CE /* WantViewController_Image_3.png */,
+				6E40273A82C62A9E1804AFAE /* WantViewController_Image_4.png */,
+				D1BEAC4514B8CA3E776C8B92 /* WantViewController_Image_5.png */,
+				32A28EE93EC5B9DED319EF02 /* MultiAddScreenWantViewController_Image_1.png */,
+				5978812FD12687DD19B8F0A9 /* MultiAddScreenWantViewController_Image_2.png */,
+				333A9BBCAD3595CA14B7E710 /* MultiAddScreenWantViewController_Image_3.png */,
+				5057D8702607CD333F01D1F3 /* MultiAddScreenWantViewController_Image_4.png */,
+				A82CB4CD894E0A8ACC03E4D8 /* MultiAddScreenWantViewController_Image_5.png */,
+				86F990CFD2F0CEE5F3D114A7 /* TradeableViewController_Image_1.png */,
+				04F7E3CDA1015FDABB94FB20 /* TradeableViewController_Image_2.png */,
+				A34560D0F18809C2A872AFE1 /* TradeableViewController_Image_3.png */,
+				D1382C808655A3C595F9FD48 /* TradeableViewController_Image_4.png */,
+				F7F3757454FC556E2C828388 /* TradeableViewController_Image_5.png */,
+				A2804CEFBC471AE92C43BA9B /* TradeableViewController_Image_6.png */,
+				FEC5E439860946A33AAD898B /* ForSaleViewController_Image_1.png */,
+				6A27FCF0E606DAC8F1B51BB6 /* ForSaleViewController_Image_2.png */,
+				85B27741332070E92B18CBDC /* ForSaleViewController_Image_3.png */,
+				E10B6041F4C051ABDA7F617E /* ForSaleViewController_Image_4.png */,
+				D647CE66429837D9A874FFB8 /* ForSaleViewController_Image_5.png */,
+				02C8A2BB14C97CA60021F408 /* Supporting Files */,
+			);
+			path = "Interface Export";
+			sourceTree = "<group>";
+		};
+		02C8A2BB14C97CA60021F408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02AA5E0514D57AF2004CE70D /* Gradient.h */,
+				02AA5E0614D57AF2004CE70D /* Gradient.m */,
+				02AA5E0714D57AF2004CE70D /* GradientNode.h */,
+				02AA5E0814D57AF2004CE70D /* GradientNode.m */,
+				02AA5E0914D57AF2004CE70D /* GradientView.h */,
+				02AA5E0A14D57AF2004CE70D /* GradientView.m */,
+				02AA5E3A14D597DB004CE70D /* MKMapView+ZoomLevel.h */,
+				02AA5E3B14D597DB004CE70D /* MKMapView+ZoomLevel.m */,
+				02C8A2BC14C97CA60021F408 /* Interface Export-Info.plist */,
+				02C8A2BD14C97CA60021F408 /* InfoPlist.strings */,
+				02C8A2C014C97CA60021F408 /* main.m */,
+				02C8A2C214C97CA60021F408 /* Interface Export-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02C8A2AF14C97CA60021F408 /* Interface Export */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C8A2C814C97CA60021F408 /* Build configuration list for PBXNativeTarget "Interface Export" */;
+			buildPhases = (
+				02C8A2AC14C97CA60021F408 /* Sources */,
+				02C8A2AD14C97CA60021F408 /* Frameworks */,
+				02C8A2AE14C97CA60021F408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Interface Export";
+			productName = "Interface Export";
+			productReference = 02C8A2B014C97CA60021F408 /* Interface Export.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02C8A2A714C97CA60021F408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Less Code Limited";
+			};
+			buildConfigurationList = 02C8A2AA14C97CA60021F408 /* Build configuration list for PBXProject "Interface Export" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02C8A2A514C97CA60021F408;
+			productRefGroup = 02C8A2B114C97CA60021F408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02C8A2AF14C97CA60021F408 /* Interface Export */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02C8A2AE14C97CA60021F408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C8A2BF14C97CA60021F408 /* InfoPlist.strings in Resources */,
+				8B9B9F7269C595BCFF1DD077 /* WelcomeViewController_Image_1.png in Resources */,
+				67FEFC6BEB01B29239E003FF /* WelcomeViewController_Image_2.png in Resources */,
+				620D0E5AB13DFC954FDA7484 /* WelcomeViewController_Image_3.png in Resources */,
+				7150A8D1A42EDDA8C64DB5A9 /* WelcomeViewController_Image_4.png in Resources */,
+				75B30BAB680AADA301FBAAD1 /* WelcomeViewController_Image_5.png in Resources */,
+				C82CB502E3BC2E52FC8BB016 /* MultiAddScreenTradeViewController_Image_1.png in Resources */,
+				17B77D5A64EE9ABA08111B55 /* MultiAddScreenTradeViewController_Image_2.png in Resources */,
+				B0F3CBD3A135B18E9657FBC6 /* MultiAddScreenTradeViewController_Image_3.png in Resources */,
+				168C750B44D75C9946460578 /* MultiAddScreenTradeViewController_Image_4.png in Resources */,
+				C05BF19111440F37BEE5AB1C /* MultiAddScreenTradeViewController_Image_5.png in Resources */,
+				A198E5F9D90871BA38ACC8CC /* AreatradesViewController_Image_1.png in Resources */,
+				3634D94419AFAC0E0F469C61 /* AreatradesViewController_Image_2.png in Resources */,
+				69399452012BF525B7753D48 /* AreatradesViewController_Image_3.png in Resources */,
+				5B386835FE025D69653A670C /* AreatradesViewController_Image_4.png in Resources */,
+				AAAEF1BECF976B1C18689602 /* AreatradesViewController_Image_5.png in Resources */,
+				769E3FAF260CE5965FB2FFA0 /* MultiAddScreenViewController_Image_1.png in Resources */,
+				E3B072C91314A1C3D63D2184 /* MultiAddScreenViewController_Image_2.png in Resources */,
+				F33B57A696F8B27D133B109D /* MultiAddScreenViewController_Image_3.png in Resources */,
+				94E9BEDA36228AF990D65EAC /* MultiAddScreenViewController_Image_4.png in Resources */,
+				758A6F41FF6D7270128F1583 /* MultiAddScreenViewController_Image_5.png in Resources */,
+				0EFA463C16082F5D440E4290 /* MultiAddScreenViewController_Image_6.png in Resources */,
+				A6C8FF9EBE5F3832F4F4DD07 /* MultiAddScreenViewController_Image_7.png in Resources */,
+				BC85DCB3ABF92750AD1125CA /* MultiAddScreenViewController_Image_8.png in Resources */,
+				F4F2B339E831ED227BBA1F01 /* MultiAddScreenViewController_Image_9.png in Resources */,
+				A388366499C7A2A652228FD7 /* MultiAddScreenViewController_Image_10.png in Resources */,
+				C9B0D11DA62C72308709E61A /* MultiAddScreenViewController_Image_11.png in Resources */,
+				A8DB214B8DA19D3C241F4CDD /* WantViewController_Image_1.png in Resources */,
+				39F82D4F8490A51BB4E309E6 /* WantViewController_Image_2.png in Resources */,
+				BE85548EC268433604ADDA30 /* WantViewController_Image_3.png in Resources */,
+				0FB4DF8DC0BE94ADD49B4835 /* WantViewController_Image_4.png in Resources */,
+				5804916031C356CED27C04E1 /* WantViewController_Image_5.png in Resources */,
+				10C7160AEDB1B60DFB01C4F1 /* MultiAddScreenWantViewController_Image_1.png in Resources */,
+				9B0C6DC93633A30C8C93AB3B /* MultiAddScreenWantViewController_Image_2.png in Resources */,
+				DCAABD7A7EC9F7261B127CC4 /* MultiAddScreenWantViewController_Image_3.png in Resources */,
+				85074C81B01A39F1D9C0FB62 /* MultiAddScreenWantViewController_Image_4.png in Resources */,
+				F776389A0D29834B438C4AD6 /* MultiAddScreenWantViewController_Image_5.png in Resources */,
+				EC36E173D012425951BD0CF8 /* TradeableViewController_Image_1.png in Resources */,
+				FA8594DCFC61A9C56CEA831F /* TradeableViewController_Image_2.png in Resources */,
+				F84D87E440B0D25CEC116476 /* TradeableViewController_Image_3.png in Resources */,
+				FB507F8067D11842F5FAAF5F /* TradeableViewController_Image_4.png in Resources */,
+				0D16CC02855BD149E92B996D /* TradeableViewController_Image_5.png in Resources */,
+				A71031A30ED3B208605F845E /* TradeableViewController_Image_6.png in Resources */,
+				D2B9B07EA3EB8F8155EA7A36 /* ForSaleViewController_Image_1.png in Resources */,
+				DBD800DB0CFE78CC8E57C5EF /* ForSaleViewController_Image_2.png in Resources */,
+				A688C8B2A54F65CB0CB61D8A /* ForSaleViewController_Image_3.png in Resources */,
+				ED901D2F36AAE4F77C60111B /* ForSaleViewController_Image_4.png in Resources */,
+				C2136240C4C5E0ABA798C414 /* ForSaleViewController_Image_5.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02C8A2AC14C97CA60021F408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C8A2C114C97CA60021F408 /* main.m in Sources */,
+				02C8A2C514C97CA60021F408 /* IFAppDelegate.m in Sources */,
+				02AA5E0B14D57AF2004CE70D /* Gradient.m in Sources */,
+				02AA5E0C14D57AF2004CE70D /* GradientNode.m in Sources */,
+				02AA5E0D14D57AF2004CE70D /* GradientView.m in Sources */,
+				02AA5E3C14D597DB004CE70D /* MKMapView+ZoomLevel.m in Sources */,
+				EC02EB9BDACFFF407227B09C /* WelcomeViewController.m in Sources */,
+				532826F8942EEE84A73BFBB5 /* MultiAddScreenTradeViewController.m in Sources */,
+				21A0DA4AB28074BD983C70B4 /* AreatradesViewController.m in Sources */,
+				358645EA3062BD81591F16B0 /* MultiAddScreenViewController.m in Sources */,
+				150A0731E6384C53B7A87F1B /* WantViewController.m in Sources */,
+				C4261853A1A87A8CBCDD3E44 /* MultiAddScreenWantViewController.m in Sources */,
+				820FB602A74782400B2D54BE /* TradeableViewController.m in Sources */,
+				F5803223AB8D0AA375FB3D36 /* ForSaleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02C8A2BD14C97CA60021F408 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02C8A2BE14C97CA60021F408 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02C8A2C614C97CA60021F408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		02C8A2C714C97CA60021F408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02C8A2C914C97CA60021F408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Interface Export/Interface Export-Prefix.pch";
+				INFOPLIST_FILE = "Interface Export/Interface Export-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02C8A2CA14C97CA60021F408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Interface Export/Interface Export-Prefix.pch";
+				INFOPLIST_FILE = "Interface Export/Interface Export-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C8A2AA14C97CA60021F408 /* Build configuration list for PBXProject "Interface Export" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C8A2C614C97CA60021F408 /* Debug */,
+				02C8A2C714C97CA60021F408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C8A2C814C97CA60021F408 /* Build configuration list for PBXNativeTarget "Interface Export" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C8A2C914C97CA60021F408 /* Debug */,
+				02C8A2CA14C97CA60021F408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02C8A2A714C97CA60021F408 /* Project object */;
+}
