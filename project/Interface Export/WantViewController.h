@@ -13,6 +13,6 @@
   
 }
 
-@property (nonatomic, retain) NSMutableArray *tableView1Data;
+@property (nonatomic, retain) NSMutableArray *tableView2Data;
 
 @end

@@ -10,6 +10,7 @@
 #import "WantViewController.h"
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
+#import "InfoViewController.h"
 #import "MultiAddScreenWantViewController.h"
 
 #import "GradientView.h"
@@ -118,6 +119,16 @@
   navigationBar1.topItem.title = @"Swapmedia";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
+  
+  // ----------------------------;
+  // Navigation Bar Right Button -> barButton1;
+  // ----------------------------;
+  
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
+  barButton1.target = self;
+  barButton1.action = @selector(didTap_barButton1:forEvent:);
+  
+  navigationBar1.topItem.rightBarButtonItem = barButton1;
   [navigationBar1 release];
   
   
@@ -133,21 +144,24 @@
   [textureView1ContentView addSubview:lightInfoButton1];
   lightInfoButton1.alpha = 1.0;
   lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
-  // UIButton -> roundedRectButton2;
+  // UIButton -> imageButton2;
   // ----------------------------;
   
-  UIButton *roundedRectButton2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-  roundedRectButton2.frame = CGRectMake(244, 0, 72, 29);
-  [textureView1ContentView addSubview:roundedRectButton2];
-  roundedRectButton2.alpha = 1.0;
-  roundedRectButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [roundedRectButton2 setTitle:@"Cancel" forState:UIControlStateNormal];
-  [roundedRectButton2 setTitleColor:[UIColor colorWithRed:0.22 green:0.33 blue:0.53 alpha:1.0] forState:UIControlStateNormal];
-  roundedRectButton2.titleLabel.font = [UIFont fontWithName:@".HelveticaNeueUI-Bold" size:15.0];
-  [roundedRectButton2 addTarget:self action:@selector(didTap_roundedRectButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
+  UIButton *imageButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
+  imageButton2.frame = CGRectMake(0, 112, 320, 55);
+  [textureView1ContentView addSubview:imageButton2];
+  imageButton2.alpha = 1.0;
+  imageButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [imageButton2 setTitle:@"Add Music" forState:UIControlStateNormal];
+  [imageButton2 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_6.png"] forState:UIControlStateNormal];
+  [imageButton2 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_7.png"] forState:UIControlStateNormal];
+  imageButton2.enabled = YES;
+  [imageButton2 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
+  [imageButton2 addTarget:self action:@selector(didTap_imageButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -155,13 +169,13 @@
   // ----------------------------;
   
   UIButton *imageButton3 = [UIButton buttonWithType:UIButtonTypeCustom];
-  imageButton3.frame = CGRectMake(0, 112, 320, 55);
+  imageButton3.frame = CGRectMake(0, 49, 320, 55);
   [textureView1ContentView addSubview:imageButton3];
   imageButton3.alpha = 1.0;
   imageButton3.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [imageButton3 setTitle:@"Add Music" forState:UIControlStateNormal];
-  [imageButton3 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_6.png"] forState:UIControlStateNormal];
-  [imageButton3 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_7.png"] forState:UIControlStateNormal];
+  [imageButton3 setTitle:@"Add Movie" forState:UIControlStateNormal];
+  [imageButton3 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_8.png"] forState:UIControlStateNormal];
+  [imageButton3 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_9.png"] forState:UIControlStateNormal];
   imageButton3.enabled = YES;
   [imageButton3 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
   [imageButton3 addTarget:self action:@selector(didTap_imageButton3:forEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -172,33 +186,16 @@
   // ----------------------------;
   
   UIButton *imageButton4 = [UIButton buttonWithType:UIButtonTypeCustom];
-  imageButton4.frame = CGRectMake(0, 49, 320, 55);
+  imageButton4.frame = CGRectMake(0, 176, 320, 55);
   [textureView1ContentView addSubview:imageButton4];
   imageButton4.alpha = 1.0;
   imageButton4.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [imageButton4 setTitle:@"Add Movie" forState:UIControlStateNormal];
-  [imageButton4 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_8.png"] forState:UIControlStateNormal];
-  [imageButton4 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_9.png"] forState:UIControlStateNormal];
+  [imageButton4 setTitle:@"Add Games" forState:UIControlStateNormal];
+  [imageButton4 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_10.png"] forState:UIControlStateNormal];
+  [imageButton4 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_11.png"] forState:UIControlStateNormal];
   imageButton4.enabled = YES;
   [imageButton4 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
   [imageButton4 addTarget:self action:@selector(didTap_imageButton4:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
-  
-  // ----------------------------;
-  // UIButton -> imageButton5;
-  // ----------------------------;
-  
-  UIButton *imageButton5 = [UIButton buttonWithType:UIButtonTypeCustom];
-  imageButton5.frame = CGRectMake(0, 176, 320, 55);
-  [textureView1ContentView addSubview:imageButton5];
-  imageButton5.alpha = 1.0;
-  imageButton5.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [imageButton5 setTitle:@"Add Games" forState:UIControlStateNormal];
-  [imageButton5 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_10.png"] forState:UIControlStateNormal];
-  [imageButton5 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_11.png"] forState:UIControlStateNormal];
-  imageButton5.enabled = YES;
-  [imageButton5 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
-  [imageButton5 addTarget:self action:@selector(didTap_imageButton5:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   contentView.frame = self.view.bounds;
@@ -265,10 +262,20 @@
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
-- (void)didTap_roundedRectButton2:(id)sender forEvent:(UIEvent *)event {
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
   [self.navigationController popViewControllerAnimated:YES];
 }
-- (void)didTap_imageButton3:(id)sender forEvent:(UIEvent *)event {
+- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
+  InfoViewController *controller = [[InfoViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
+}
+- (void)didTap_imageButton2:(id)sender forEvent:(UIEvent *)event {
   UIAlertView *alertView = [[UIAlertView alloc] init];
   alertView.title = @"Not enabled ";
   alertView.message = @"";
@@ -276,12 +283,12 @@
   [alertView show];
   [alertView release];
 }
-- (void)didTap_imageButton4:(id)sender forEvent:(UIEvent *)event {
+- (void)didTap_imageButton3:(id)sender forEvent:(UIEvent *)event {
   MultiAddScreenWantViewController *controller = [[MultiAddScreenWantViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
-- (void)didTap_imageButton5:(id)sender forEvent:(UIEvent *)event {
+- (void)didTap_imageButton4:(id)sender forEvent:(UIEvent *)event {
   UIAlertView *alertView = [[UIAlertView alloc] init];
   alertView.title = @"Not enabled";
   alertView.message = @"";

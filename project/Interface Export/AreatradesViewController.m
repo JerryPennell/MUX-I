@@ -10,6 +10,7 @@
 #import "TradeableViewController.h"
 #import "WantViewController.h"
 #import "ForSaleViewController.h"
+#import "InfoViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -71,6 +72,7 @@
   // ----------------------------;
   
   UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"AreatradesViewController_Image_5.png"] tag:4] autorelease];
+  tabBarItem4.badgeValue = @"1";
   
   tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4, nil];
   
@@ -114,7 +116,7 @@
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
   navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
-  navigationBar1.topItem.title = @"Swapmedia";
+  navigationBar1.topItem.title = @"Area Trades";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
   [navigationBar1 release];
@@ -132,6 +134,7 @@
   [textureView1ContentView addSubview:lightInfoButton1];
   lightInfoButton1.alpha = 1.0;
   lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -146,6 +149,7 @@
   [textureView1ContentView addSubview:addContactButton2];
   addContactButton2.alpha = 1.0;
   addContactButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [addContactButton2 addTarget:self action:@selector(didTap_addContactButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -161,7 +165,6 @@
   [mapView1 setCenterCoordinate:CLLocationCoordinate2DMake(37.33181999999998, -122.03117999999999) zoomLevel:6 animated:NO];
   [mapView1 release];
   
-    
   
   // ----------------------------;
   // UISearchBar -> searchBar1;
@@ -200,7 +203,7 @@
   switch1.alpha = 1.0;
   switch1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   switch1.enabled = YES;
-  switch1.onTintColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.92 alpha:1.0];
+  switch1.onTintColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.0 alpha:1.0];
   [switch1 release];
   
   
@@ -208,7 +211,7 @@
   // UILabel -> label1;
   // ----------------------------;
   
-  UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(17, 356, 157, 50)];
+  UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(27, 370, 157, 26)];
   [textureView1ContentView addSubview:label1];
   label1.alpha = 1.0;
   label1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
@@ -284,6 +287,24 @@
   ForSaleViewController *controller = [[ForSaleViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
+}
+- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
+  InfoViewController *controller = [[InfoViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
+}
+- (void)didTap_addContactButton2:(id)sender forEvent:(UIEvent *)event {
+  UIAlertView *alertView = [[UIAlertView alloc] init];
+  alertView.title = @"Demo only";
+  alertView.message = @"";
+  [alertView addButtonWithTitle:@"Done"];
+  [alertView show];
+  [alertView release];
 }
 
 

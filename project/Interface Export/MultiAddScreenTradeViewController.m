@@ -7,6 +7,7 @@
 //
 
 #import "MultiAddScreenTradeViewController.h"
+#import "InfoViewController.h"
 #import "WantViewController.h"
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
@@ -75,6 +76,17 @@
   navigationBar1.topItem.title = @"Add Movie";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
+  
+  // ----------------------------;
+  // Navigation Bar Right Button -> barButton1;
+  // ----------------------------;
+  
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0]];
+  barButton1.target = self;
+  barButton1.action = @selector(didTap_barButton1:forEvent:);
+  
+  navigationBar1.topItem.rightBarButtonItem = barButton1;
   [navigationBar1 release];
   
   
@@ -90,6 +102,7 @@
   [textureView1ContentView addSubview:lightInfoButton1];
   lightInfoButton1.alpha = 1.0;
   lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -123,21 +136,6 @@
   textField1.textColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
   textField1.font = [UIFont fontWithName:@".HelveticaNeueUI" size:17.0];
   [textField1 release];
-  
-  
-  // ----------------------------;
-  // UIButton -> roundedRectButton2;
-  // ----------------------------;
-  
-  UIButton *roundedRectButton2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-  roundedRectButton2.frame = CGRectMake(244, 0, 72, 29);
-  [textureView1ContentView addSubview:roundedRectButton2];
-  roundedRectButton2.alpha = 1.0;
-  roundedRectButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [roundedRectButton2 setTitle:@"Done" forState:UIControlStateNormal];
-  [roundedRectButton2 setTitleColor:[UIColor colorWithRed:0.22 green:0.33 blue:0.53 alpha:1.0] forState:UIControlStateNormal];
-  roundedRectButton2.titleLabel.font = [UIFont fontWithName:@".HelveticaNeueUI-Bold" size:15.0];
-  [roundedRectButton2 addTarget:self action:@selector(didTap_roundedRectButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -264,8 +262,18 @@
 // Action
 // ----------------
 
-- (void)didTap_roundedRectButton2:(id)sender forEvent:(UIEvent *)event {
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
   [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
+  InfoViewController *controller = [[InfoViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
 }
 - (void)didTap_tabBarItem2 {
   WantViewController *controller = [[WantViewController alloc] init];

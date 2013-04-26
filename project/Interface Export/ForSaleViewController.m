@@ -8,6 +8,8 @@
 
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
+#import "InfoViewController.h"
+#import "MultiAddScreenTradeViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -63,6 +65,7 @@
   // ----------------------------;
   
   UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"ForSaleViewController_Image_4.png"] tag:3] autorelease];
+  tabBarItem3.badgeValue = @"4";
   
   
   // ----------------------------;
@@ -113,7 +116,7 @@
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
   navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
-  navigationBar1.topItem.title = @"Swapmedia";
+  navigationBar1.topItem.title = @"For Sale List";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
   [navigationBar1 release];
@@ -131,6 +134,7 @@
   [textureView1ContentView addSubview:lightInfoButton1];
   lightInfoButton1.alpha = 1.0;
   lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -145,6 +149,7 @@
   [textureView1ContentView addSubview:addContactButton2];
   addContactButton2.alpha = 1.0;
   addContactButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [addContactButton2 addTarget:self action:@selector(didTap_addContactButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -461,6 +466,21 @@
 }
 - (void)didTap_tabBarItem4 {
   AreatradesViewController *controller = [[AreatradesViewController alloc] init];
+  [self.navigationController pushViewController:controller animated:YES];
+  [controller release];
+}
+- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
+  InfoViewController *controller = [[InfoViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
+}
+- (void)didTap_addContactButton2:(id)sender forEvent:(UIEvent *)event {
+  MultiAddScreenTradeViewController *controller = [[MultiAddScreenTradeViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }

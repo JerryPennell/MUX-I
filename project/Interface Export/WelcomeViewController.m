@@ -7,7 +7,9 @@
 //
 
 #import "WelcomeViewController.h"
+#import "InfoViewController.h"
 #import "TradeableViewController.h"
+#import "WantViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -148,6 +150,7 @@
   [textureView1ContentView addSubview:lightInfoButton1];
   lightInfoButton1.alpha = 1.0;
   lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -397,13 +400,25 @@
 // Action
 // ----------------
 
+- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
+  InfoViewController *controller = [[InfoViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
+}
 - (void)didTap_roundedRectButton2:(id)sender forEvent:(UIEvent *)event {
-  UIAlertView *alertView = [[UIAlertView alloc] init];
-  alertView.title = @"Mockup Error";
-  alertView.message = @"Target Screen Not Found";
-  [alertView addButtonWithTitle:@"OK"];
-  [alertView show];
-  [alertView release];
+  TradeableViewController *controller = [[TradeableViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
 }
 - (void)didTap_tabBarItem1 {
   TradeableViewController *controller = [[TradeableViewController alloc] init];
@@ -411,12 +426,9 @@
   [controller release];
 }
 - (void)didTap_tabBarItem2 {
-  UIAlertView *alertView = [[UIAlertView alloc] init];
-  alertView.title = @"Mockup Error";
-  alertView.message = @"Target Screen Not Found";
-  [alertView addButtonWithTitle:@"OK"];
-  [alertView show];
-  [alertView release];
+  WantViewController *controller = [[WantViewController alloc] init];
+  [self.navigationController pushViewController:controller animated:YES];
+  [controller release];
 }
 
 
