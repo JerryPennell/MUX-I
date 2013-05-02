@@ -7,8 +7,8 @@
 //
 
 #import "AreatradesViewController.h"
-#import "TradeableViewController.h"
-#import "WantViewController.h"
+#import "TradeMenuViewController.h"
+#import "WantMenuViewController.h"
 #import "ForSaleViewController.h"
 #import "InfoViewController.h"
 
@@ -80,8 +80,8 @@
   // MockTextureView -> textureView1;
   // ----------------------------;
   
-  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
-  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
+  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 410)];
+  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 410)];
   textureView1ContentView.clipsToBounds = YES;
   textureView1ContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   [textureView1 addSubview:textureView1ContentView];
@@ -98,6 +98,7 @@
   textureView1.layer.shadowRadius = 5.0;
   textureView1ContentView.layer.cornerRadius = 2.0;
   textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"AreatradesViewController_Image_6.png"]];
   [textureView1 release];
   
   
@@ -115,10 +116,21 @@
   navigationBar1.alpha = 1.0;
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
   navigationBar1.topItem.title = @"Area Trades";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
+  
+  // ----------------------------;
+  // Navigation Bar Right Button -> barButton1;
+  // ----------------------------;
+  
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0]];
+  barButton1.target = self;
+  barButton1.action = @selector(didTap_barButton1:forEvent:);
+  
+  navigationBar1.topItem.rightBarButtonItem = barButton1;
   [navigationBar1 release];
   
   
@@ -135,21 +147,6 @@
   lightInfoButton1.alpha = 1.0;
   lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
-  
-  // ----------------------------;
-  // UIButton -> addContactButton2;
-  // ----------------------------;
-  
-  UIButton *addContactButton2 = [UIButton buttonWithType:UIButtonTypeContactAdd];
-  CGRect addContactButton2Rect = addContactButton2.frame;
-  addContactButton2Rect.origin.x = 281;
-  addContactButton2Rect.origin.y =  3;
-  addContactButton2.frame = addContactButton2Rect;
-  [textureView1ContentView addSubview:addContactButton2];
-  addContactButton2.alpha = 1.0;
-  addContactButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [addContactButton2 addTarget:self action:@selector(didTap_addContactButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
@@ -176,6 +173,7 @@
   searchBar1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   searchBar1.barStyle = UIBarStyleDefault;
   searchBar1.tintColor = [UIColor colorWithRed:1.0 green:1.0 blue:0.4 alpha:1.0];
+  searchBar1.prompt = @"";
   searchBar1.text = @"";
   searchBar1.placeholder = @"Search nearby events";
   searchBar1.scopeButtonTitles = [NSArray arrayWithObjects:@"", nil];
@@ -216,8 +214,8 @@
   label1.alpha = 1.0;
   label1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   label1.text = @"Available to trade";
-  label1.textColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
-  label1.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+  label1.textColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+  label1.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
   label1.textAlignment = UITextAlignmentCenter;
   label1.shadowOffset = CGSizeMake(0, -1);
   label1.font = [UIFont fontWithName:@".HelveticaNeueUI" size:17.0];
@@ -274,12 +272,12 @@
 // ----------------
 
 - (void)didTap_tabBarItem1 {
-  TradeableViewController *controller = [[TradeableViewController alloc] init];
+  TradeMenuViewController *controller = [[TradeMenuViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
 - (void)didTap_tabBarItem2 {
-  WantViewController *controller = [[WantViewController alloc] init];
+  WantMenuViewController *controller = [[WantMenuViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
@@ -288,23 +286,23 @@
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
+  UIAlertView *alertView = [[UIAlertView alloc] init];
+  alertView.title = @"Demo only";
+  alertView.message = @"";
+  [alertView addButtonWithTitle:@"OK"];
+  [alertView show];
+  [alertView release];
+}
 - (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
   InfoViewController *controller = [[InfoViewController alloc] init];
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
   [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
   navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
   [self presentModalViewController:navigationController animated:YES];
   [navigationController release];
   [controller release];
-}
-- (void)didTap_addContactButton2:(id)sender forEvent:(UIEvent *)event {
-  UIAlertView *alertView = [[UIAlertView alloc] init];
-  alertView.title = @"Demo only";
-  alertView.message = @"";
-  [alertView addButtonWithTitle:@"Done"];
-  [alertView show];
-  [alertView release];
 }
 
 

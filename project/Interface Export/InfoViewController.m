@@ -57,9 +57,9 @@
   [textureView1 addSubview:textureView1ContentView];
   [textureView1ContentView release];
   [contentView addSubview:textureView1];
-  textureView1.alpha = 0.7568627595901489;
+  textureView1.alpha = 0.6941176652908325;
   textureView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  textureView1.backgroundColor = [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0];
+  textureView1.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
   textureView1.layer.cornerRadius = 2.0;
   textureView1.layer.borderWidth = 0.0;
   textureView1.layer.borderColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
@@ -85,7 +85,7 @@
   navigationBar1.alpha = 1.0;
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
   navigationBar1.topItem.title = @"Info";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
@@ -95,24 +95,16 @@
   // ----------------------------;
   
   UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:1.0 green:1.0 blue:0.4 alpha:1.0]];
+  NSMutableDictionary *barButton1StyleDictionary = [NSMutableDictionary dictionary];
+  UIColor *barButton1TextColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+  [barButton1StyleDictionary setObject:barButton1TextColor forKey:UITextAttributeTextColor];
+  [barButton1 setTitleTextAttributes:barButton1StyleDictionary forState:UIControlStateNormal];
   barButton1.target = self;
   barButton1.action = @selector(didTap_barButton1:forEvent:);
   
   navigationBar1.topItem.rightBarButtonItem = barButton1;
   [navigationBar1 release];
-  
-  
-  // ----------------------------;
-  // UIImageView -> imageView1;
-  // ----------------------------;
-  
-  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, 320, 300)];
-  [textureView1ContentView addSubview:imageView1];
-  imageView1.alpha = 1.0;
-  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  imageView1.image = [UIImage imageNamed:@"InfoViewController_Image_2.png"];
-  imageView1.contentMode = UIViewContentModeScaleToFill;
-  [imageView1 release];
   
   
   // ----------------------------;
@@ -127,6 +119,36 @@
   [textureView1ContentView addSubview:lightInfoButton2];
   lightInfoButton2.alpha = 1.0;
   lightInfoButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  
+  
+  // ----------------------------;
+  // UIImageView -> imageView1;
+  // ----------------------------;
+  
+  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(46.5, 92.5, 230, 257.5)];
+  [textureView1ContentView addSubview:imageView1];
+  imageView1.alpha = 1.0;
+  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView1.image = [UIImage imageNamed:@"InfoViewController_Image_2.png"];
+  imageView1.contentMode = UIViewContentModeScaleToFill;
+  [imageView1 release];
+  
+  
+  // ----------------------------;
+  // UILabel -> label1;
+  // ----------------------------;
+  
+  UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 280, 43)];
+  [textureView1ContentView addSubview:label1];
+  label1.alpha = 1.0;
+  label1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  label1.text = @"Swapmedia  v 1.0";
+  label1.textColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+  label1.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
+  label1.textAlignment = UITextAlignmentCenter;
+  label1.shadowOffset = CGSizeMake(0, -1);
+  label1.font = [UIFont fontWithName:@"ArialMT" size:30.0];
+  [label1 release];
   
   
   // ----------------------------;

@@ -7,11 +7,11 @@
 //
 
 #import "TradeableViewController.h"
+#import "TradeMenuViewController.h"
 #import "WantViewController.h"
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
 #import "InfoViewController.h"
-#import "MultiAddScreenViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -81,8 +81,8 @@
   // MockTextureView -> textureView1;
   // ----------------------------;
   
-  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
-  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
+  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 410)];
+  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 410)];
   textureView1ContentView.clipsToBounds = YES;
   textureView1ContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   [textureView1 addSubview:textureView1ContentView];
@@ -99,70 +99,20 @@
   textureView1.layer.shadowRadius = 5.0;
   textureView1ContentView.layer.cornerRadius = 2.0;
   textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TradeableViewController_Image_6.png"]];
   [textureView1 release];
-  
-  
-  // ----------------------------;
-  // UINavigationBar -> navigationBar1;
-  // ----------------------------;
-  
-  UINavigationBar *navigationBar1 = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-  navigationBar1.delegate = (id<UINavigationBarDelegate>)self;
-  UINavigationItem *navigationBar1BackItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
-  UINavigationItem *navigationBar1TopItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
-  NSArray *navigationBar1Items = [NSArray arrayWithObjects:navigationBar1BackItem, navigationBar1TopItem, nil];
-  [navigationBar1 setItems:navigationBar1Items animated:NO];
-  [textureView1ContentView addSubview:navigationBar1];
-  navigationBar1.alpha = 1.0;
-  navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
-  navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
-  navigationBar1.topItem.title = @"Tradable";
-  [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
-  navigationBar1.topItem.hidesBackButton = YES;
-  [navigationBar1 release];
-  
-  
-  // ----------------------------;
-  // UIButton -> lightInfoButton1;
-  // ----------------------------;
-  
-  UIButton *lightInfoButton1 = [UIButton buttonWithType:UIButtonTypeInfoLight];
-  CGRect lightInfoButton1Rect = lightInfoButton1.frame;
-  lightInfoButton1Rect.origin.x = 17;
-  lightInfoButton1Rect.origin.y =  10;
-  lightInfoButton1.frame = lightInfoButton1Rect;
-  [textureView1ContentView addSubview:lightInfoButton1];
-  lightInfoButton1.alpha = 1.0;
-  lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
-  
-  // ----------------------------;
-  // UIButton -> addContactButton2;
-  // ----------------------------;
-  
-  UIButton *addContactButton2 = [UIButton buttonWithType:UIButtonTypeContactAdd];
-  CGRect addContactButton2Rect = addContactButton2.frame;
-  addContactButton2Rect.origin.x = 281;
-  addContactButton2Rect.origin.y =  3;
-  addContactButton2.frame = addContactButton2Rect;
-  [textureView1ContentView addSubview:addContactButton2];
-  addContactButton2.alpha = 1.0;
-  addContactButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [addContactButton2 addTarget:self action:@selector(didTap_addContactButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
   
   // ----------------------------;
   // UISearchBar -> searchBar1;
   // ----------------------------;
   
-  UISearchBar *searchBar1 = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 40, 320, 44)];
+  UISearchBar *searchBar1 = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 44, 320, 44)];
   [textureView1ContentView addSubview:searchBar1];
   searchBar1.alpha = 1.0;
   searchBar1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   searchBar1.barStyle = UIBarStyleDefault;
-  searchBar1.tintColor = [UIColor colorWithRed:0.5 green:1.0 blue:0.0 alpha:1.0];
+  searchBar1.tintColor = [UIColor colorWithRed:1.0 green:1.0 blue:0.4 alpha:1.0];
   searchBar1.text = @"";
   searchBar1.placeholder = @"Search tradables";
   searchBar1.scopeButtonTitles = [NSArray arrayWithObjects:@"", nil];
@@ -180,7 +130,7 @@
   // UITableView -> tableView1;
   // ----------------------------;
   
-  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 84, 320, 322) style:UITableViewStylePlain];
+  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 88, 320, 251) style:UITableViewStylePlain];
   tableView1.tag = 1;
   tableView1.delegate = (id<UITableViewDelegate>)self;
   tableView1.dataSource = (id<UITableViewDataSource>)self;
@@ -189,7 +139,7 @@
   tableView1.alpha = 1.0;
   tableView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   tableView1.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
-  tableView1.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TradeableViewController_Image_6.png"]];
+  tableView1.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TradeableViewController_Image_7.png"]];
   tableView1.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
   [tableView1 release];
   
@@ -213,6 +163,7 @@
   tableViewCell1.textLabel.text = @"Toy Story";
   tableViewCell1.detailTextLabel.text = @"New";
   tableViewCell1.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell1.imageView.image = [UIImage imageNamed:@"TradeableViewController_Image_8.png"];
   tableViewCell1.backgroundColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
   [tableViewCell1Data setObject:tableViewCell1 forKey:@"cell"];
   [tableViewCell1Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
@@ -230,6 +181,7 @@
   tableViewCell2.textLabel.text = @"Matrix";
   tableViewCell2.detailTextLabel.text = @"Slightly used";
   tableViewCell2.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell2.imageView.image = [UIImage imageNamed:@"TradeableViewController_Image_9.png"];
   [tableViewCell2Data setObject:tableViewCell2 forKey:@"cell"];
   [tableViewCell2Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
   [tableViewCell2Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
@@ -256,6 +208,7 @@
   tableViewCell3.textLabel.text = @"Mario World Wii";
   tableViewCell3.detailTextLabel.text = @"New";
   tableViewCell3.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell3.imageView.image = [UIImage imageNamed:@"TradeableViewController_Image_10.png"];
   [tableViewCell3Data setObject:tableViewCell3 forKey:@"cell"];
   [tableViewCell3Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
   [tableViewCell3Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
@@ -282,12 +235,73 @@
   tableViewCell4.textLabel.text = @"P!nk - Funhouse";
   tableViewCell4.detailTextLabel.text = @"Used";
   tableViewCell4.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell4.imageView.image = [UIImage imageNamed:@"TradeableViewController_Image_11.png"];
   [tableViewCell4Data setObject:tableViewCell4 forKey:@"cell"];
   [tableViewCell4Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
   [tableViewCell4Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
   [tableViewCell4Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
   [tableViewCell4Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
   [[tableViewSection3Data objectForKey:@"cells"] addObject:tableViewCell4Data];
+  
+  // ----------------------------;
+  // UINavigationBar -> navigationBar1;
+  // ----------------------------;
+  
+  UINavigationBar *navigationBar1 = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+  navigationBar1.delegate = (id<UINavigationBarDelegate>)self;
+  UINavigationItem *navigationBar1BackItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
+  UINavigationItem *navigationBar1TopItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
+  NSArray *navigationBar1Items = [NSArray arrayWithObjects:navigationBar1BackItem, navigationBar1TopItem, nil];
+  [navigationBar1 setItems:navigationBar1Items animated:NO];
+  [textureView1ContentView addSubview:navigationBar1];
+  navigationBar1.alpha = 1.0;
+  navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
+  navigationBar1.barStyle = UIBarStyleDefault;
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
+  navigationBar1.topItem.title = @"Tradable";
+  [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
+  navigationBar1.topItem.hidesBackButton = YES;
+  
+  // ----------------------------;
+  // Navigation Bar Right Button -> barButton1;
+  // ----------------------------;
+  
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0]];
+  barButton1.target = self;
+  barButton1.action = @selector(didTap_barButton1:forEvent:);
+  
+  navigationBar1.topItem.rightBarButtonItem = barButton1;
+  [navigationBar1 release];
+  
+  
+  // ----------------------------;
+  // UIButton -> lightInfoButton1;
+  // ----------------------------;
+  
+  UIButton *lightInfoButton1 = [UIButton buttonWithType:UIButtonTypeInfoLight];
+  CGRect lightInfoButton1Rect = lightInfoButton1.frame;
+  lightInfoButton1Rect.origin.x = 17;
+  lightInfoButton1Rect.origin.y =  10;
+  lightInfoButton1.frame = lightInfoButton1Rect;
+  [textureView1ContentView addSubview:lightInfoButton1];
+  lightInfoButton1.alpha = 1.0;
+  lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
+  
+  
+  // ----------------------------;
+  // UIImageView -> imageView1;
+  // ----------------------------;
+  
+  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(51, 371, 218, 31)];
+  [textureView1ContentView addSubview:imageView1];
+  imageView1.alpha = 1.0;
+  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView1.image = [UIImage imageNamed:@"TradeableViewController_Image_12.png"];
+  imageView1.contentMode = UIViewContentModeScaleToFill;
+  [imageView1 release];
+  
   
   contentView.frame = self.view.bounds;
   [self.view addSubview:contentView];
@@ -458,6 +472,9 @@
 // ----------------
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+  if (tabBar.tag == 1 && item.tag == 1) {;
+    [self didTap_tabBarItem1];
+  };
   if (tabBar.tag == 1 && item.tag == 2) {;
     [self didTap_tabBarItem2];
   };
@@ -482,6 +499,11 @@
 // Action
 // ----------------
 
+- (void)didTap_tabBarItem1 {
+  TradeMenuViewController *controller = [[TradeMenuViewController alloc] init];
+  [self.navigationController pushViewController:controller animated:YES];
+  [controller release];
+}
 - (void)didTap_tabBarItem2 {
   WantViewController *controller = [[WantViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
@@ -497,19 +519,17 @@
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
+  [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
   InfoViewController *controller = [[InfoViewController alloc] init];
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
   [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
   navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
   [self presentModalViewController:navigationController animated:YES];
   [navigationController release];
-  [controller release];
-}
-- (void)didTap_addContactButton2:(id)sender forEvent:(UIEvent *)event {
-  MultiAddScreenViewController *controller = [[MultiAddScreenViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
 

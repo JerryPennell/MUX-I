@@ -21,6 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    sleep(3);
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -28,7 +30,14 @@
     
     WelcomeViewController *controller = [[WelcomeViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    [_window addSubview:controller.view];
+    [_window makeKeyAndVisible];
+    [NSTimer scheduledTimerWithTimeInterval:1.0/30. target:self selector:@selector(welcomeScreen) userInfo:nil repeats:NO];
+
+    
     [navigationController setNavigationBarHidden:YES animated:NO];
+    
     
     self.window.rootViewController = navigationController;
 
@@ -36,7 +45,8 @@
     [navigationController release];
     
     [self.window makeKeyAndVisible];
-    return YES;
+    
+        return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -77,5 +87,30 @@
      See also applicationDidEnterBackground:.
      */
 }
+
+- (void) welcomeScreen
+{
+    //Welcome Screen
+    UIImageView* welcome = [[[UIImageView alloc] initWithFrame:CGRectMake(0,0,320,480)]autorelease];
+    welcome.image = [UIImage imageNamed:@"Default.png"];
+    [_window addSubview:welcome];
+    [_window bringSubviewToFront:welcome];
+    //Animation Effects (zoom and fade)
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:2.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:_window cache:YES];
+    [UIView setAnimationDelegate:welcome];
+    [UIView setAnimationDidStopSelector:@selector(removeFromSuperview)];
+    
+    //set transparency to 0.0
+    welcome.alpha = 0.0;
+    
+    //zoom effect
+    welcome.frame = CGRectMake(-60, -60, 440, 600);
+    [UIView commitAnimations];
+    
+}
+
+
 
 @end

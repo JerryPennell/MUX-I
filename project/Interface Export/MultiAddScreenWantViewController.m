@@ -8,6 +8,7 @@
 
 #import "MultiAddScreenWantViewController.h"
 #import "InfoViewController.h"
+#import "TradeMenuViewController.h"
 #import "WantViewController.h"
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
@@ -56,6 +57,7 @@
   textureView1.layer.shadowRadius = 5.0;
   textureView1ContentView.layer.cornerRadius = 2.0;
   textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_2.png"]];
   [textureView1 release];
   
   
@@ -73,8 +75,8 @@
   navigationBar1.alpha = 1.0;
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
-  navigationBar1.topItem.title = @"Add Movie";
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
+  navigationBar1.topItem.title = @"Add Movies";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
   
@@ -231,28 +233,28 @@
   // Tab Bar Item -> tabBarItem1;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem1 = [[[UITabBarItem alloc] initWithTitle:@"Tradable" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_2.png"] tag:1] autorelease];
+  UITabBarItem *tabBarItem1 = [[[UITabBarItem alloc] initWithTitle:@"Tradable" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_3.png"] tag:1] autorelease];
   
   
   // ----------------------------;
   // Tab Bar Item -> tabBarItem2;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem2 = [[[UITabBarItem alloc] initWithTitle:@"Want" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_3.png"] tag:2] autorelease];
+  UITabBarItem *tabBarItem2 = [[[UITabBarItem alloc] initWithTitle:@"Want" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_4.png"] tag:2] autorelease];
   
   
   // ----------------------------;
   // Tab Bar Item -> tabBarItem3;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_4.png"] tag:3] autorelease];
+  UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_5.png"] tag:3] autorelease];
   
   
   // ----------------------------;
   // Tab Bar Item -> tabBarItem4;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_5.png"] tag:4] autorelease];
+  UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"MultiAddScreenWantViewController_Image_6.png"] tag:4] autorelease];
   
   tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4, nil];
   
@@ -353,6 +355,9 @@
 // ----------------
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+  if (tabBar.tag == 1 && item.tag == 1) {;
+    [self didTap_tabBarItem1];
+  };
   if (tabBar.tag == 1 && item.tag == 2) {;
     [self didTap_tabBarItem2];
   };
@@ -384,10 +389,15 @@
   InfoViewController *controller = [[InfoViewController alloc] init];
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
   [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
   navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
   [self presentModalViewController:navigationController animated:YES];
   [navigationController release];
+  [controller release];
+}
+- (void)didTap_tabBarItem1 {
+  TradeMenuViewController *controller = [[TradeMenuViewController alloc] init];
+  [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
 - (void)didTap_tabBarItem2 {

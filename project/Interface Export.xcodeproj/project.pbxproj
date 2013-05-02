@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008B20B576921993CE211BE3 /* MultiAddScreenWantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95387E017E4B6BCBF2DE7D4C /* MultiAddScreenWantViewController_Image_3.png */; };
 		02AA5E0B14D57AF2004CE70D /* Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E0614D57AF2004CE70D /* Gradient.m */; };
 		02AA5E0C14D57AF2004CE70D /* GradientNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E0814D57AF2004CE70D /* GradientNode.m */; };
 		02AA5E0D14D57AF2004CE70D /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E0A14D57AF2004CE70D /* GradientView.m */; };
 		02AA5E3814D59768004CE70D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AA5E3714D59768004CE70D /* CoreLocation.framework */; };
 		02AA5E3C14D597DB004CE70D /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA5E3B14D597DB004CE70D /* MKMapView+ZoomLevel.m */; };
-		02BFB96FB293D019C7EE4151 /* MultiAddScreenTradeViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8ED8C38CF94B35B38D5303 /* MultiAddScreenTradeViewController_Image_5.png */; };
 		02C8A2B514C97CA60021F408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2B414C97CA60021F408 /* UIKit.framework */; };
 		02C8A2B714C97CA60021F408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2B614C97CA60021F408 /* Foundation.framework */; };
 		02C8A2B914C97CA60021F408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2B814C97CA60021F408 /* CoreGraphics.framework */; };
@@ -22,74 +20,140 @@
 		02C8A2C514C97CA60021F408 /* IFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8A2C414C97CA60021F408 /* IFAppDelegate.m */; };
 		02C8A2CC14C97CC00021F408 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2CB14C97CC00021F408 /* MapKit.framework */; };
 		02C8A2CE14C97CC80021F408 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8A2CD14C97CC80021F408 /* QuartzCore.framework */; };
-		03962118E1D1F265C371A5DA /* TradeableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A937A431F3ECF1006CE1E476 /* TradeableViewController.m */; };
-		0664B9AA99522A4362A2E7F3 /* MultiAddScreenViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F89B7A93EB25A1A2076DBAB9 /* MultiAddScreenViewController_Image_1.png */; };
-		0B913D423836C6390FC57480 /* TradeableViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CAF3BF111B48665E22014 /* TradeableViewController_Image_2.png */; };
-		0C51344081D16D68083D12E8 /* AreatradesViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F731BE96AD215F5E9124D /* AreatradesViewController_Image_4.png */; };
-		0C75A4F6CB2024975204F87A /* MultiAddScreenWantViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C541B274A611E430AFCCEECA /* MultiAddScreenWantViewController_Image_2.png */; };
-		0DACC01BCC4963403621A5BF /* WantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC71B28895A44226FD4A816 /* WantViewController.m */; };
-		0E67C42A7081AA041ADF035F /* InfoViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B655952227FAEAF1C216425 /* InfoViewController_Image_6.png */; };
-		0EC5E7390F0F270A55C20204 /* MultiAddScreenViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB7E88AC0A57F3E45E0983 /* MultiAddScreenViewController_Image_11.png */; };
-		14CE2B8F8705D5B63971FE5B /* MultiAddScreenWantViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EECC1D3CBAA2D77D6BC8897 /* MultiAddScreenWantViewController_Image_1.png */; };
-		15D9628B36F1BF3BC16BE0C6 /* AreatradesViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FED11F61BA735305A692CF /* AreatradesViewController_Image_1.png */; };
-		1F7B87492936D5FE67D32564 /* MultiAddScreenTradeViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31400B6E5CCE007B139F5A /* MultiAddScreenTradeViewController_Image_1.png */; };
-		212B242AFF1F62D34127C3C0 /* MultiAddScreenViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 23B54EF50A40479317676667 /* MultiAddScreenViewController_Image_2.png */; };
-		21A7591998725591CDD7EFD7 /* MultiAddScreenWantViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D41CB7A903A9A7EF5A984C6 /* MultiAddScreenWantViewController_Image_4.png */; };
-		23EEB2E5FC627DDB3DCF6D97 /* MultiAddScreenViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDF4A184677EC4A9F09087D /* MultiAddScreenViewController_Image_5.png */; };
-		2E37B11CF8425DB651188114 /* AreatradesViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C92DA04C5E705ACF0678121 /* AreatradesViewController_Image_5.png */; };
-		2FA3F4BB4A7F6CCDA5951BF8 /* InfoViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EF326A9957509D44F18FC28 /* InfoViewController_Image_2.png */; };
-		308F0348EBDFC36F2230D155 /* MultiAddScreenViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E0BD7DB75C2CC61DB9010 /* MultiAddScreenViewController_Image_7.png */; };
-		37D712D537D1938E62022958 /* TradeableViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = B132756BB1004DC74E840FC5 /* TradeableViewController_Image_4.png */; };
-		3B3D2CB01C796BC5EC3FEA82 /* WelcomeViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = B15B6F4B894F3217D308CBC5 /* WelcomeViewController_Image_5.png */; };
-		3C5E34EDCD65E59E4111A1A2 /* MultiAddScreenViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 94822635AB31422C5A7F8AF1 /* MultiAddScreenViewController_Image_3.png */; };
-		41E8A35D6D81ED23AAB2F45B /* MultiAddScreenTradeViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF6C46624B842D1AC80A71B /* MultiAddScreenTradeViewController_Image_3.png */; };
-		4365B1E4FD9AEB22ACE4394E /* WelcomeViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F7B02D208E8D66F2A5BCCD /* WelcomeViewController_Image_4.png */; };
-		465A7D4329A3B96ECC9B1834 /* MultiAddScreenViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C67C74F37A25C0D4CCE787D /* MultiAddScreenViewController_Image_6.png */; };
-		468490029EE549E4AEFB11C5 /* MultiAddScreenViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 187748FF35EA691FA729633F /* MultiAddScreenViewController_Image_9.png */; };
-		47B3A3822193683C19D6B69C /* ForSaleViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E2AB91FA82B1D56AA880943B /* ForSaleViewController_Image_5.png */; };
-		4BE650DC20BE61C7EC381B8F /* WelcomeViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19526A89C3A2BB6F48A0DD18 /* WelcomeViewController_Image_1.png */; };
-		4CB6A336AAAC0ED4B794048A /* MultiAddScreenWantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A81620F90EC7E24505D5E81 /* MultiAddScreenWantViewController.m */; };
-		4E10344C600791689C6FD0BA /* MultiAddScreenViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB2FA529542C08A03578FA9 /* MultiAddScreenViewController_Image_4.png */; };
-		5393031033CC208FA241FE85 /* TradeableViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A400E6CC7D5F929D4A728A /* TradeableViewController_Image_5.png */; };
-		58928683A54055EAA269B556 /* AreatradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CC9C8EC1359931716A0BB3 /* AreatradesViewController.m */; };
-		5FCBFEB7D8820BB26B735439 /* MultiAddScreenTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509544B7B3C00BFD06B7A /* MultiAddScreenTradeViewController.m */; };
-		6030AB1C8CF67E108305B972 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439CC68FFC5A90051CC86F4 /* WelcomeViewController.m */; };
-		68F0572389AE03BD8D3B3925 /* TradeableViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E43F82D542D0F5259B05F97 /* TradeableViewController_Image_6.png */; };
-		6A5AD035723752840D9DA082 /* ForSaleViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD896DE3B40F548A05AAB9 /* ForSaleViewController_Image_1.png */; };
-		734AF48CE34D336E72ED461B /* MultiAddScreenViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = A8B55378182148AE4C141A21 /* MultiAddScreenViewController_Image_10.png */; };
-		837690E37D936F4D9C57EF4F /* ForSaleViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6AE103A7E15FFF63C5A8B /* ForSaleViewController_Image_4.png */; };
-		847C0A17C212535C6CBC0024 /* AreatradesViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = BB321C8562ECD6EE51678DEF /* AreatradesViewController_Image_3.png */; };
-		9F21180E78A36638939B77B0 /* ForSaleViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 249AE402036137D49559CB33 /* ForSaleViewController_Image_3.png */; };
-		A3BCD9F8AF61E43BD7DF849F /* InfoViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F38FA179374E7BD109274 /* InfoViewController_Image_3.png */; };
-		B477F82ADA0C376532427CD3 /* InfoViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2B1BB498B6F088E62089F6 /* InfoViewController_Image_5.png */; };
-		B83F3ED20BBAC3011BAABF61 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3571843F8B9C5522C8193BD9 /* InfoViewController.m */; };
-		BE7291B5159711875A311009 /* ForSaleViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E004613B0064C0FC6E13C8 /* ForSaleViewController_Image_2.png */; };
-		C245955CC1A7CF0C91F668AE /* MultiAddScreenTradeViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 967DEBC585916DAED603A169 /* MultiAddScreenTradeViewController_Image_4.png */; };
-		CD67431BA989A1CE4B093D95 /* AreatradesViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 280D0609580F6DAF8C026A39 /* AreatradesViewController_Image_2.png */; };
-		D3EB251647B1CB0A83B7834B /* WantViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D45F0D0A3870A23FE7E2D5FB /* WantViewController_Image_1.png */; };
-		D689070BEC8E0323D880D5CA /* MultiAddScreenWantViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 47DF0101D741052B1F18518B /* MultiAddScreenWantViewController_Image_5.png */; };
-		D85B4D38F55477FDE616909D /* InfoViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 552032AE04DCE5B6F5C54A0D /* InfoViewController_Image_4.png */; };
-		D96394D39B8B00AA3D8E393F /* WantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B44E23148D128EA5A109D4 /* WantViewController_Image_3.png */; };
-		DE674411E249D0705CA2426A /* TradeableViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FB8D0F5A735D28F72C0756 /* TradeableViewController_Image_1.png */; };
-		E168ED32D700867421758576 /* ForSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B3AC36BDEA98089AEB50E2 /* ForSaleViewController.m */; };
-		E257CBBA972ACBA6341EC758 /* WelcomeViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9E7F94DEB9195F23873372 /* WelcomeViewController_Image_3.png */; };
-		E3735D5D172A038D00290315 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3735D58172A038D00290315 /* Default@2x.png */; };
-		E3735D5E172A038D00290315 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E3735D59172A038D00290315 /* Default.png */; };
-		E3735D5F172A038D00290315 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3735D5A172A038D00290315 /* Default-568h@2x.png */; };
-		E3735D60172A038D00290315 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = E3735D5B172A038D00290315 /* 114x114.png */; };
-		E3735D61172A038D00290315 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E3735D5C172A038D00290315 /* 57x57.png */; };
-		E5F9073C3ADE3619F4E90085 /* WantViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = F19DB8D798B2FE1A004E57DB /* WantViewController_Image_4.png */; };
-		E716EF4E84D48E27B0F38068 /* WelcomeViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4EC13ABB1F05BB34B749F6 /* WelcomeViewController_Image_2.png */; };
-		EF2910DB0C98836C027CC5C4 /* TradeableViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A02B513C78FBD20AD0928EB3 /* TradeableViewController_Image_3.png */; };
-		F0264CC7DB0DAB14FAA0524C /* MultiAddScreenTradeViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 593E7927F6B2B7C7F790F0E7 /* MultiAddScreenTradeViewController_Image_2.png */; };
-		F63D7E1AD65B3274A5933D3F /* WantViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F912894B745284B8B2CF26D /* WantViewController_Image_2.png */; };
-		F72EBD4260A8F9096C8F8D78 /* WantViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F77AA8CBC0ABB0AA850CDB /* WantViewController_Image_5.png */; };
-		FCBCE245726C362544390FEC /* MultiAddScreenViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 684BB676735A62424EBABEA4 /* MultiAddScreenViewController_Image_8.png */; };
-		FD28033C0FC07AAC7FE9B623 /* InfoViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBA3774955BB911C678EAB0 /* InfoViewController_Image_1.png */; };
-		FF5EB8F6405BEEFB649C90E9 /* MultiAddScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4754E2A520801BDAC1F2D6C /* MultiAddScreenViewController.m */; };
+		04324F26C55D9A2C28D64EE3 /* MultiAddScreenViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 002EB009F40B3DB33B6F2DB0 /* MultiAddScreenViewController_Image_1.png */; };
+		075DA179519B7295EACD1670 /* WantMenuViewController_Image_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB1F1D3DD05B96AF39E0DDC /* WantMenuViewController_Image_14.png */; };
+		0969DC83A0B6A6311A739725 /* MultiAddScreenViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E837564BE272FFA3D7B19C41 /* MultiAddScreenViewController_Image_2.png */; };
+		0D802794BAC0305076816C23 /* AreatradesViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4FA2FF68C462A5746B8EFF /* AreatradesViewController_Image_6.png */; };
+		0F3A243BA8C6BEB12B063DBB /* WantMenuViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B5E1F1A267A737F9097D4A /* WantMenuViewController_Image_1.png */; };
+		10F354A29EC00837862DD762 /* MultiAddScreenViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = C45B27698BA5939299D68477 /* MultiAddScreenViewController_Image_11.png */; };
+		1338D84996411547380C41AA /* MultiAddScreenTradeViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 175A5804AECF613B8BFA9DD2 /* MultiAddScreenTradeViewController_Image_3.png */; };
+		148D4159C8FC646F31DF0EB4 /* ForSaleViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = A7EE3A6A5319999F3C749B7E /* ForSaleViewController_Image_9.png */; };
+		1809C5694EEB062B3C428037 /* InfoViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBBB322321930D2692E7EA4 /* InfoViewController_Image_6.png */; };
+		186D771F8C0ABA81BDA12E03 /* TradeMenuViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF71799029D182168CAC4E /* TradeMenuViewController_Image_5.png */; };
+		1883996F327FDEF7250312DF /* TradeableViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 285B2C5A1251A969C67A3193 /* TradeableViewController_Image_11.png */; };
+		1B814F9E5F2B83C929C44B28 /* MultiAddScreenViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 79087649B733EDF7A533E51B /* MultiAddScreenViewController_Image_3.png */; };
+		1C1DD57F716C2DBFC90E4357 /* MultiAddScreenWantViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B26DCC77C25426711EDFE3EA /* MultiAddScreenWantViewController_Image_1.png */; };
+		1E6026AA1D9EEC080EECF349 /* ForSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEDF0B79D912B568A07038 /* ForSaleViewController.m */; };
+		1EA0CB422A19717EEAE1598E /* MultiAddScreenWantViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2704CBF7E2040F5498BC3F77 /* MultiAddScreenWantViewController_Image_6.png */; };
+		1EBD64E9FA6EE9D73969AD89 /* MultiAddScreenWantViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A370ADA7F3475E581AA85885 /* MultiAddScreenWantViewController_Image_4.png */; };
+		1F0935096C2C186895299006 /* MultiAddScreenViewController_Image_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A578A3FC2B1AAFBBC708BCB /* MultiAddScreenViewController_Image_14.png */; };
+		215E4E3F4BA157A3BB2EC016 /* WelcomeViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE93624720D316261C5FB410 /* WelcomeViewController_Image_4.png */; };
+		229463D404F631817F705C78 /* TradeMenuViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A644CF0445FEB460F5FE5A /* TradeMenuViewController_Image_7.png */; };
+		23B126E141D518C77813A413 /* WantMenuViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5453517E92CF6797E09BD8 /* WantMenuViewController_Image_8.png */; };
+		25C0315BAF19BF1015E490E9 /* TradeableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A96563B90F97E7F8357E23 /* TradeableViewController.m */; };
+		2730E1DAA1397E9DAF6C5B44 /* TradeMenuViewController_Image_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CE2B6D018950BB6F5DA0A /* TradeMenuViewController_Image_14.png */; };
+		284C4E63DFCF3B8387E3BADD /* WantMenuViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D21F35CDE527CB42A6AE9C /* WantMenuViewController_Image_10.png */; };
+		28D8BA7C6C2D895B800373F6 /* MultiAddScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5972E3203EE85E91AC53ADA /* MultiAddScreenViewController.m */; };
+		2B1A9452635FAB80CF63899B /* TradeMenuViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDBB89AA52FE8328870FBFE /* TradeMenuViewController_Image_10.png */; };
+		2D124B38D25E0CA16007B273 /* TradeableViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1975C7D625730D644BB8D98E /* TradeableViewController_Image_9.png */; };
+		2E698E17FB14FC36CD48D0A4 /* TradeMenuViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE558CBBA3DA5B20D0DCB80 /* TradeMenuViewController_Image_11.png */; };
+		304586DC425DCB6DC143BC2F /* TradeableViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0C38C5FC9D6864F7C4D52 /* TradeableViewController_Image_3.png */; };
+		321A514D62E1941939545112 /* WelcomeViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5787468FDD3EED76BAFA0 /* WelcomeViewController_Image_1.png */; };
+		3269899DAFE14CB136D2B929 /* MultiAddScreenViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = E18E81D6D27F361FD360FC0D /* MultiAddScreenViewController_Image_7.png */; };
+		32874A9B4FEE6991093CF8BD /* ForSaleViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1549DB9E16F99C66AFE759D /* ForSaleViewController_Image_1.png */; };
+		356C59D4EE06E72825F2B854 /* MultiAddScreenViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = B351BCF4F395CA9DA30147AE /* MultiAddScreenViewController_Image_5.png */; };
+		3AC52B89400E9B8EC4A20B6E /* WantViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7971EB2315444141C139DB /* WantViewController_Image_10.png */; };
+		3FBA8D918334C214888A53A8 /* MultiAddScreenWantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD93A41BAF9D2E3A3B35BB2 /* MultiAddScreenWantViewController_Image_3.png */; };
+		4462D5D4F153D6B4CEB33434 /* TradeMenuViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6078B01C0BC19BD7F15FD24C /* TradeMenuViewController_Image_4.png */; };
+		453DEBB3EF58F5A688FA263B /* TradeableViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCF6CC2F11D8DF8F60EEECF /* TradeableViewController_Image_8.png */; };
+		494B35627448BDE0CC36122C /* TradeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63249DB1239C8B28697220B0 /* TradeMenuViewController.m */; };
+		49DDAE806C789C4B6DAE630F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2913F6FFA3CE3AA4742F9E6C /* InfoViewController.m */; };
+		4A2C9DFA2CF2C64C1DD96600 /* AreatradesViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1653E1D149CD685968B450 /* AreatradesViewController_Image_3.png */; };
+		516892DC305E57B65956978C /* ForSaleViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F6BC1014154B41D87F4CCB /* ForSaleViewController_Image_3.png */; };
+		5575BC9CCB9D7DF1619D0B30 /* TradeableViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = AB73C1044A151A26715BAA77 /* TradeableViewController_Image_6.png */; };
+		55A2F5E978C5F9D032DDACCB /* MultiAddScreenViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F2B3379FC5DA39F20E27B9 /* MultiAddScreenViewController_Image_6.png */; };
+		56B77DB04FB45A10C79770E2 /* WantMenuViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A42C817806EAC0B57F931C /* WantMenuViewController_Image_5.png */; };
+		593846EFD7DF583555586B82 /* WantViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF95552972377CD2DF71015 /* WantViewController_Image_8.png */; };
+		5B0A7D7C1B5D560F2E9B6DCF /* ForSaleViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC00E6DCAEFD4ACF3196BB0 /* ForSaleViewController_Image_7.png */; };
+		632A5F9EE394C1A2EDD4BC0D /* AreatradesViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EDABFA014B045C4A9479AE /* AreatradesViewController_Image_4.png */; };
+		64D6FE814CB7B4CB73785FBD /* MultiAddScreenViewController_Image_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A58EB1967C9E4A92AADF1B1 /* MultiAddScreenViewController_Image_13.png */; };
+		6561EDA6EFD016B079E0DC5D /* WelcomeViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = F02A7E691F1FA8C86E1B802D /* WelcomeViewController_Image_3.png */; };
+		68219120251BEB8ED53DBCE7 /* ForSaleViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A3995C056F7A64F45F0621 /* ForSaleViewController_Image_8.png */; };
+		695FC132162E41C95FF5D9A2 /* WelcomeViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = B53C22B11240534099FB84BF /* WelcomeViewController_Image_6.png */; };
+		6A6F0785644585BE305CA20C /* WantMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AC4CE8857C94632F33B944 /* WantMenuViewController.m */; };
+		6B9E3316ACA4690ADF1C4C0F /* TradeableViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 415018D0B8F95D4CDF95EB67 /* TradeableViewController_Image_5.png */; };
+		6D07BAE7CFF4117D88F311EE /* MultiAddScreenTradeViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0633A605581BBC75A70525F0 /* MultiAddScreenTradeViewController_Image_1.png */; };
+		6D8165E5A2FAB8A7F9A093F6 /* MultiAddScreenTradeViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C227FE0EFECB6C8D94131964 /* MultiAddScreenTradeViewController_Image_4.png */; };
+		6EA690880873FF2B9A7DC3E8 /* MultiAddScreenTradeViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 865DDE8DD799029FCD0B494F /* MultiAddScreenTradeViewController_Image_6.png */; };
+		6F5A535C78F09A4C0EA9BBB0 /* InfoViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE616891D1E37A99D9107D81 /* InfoViewController_Image_1.png */; };
+		6F5ADB5DE9EEC0192EAE1D73 /* MultiAddScreenTradeViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = D41FAD65BF65358DFD1B27B5 /* MultiAddScreenTradeViewController_Image_7.png */; };
+		70F766CFA91E887703C4F6DA /* WantViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDFE05FE72DDE461DD819DB /* WantViewController_Image_4.png */; };
+		7136C5D8A9BBDE3C97742296 /* MultiAddScreenViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC42A6A923928F6D1F0C9A6 /* MultiAddScreenViewController_Image_10.png */; };
+		79B13173207C4B96D1F933BA /* WantViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C4B66D01BA3B14045E92A8 /* WantViewController_Image_7.png */; };
+		7A9CD1D87712E75E438B9B7C /* MultiAddScreenWantViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE847CAC57B35694EB967BB /* MultiAddScreenWantViewController_Image_5.png */; };
+		7EF0FAD8ED0F6990E7213F07 /* TradeMenuViewController_Image_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E889C765164712DEFA8177 /* TradeMenuViewController_Image_13.png */; };
+		80C6D068BD11F23AB645915E /* WantMenuViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 39318105D24913C2BE6FB6FC /* WantMenuViewController_Image_11.png */; };
+		818A57642440FE6C63595E88 /* InfoViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A60CBCBCA7DF65B2896C82 /* InfoViewController_Image_5.png */; };
+		846A937AE07F7DD954C3BC8B /* AreatradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20736E9E97B82FE344AAA5F5 /* AreatradesViewController.m */; };
+		87E8432D8B77176BE6FE13A4 /* AreatradesViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3CAC1B37A92045D6DDCD06 /* AreatradesViewController_Image_5.png */; };
+		899B7FC61BB5EBB312C9E848 /* MultiAddScreenViewController_Image_12.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD887BCF50D418F3B8466B5 /* MultiAddScreenViewController_Image_12.png */; };
+		8D3D6CE9083101C7F17323FC /* WantViewController_Image_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8F9DB444A1BC57A0688F8B /* WantViewController_Image_12.png */; };
+		94320B58AC52D7227394B6C1 /* WantViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290B389690189657581AD410 /* WantViewController_Image_3.png */; };
+		94370D0526D45EFFC7FF2EAD /* WantMenuViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D99FD16137F4871D053306B /* WantMenuViewController_Image_3.png */; };
+		94AC15125069826D25FE312B /* WantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DD9E6AD8D162D38D7902B4 /* WantViewController.m */; };
+		982EB7E18AA7F524DC8768FB /* InfoViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71AC2F0A8D97BC81F2B8652A /* InfoViewController_Image_2.png */; };
+		9B35A3384831A4B7D656CAE2 /* ForSaleViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EFE62F1F91A8D11AD6FB13A /* ForSaleViewController_Image_10.png */; };
+		9E1BE057A4478A2951535FAE /* MultiAddScreenViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C69A9A4D4439CE55975A76 /* MultiAddScreenViewController_Image_8.png */; };
+		9FD58A72D999625B438FF64D /* WantMenuViewController_Image_12.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E6E08B4D67F313F95BCBF1 /* WantMenuViewController_Image_12.png */; };
+		A001E7AC013C5BE86E589111 /* WantViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F7C7D527036B0A9332EB0F /* WantViewController_Image_2.png */; };
+		A06BD7FFDC789FAAC935B045 /* ForSaleViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 466091B9D36C8C6AA5C38C44 /* ForSaleViewController_Image_4.png */; };
+		A2908430FCFB2FBCB318E6FC /* WantMenuViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B3A5F190243CE3843353EA /* WantMenuViewController_Image_4.png */; };
+		A314153526A63AEF9953690C /* WantMenuViewController_Image_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 61F404C02BA350976EAA4F41 /* WantMenuViewController_Image_13.png */; };
+		A3D9818C96A8B77E1505CD70 /* ForSaleViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192974932824AD9E90B8DD7 /* ForSaleViewController_Image_6.png */; };
+		A7EFEC9941E99A8AC407742D /* MultiAddScreenViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D9AAD9AC57B590C66A17AA /* MultiAddScreenViewController_Image_9.png */; };
+		A8C7921F604897030C05B729 /* TradeMenuViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C21D52003E6E940138222B /* TradeMenuViewController_Image_9.png */; };
+		AA8B32BE9D35B4CDCDC530EC /* WelcomeViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C53EE90E6AD0E3EE88F0A2B /* WelcomeViewController_Image_2.png */; };
+		AB693C06E83B847B3A923CDF /* AreatradesViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF831D3374F3734D79F7A0 /* AreatradesViewController_Image_2.png */; };
+		AD692A42DABD901DE193EA17 /* TradeMenuViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DEED24A2ECEC3990551ECCEB /* TradeMenuViewController_Image_2.png */; };
+		B02AB25706F1588C947511D1 /* MultiAddScreenTradeViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFE963303B63E3E46C5E029 /* MultiAddScreenTradeViewController_Image_2.png */; };
+		B2A1362E5F7366E881319C9B /* WantMenuViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 018A3446C923385DE3C7CED4 /* WantMenuViewController_Image_2.png */; };
+		B2FDEEED70C5965A0C49F520 /* TradeableViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 498CA760637949FE3F2299EA /* TradeableViewController_Image_1.png */; };
+		B3FF1EC36232F493BE028358 /* WantMenuViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D4D1389B338665A1ECA6ED /* WantMenuViewController_Image_7.png */; };
+		B5902C824C2E499BF76A9078 /* ForSaleViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = A29EAB9FC26B9EDEF72BA3C4 /* ForSaleViewController_Image_5.png */; };
+		B5E75D2BC1DF305AA186A9C2 /* WantMenuViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AB558681A4840F0328B66F6 /* WantMenuViewController_Image_6.png */; };
+		B8C4B2E70D989D92E11A8882 /* TradeMenuViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 105C011E31DD6262EE211198 /* TradeMenuViewController_Image_8.png */; };
+		C2604771A91CC93AC064C3DE /* WantMenuViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41CA6D3DE0E5816D522C6 /* WantMenuViewController_Image_9.png */; };
+		C7AF12E2E86B82DD37424E90 /* TradeMenuViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F291CA70C39EBF4DFDCE4B03 /* TradeMenuViewController_Image_1.png */; };
+		CDD50DA4AA4A9E022F9EDA76 /* TradeableViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 79CD4F177A9BE444163C0353 /* TradeableViewController_Image_4.png */; };
+		CF0C606F521C7806DC32F606 /* WelcomeViewController_Image_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA37AF740C33C81B46CCBD /* WelcomeViewController_Image_8.png */; };
+		D08BE1218CE4623F83891C40 /* MultiAddScreenTradeViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C885F67856E101B27CDC06D6 /* MultiAddScreenTradeViewController_Image_5.png */; };
+		D25EA395CC0EF3DF75F146EB /* WelcomeViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 174E43C05D19AE0966DBF1BF /* WelcomeViewController_Image_7.png */; };
+		D3BC51DE5A3A059B53A61DA5 /* InfoViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A47B90AC4981908F435F5B /* InfoViewController_Image_4.png */; };
+		D697012E188EB8F99375B2CA /* WantViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E5799FA27EFA0C63E8298C49 /* WantViewController_Image_6.png */; };
+		D9AC09DD7949C69E941DFEE6 /* MultiAddScreenViewController_Image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C0404D8887E698B8EF9BBF65 /* MultiAddScreenViewController_Image_4.png */; };
+		DBF8E2E9ED1CF7A486AEB648 /* TradeMenuViewController_Image_12.png in Resources */ = {isa = PBXBuildFile; fileRef = F352AB98F435A8B86AE49C9E /* TradeMenuViewController_Image_12.png */; };
+		DC61BAF2B5DF62645078E885 /* WantMenuViewController_Image_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 87CDB2DDBB923670C93D2ACF /* WantMenuViewController_Image_15.png */; };
+		DC91CD4F6459310BFBE86E50 /* ForSaleViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1B9BB8A2E254ABA06F4C31 /* ForSaleViewController_Image_2.png */; };
+		DCC7A72E534555DD23DD58CA /* MultiAddScreenWantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92839A48BABA044AE035D8A3 /* MultiAddScreenWantViewController.m */; };
+		DE46ADC6DBA008D33A79EE9F /* MultiAddScreenWantViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DF196AD630C28646F3F1F08 /* MultiAddScreenWantViewController_Image_2.png */; };
+		E2DC4C4B9B4176AB161BCAF0 /* TradeMenuViewController_Image_6.png in Resources */ = {isa = PBXBuildFile; fileRef = C00F6EB33EBDD7829C83F93F /* TradeMenuViewController_Image_6.png */; };
+		E34C27DE49686512DB268462 /* WantViewController_Image_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC7A2123EB383ED3CA10CC9 /* WantViewController_Image_9.png */; };
+		E351240C1731F10D00C95465 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E35124071731F10D00C95465 /* Default@2x.png */; };
+		E351240D1731F10D00C95465 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E35124081731F10D00C95465 /* Default.png */; };
+		E351240E1731F10D00C95465 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E35124091731F10D00C95465 /* Default-568h@2x.png */; };
+		E351240F1731F10D00C95465 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = E351240A1731F10D00C95465 /* 114x114.png */; };
+		E35124101731F10D00C95465 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E351240B1731F10D00C95465 /* 57x57.png */; };
+		E66558D682D679A6F54DCB57 /* WelcomeViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF7BE8D6242C6F086183850 /* WelcomeViewController_Image_5.png */; };
+		E987AA15C11A62E5DC20BA55 /* TradeableViewController_Image_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0190B7BB1940F7E7C168B291 /* TradeableViewController_Image_10.png */; };
+		EAED9E79AC0B2F5A09A71A91 /* ForSaleViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F03A2A16F610FB49A1529D /* ForSaleViewController_Image_11.png */; };
+		EB10E21FE57E8D4C45786776 /* AreatradesViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F79F7427C73971F18EF339B8 /* AreatradesViewController_Image_1.png */; };
+		ECD5B17180FC23A39E3CC7C6 /* TradeMenuViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4443D38C8A4DEE2D858EA67C /* TradeMenuViewController_Image_3.png */; };
+		F056B641081DB70F13CB4BA4 /* WantViewController_Image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7101E04A5E978318FC488985 /* WantViewController_Image_5.png */; };
+		F3014E982EB88A4A5AEFF284 /* MultiAddScreenTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3586F6FAF48E1FE13C0490E /* MultiAddScreenTradeViewController.m */; };
+		F371056E1A835F0F0EAEF86F /* TradeableViewController_Image_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B3C0307EB4769C893D5F735 /* TradeableViewController_Image_7.png */; };
+		F5F81CC2158D6232E500E564 /* TradeableViewController_Image_12.png in Resources */ = {isa = PBXBuildFile; fileRef = E95793D3C5AE3B90C9CD5634 /* TradeableViewController_Image_12.png */; };
+		F620AF794FB84E08625434CB /* WantViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE0ECFA6CF1E0A37E9F1BB9 /* WantViewController_Image_1.png */; };
+		F7F724F62E2958082898B581 /* InfoViewController_Image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF2D1774D8344FE051FC53C /* InfoViewController_Image_3.png */; };
+		FC6539BEEF872505C6AA04A8 /* WantViewController_Image_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0655F63FFA56ED9EF420B14D /* WantViewController_Image_11.png */; };
+		FE02BDE3B057DDF70D08B58C /* TradeableViewController_Image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B664B1F2AE5A24A4ACE48 /* TradeableViewController_Image_2.png */; };
+		FE8621FFFD8014D6A376A6D4 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A9749EC394BE00470E087 /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002EB009F40B3DB33B6F2DB0 /* MultiAddScreenViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_1.png; sourceTree = "<group>"; };
+		00B5E1F1A267A737F9097D4A /* WantMenuViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_1.png; sourceTree = "<group>"; };
+		018A3446C923385DE3C7CED4 /* WantMenuViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_2.png; sourceTree = "<group>"; };
+		0190B7BB1940F7E7C168B291 /* TradeableViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_10.png; sourceTree = "<group>"; };
 		02AA5E0514D57AF2004CE70D /* Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gradient.h; sourceTree = "<group>"; };
 		02AA5E0614D57AF2004CE70D /* Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gradient.m; sourceTree = "<group>"; };
 		02AA5E0714D57AF2004CE70D /* GradientNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientNode.h; sourceTree = "<group>"; };
@@ -111,82 +175,140 @@
 		02C8A2C414C97CA60021F408 /* IFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFAppDelegate.m; sourceTree = "<group>"; };
 		02C8A2CB14C97CC00021F408 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		02C8A2CD14C97CC80021F408 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0A917E03E576AF8E7D17DE6D /* ForSaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForSaleViewController.h; sourceTree = "<group>"; };
-		187748FF35EA691FA729633F /* MultiAddScreenViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_9.png; sourceTree = "<group>"; };
-		19526A89C3A2BB6F48A0DD18 /* WelcomeViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_1.png; sourceTree = "<group>"; };
-		1A81620F90EC7E24505D5E81 /* MultiAddScreenWantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenWantViewController.m; sourceTree = "<group>"; };
-		1EEB7E88AC0A57F3E45E0983 /* MultiAddScreenViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_11.png; sourceTree = "<group>"; };
-		1EF326A9957509D44F18FC28 /* InfoViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_2.png; sourceTree = "<group>"; };
-		1F912894B745284B8B2CF26D /* WantViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_2.png; sourceTree = "<group>"; };
-		23B54EF50A40479317676667 /* MultiAddScreenViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_2.png; sourceTree = "<group>"; };
-		249AE402036137D49559CB33 /* ForSaleViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_3.png; sourceTree = "<group>"; };
-		25FB8D0F5A735D28F72C0756 /* TradeableViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_1.png; sourceTree = "<group>"; };
-		280D0609580F6DAF8C026A39 /* AreatradesViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_2.png; sourceTree = "<group>"; };
-		2ACD896DE3B40F548A05AAB9 /* ForSaleViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_1.png; sourceTree = "<group>"; };
-		2BBA3774955BB911C678EAB0 /* InfoViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_1.png; sourceTree = "<group>"; };
-		2C3509544B7B3C00BFD06B7A /* MultiAddScreenTradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenTradeViewController.m; sourceTree = "<group>"; };
-		3439CC68FFC5A90051CC86F4 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
-		3571843F8B9C5522C8193BD9 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		3C67C74F37A25C0D4CCE787D /* MultiAddScreenViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_6.png; sourceTree = "<group>"; };
-		47CC9C8EC1359931716A0BB3 /* AreatradesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreatradesViewController.m; sourceTree = "<group>"; };
-		47DF0101D741052B1F18518B /* MultiAddScreenWantViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_5.png; sourceTree = "<group>"; };
-		49F77AA8CBC0ABB0AA850CDB /* WantViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_5.png; sourceTree = "<group>"; };
-		552032AE04DCE5B6F5C54A0D /* InfoViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_4.png; sourceTree = "<group>"; };
-		593E7927F6B2B7C7F790F0E7 /* MultiAddScreenTradeViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_2.png; sourceTree = "<group>"; };
-		59B44E23148D128EA5A109D4 /* WantViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_3.png; sourceTree = "<group>"; };
-		684BB676735A62424EBABEA4 /* MultiAddScreenViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_8.png; sourceTree = "<group>"; };
-		6B3E0BD7DB75C2CC61DB9010 /* MultiAddScreenViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_7.png; sourceTree = "<group>"; };
-		6D8317DF0EBA796FBB6A9359 /* WantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WantViewController.h; sourceTree = "<group>"; };
-		72CDC174FF9CA47CD6EEF9EB /* TradeableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeableViewController.h; sourceTree = "<group>"; };
-		7AF6AE103A7E15FFF63C5A8B /* ForSaleViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_4.png; sourceTree = "<group>"; };
-		7C92DA04C5E705ACF0678121 /* AreatradesViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_5.png; sourceTree = "<group>"; };
-		7EECC1D3CBAA2D77D6BC8897 /* MultiAddScreenWantViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_1.png; sourceTree = "<group>"; };
-		81F7B02D208E8D66F2A5BCCD /* WelcomeViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_4.png; sourceTree = "<group>"; };
-		8A6CAF3BF111B48665E22014 /* TradeableViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_2.png; sourceTree = "<group>"; };
-		8B655952227FAEAF1C216425 /* InfoViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_6.png; sourceTree = "<group>"; };
-		8C4F731BE96AD215F5E9124D /* AreatradesViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_4.png; sourceTree = "<group>"; };
-		8D41CB7A903A9A7EF5A984C6 /* MultiAddScreenWantViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_4.png; sourceTree = "<group>"; };
-		8E43F82D542D0F5259B05F97 /* TradeableViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_6.png; sourceTree = "<group>"; };
-		92A400E6CC7D5F929D4A728A /* TradeableViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_5.png; sourceTree = "<group>"; };
-		93FED11F61BA735305A692CF /* AreatradesViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_1.png; sourceTree = "<group>"; };
-		94822635AB31422C5A7F8AF1 /* MultiAddScreenViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_3.png; sourceTree = "<group>"; };
-		95387E017E4B6BCBF2DE7D4C /* MultiAddScreenWantViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_3.png; sourceTree = "<group>"; };
-		967DEBC585916DAED603A169 /* MultiAddScreenTradeViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_4.png; sourceTree = "<group>"; };
-		97B3AC36BDEA98089AEB50E2 /* ForSaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForSaleViewController.m; sourceTree = "<group>"; };
-		9E2F38FA179374E7BD109274 /* InfoViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_3.png; sourceTree = "<group>"; };
-		A02B513C78FBD20AD0928EB3 /* TradeableViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_3.png; sourceTree = "<group>"; };
-		A4754E2A520801BDAC1F2D6C /* MultiAddScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenViewController.m; sourceTree = "<group>"; };
-		A8B55378182148AE4C141A21 /* MultiAddScreenViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_10.png; sourceTree = "<group>"; };
-		A937A431F3ECF1006CE1E476 /* TradeableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeableViewController.m; sourceTree = "<group>"; };
-		AE4EC13ABB1F05BB34B749F6 /* WelcomeViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_2.png; sourceTree = "<group>"; };
-		B132756BB1004DC74E840FC5 /* TradeableViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_4.png; sourceTree = "<group>"; };
-		B15B6F4B894F3217D308CBC5 /* WelcomeViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_5.png; sourceTree = "<group>"; };
-		B7DDF18BD14C952A702B72BD /* MultiAddScreenWantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenWantViewController.h; sourceTree = "<group>"; };
-		BB321C8562ECD6EE51678DEF /* AreatradesViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_3.png; sourceTree = "<group>"; };
-		C15EB78D91D497DDD191EA43 /* MultiAddScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenViewController.h; sourceTree = "<group>"; };
-		C36C63F7D8BED05DEC51770A /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		C541B274A611E430AFCCEECA /* MultiAddScreenWantViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_2.png; sourceTree = "<group>"; };
-		CAC71B28895A44226FD4A816 /* WantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WantViewController.m; sourceTree = "<group>"; };
-		CD9E7F94DEB9195F23873372 /* WelcomeViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_3.png; sourceTree = "<group>"; };
-		CF8ED8C38CF94B35B38D5303 /* MultiAddScreenTradeViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_5.png; sourceTree = "<group>"; };
-		CFFCB6AE1086721AA54E9BC2 /* MultiAddScreenTradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenTradeViewController.h; sourceTree = "<group>"; };
-		D0E004613B0064C0FC6E13C8 /* ForSaleViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_2.png; sourceTree = "<group>"; };
-		D45F0D0A3870A23FE7E2D5FB /* WantViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_1.png; sourceTree = "<group>"; };
-		DAB2FA529542C08A03578FA9 /* MultiAddScreenViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_4.png; sourceTree = "<group>"; };
-		E2AB91FA82B1D56AA880943B /* ForSaleViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_5.png; sourceTree = "<group>"; };
-		E3735D58172A038D00290315 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		E3735D59172A038D00290315 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		E3735D5A172A038D00290315 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E3735D5B172A038D00290315 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
-		E3735D5C172A038D00290315 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
-		ECDF4A184677EC4A9F09087D /* MultiAddScreenViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_5.png; sourceTree = "<group>"; };
-		EEA7225C4F99AB8C1C28B4BD /* AreatradesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreatradesViewController.h; sourceTree = "<group>"; };
-		F19DB8D798B2FE1A004E57DB /* WantViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_4.png; sourceTree = "<group>"; };
-		F89B7A93EB25A1A2076DBAB9 /* MultiAddScreenViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_1.png; sourceTree = "<group>"; };
-		FA76DFC630F690450AA03E19 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		FB31400B6E5CCE007B139F5A /* MultiAddScreenTradeViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_1.png; sourceTree = "<group>"; };
-		FBF6C46624B842D1AC80A71B /* MultiAddScreenTradeViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_3.png; sourceTree = "<group>"; };
-		FE2B1BB498B6F088E62089F6 /* InfoViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_5.png; sourceTree = "<group>"; };
+		049A9749EC394BE00470E087 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		0633A605581BBC75A70525F0 /* MultiAddScreenTradeViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_1.png; sourceTree = "<group>"; };
+		0655F63FFA56ED9EF420B14D /* WantViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_11.png; sourceTree = "<group>"; };
+		09AA37AF740C33C81B46CCBD /* WelcomeViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_8.png; sourceTree = "<group>"; };
+		0A552216642F5DEB448175B0 /* MultiAddScreenTradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenTradeViewController.h; sourceTree = "<group>"; };
+		0A578A3FC2B1AAFBBC708BCB /* MultiAddScreenViewController_Image_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_14.png; sourceTree = "<group>"; };
+		0AC904142EBB983F021225D2 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		0BDF831D3374F3734D79F7A0 /* AreatradesViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_2.png; sourceTree = "<group>"; };
+		0D2AAE8A4E59B794EFCB67CD /* TradeMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeMenuViewController.h; sourceTree = "<group>"; };
+		0D99FD16137F4871D053306B /* WantMenuViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_3.png; sourceTree = "<group>"; };
+		0DF196AD630C28646F3F1F08 /* MultiAddScreenWantViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_2.png; sourceTree = "<group>"; };
+		105C011E31DD6262EE211198 /* TradeMenuViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_8.png; sourceTree = "<group>"; };
+		1325FA1EA52C42FC1BB91C80 /* AreatradesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreatradesViewController.h; sourceTree = "<group>"; };
+		174E43C05D19AE0966DBF1BF /* WelcomeViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_7.png; sourceTree = "<group>"; };
+		175A5804AECF613B8BFA9DD2 /* MultiAddScreenTradeViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_3.png; sourceTree = "<group>"; };
+		17C69A9A4D4439CE55975A76 /* MultiAddScreenViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_8.png; sourceTree = "<group>"; };
+		1975C7D625730D644BB8D98E /* TradeableViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_9.png; sourceTree = "<group>"; };
+		1D7971EB2315444141C139DB /* WantViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_10.png; sourceTree = "<group>"; };
+		1DF2D1774D8344FE051FC53C /* InfoViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_3.png; sourceTree = "<group>"; };
+		1F41F3CB3B42B827577B7271 /* TradeableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeableViewController.h; sourceTree = "<group>"; };
+		20736E9E97B82FE344AAA5F5 /* AreatradesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreatradesViewController.m; sourceTree = "<group>"; };
+		20F6BC1014154B41D87F4CCB /* ForSaleViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_3.png; sourceTree = "<group>"; };
+		2704CBF7E2040F5498BC3F77 /* MultiAddScreenWantViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_6.png; sourceTree = "<group>"; };
+		285B2C5A1251A969C67A3193 /* TradeableViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_11.png; sourceTree = "<group>"; };
+		290B389690189657581AD410 /* WantViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_3.png; sourceTree = "<group>"; };
+		2913F6FFA3CE3AA4742F9E6C /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		2C7F340D8F57C725034013FB /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		2CD93A41BAF9D2E3A3B35BB2 /* MultiAddScreenWantViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_3.png; sourceTree = "<group>"; };
+		2CE558CBBA3DA5B20D0DCB80 /* TradeMenuViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_11.png; sourceTree = "<group>"; };
+		39318105D24913C2BE6FB6FC /* WantMenuViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_11.png; sourceTree = "<group>"; };
+		3DB1F1D3DD05B96AF39E0DDC /* WantMenuViewController_Image_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_14.png; sourceTree = "<group>"; };
+		415018D0B8F95D4CDF95EB67 /* TradeableViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_5.png; sourceTree = "<group>"; };
+		4443D38C8A4DEE2D858EA67C /* TradeMenuViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_3.png; sourceTree = "<group>"; };
+		45D4D1389B338665A1ECA6ED /* WantMenuViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_7.png; sourceTree = "<group>"; };
+		466091B9D36C8C6AA5C38C44 /* ForSaleViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_4.png; sourceTree = "<group>"; };
+		498CA760637949FE3F2299EA /* TradeableViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_1.png; sourceTree = "<group>"; };
+		4B4CE2B6D018950BB6F5DA0A /* TradeMenuViewController_Image_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_14.png; sourceTree = "<group>"; };
+		51F7C7D527036B0A9332EB0F /* WantViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_2.png; sourceTree = "<group>"; };
+		57AC4CE8857C94632F33B944 /* WantMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WantMenuViewController.m; sourceTree = "<group>"; };
+		5AB558681A4840F0328B66F6 /* WantMenuViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_6.png; sourceTree = "<group>"; };
+		5AC42A6A923928F6D1F0C9A6 /* MultiAddScreenViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_10.png; sourceTree = "<group>"; };
+		5DC00E6DCAEFD4ACF3196BB0 /* ForSaleViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_7.png; sourceTree = "<group>"; };
+		5F4B664B1F2AE5A24A4ACE48 /* TradeableViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_2.png; sourceTree = "<group>"; };
+		6078B01C0BC19BD7F15FD24C /* TradeMenuViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_4.png; sourceTree = "<group>"; };
+		61F404C02BA350976EAA4F41 /* WantMenuViewController_Image_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_13.png; sourceTree = "<group>"; };
+		63249DB1239C8B28697220B0 /* TradeMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeMenuViewController.m; sourceTree = "<group>"; };
+		65C21D52003E6E940138222B /* TradeMenuViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_9.png; sourceTree = "<group>"; };
+		67C4B66D01BA3B14045E92A8 /* WantViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_7.png; sourceTree = "<group>"; };
+		6A8F9DB444A1BC57A0688F8B /* WantViewController_Image_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_12.png; sourceTree = "<group>"; };
+		70A0C38C5FC9D6864F7C4D52 /* TradeableViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_3.png; sourceTree = "<group>"; };
+		70EDABFA014B045C4A9479AE /* AreatradesViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_4.png; sourceTree = "<group>"; };
+		7101E04A5E978318FC488985 /* WantViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_5.png; sourceTree = "<group>"; };
+		71AC2F0A8D97BC81F2B8652A /* InfoViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_2.png; sourceTree = "<group>"; };
+		77E889C765164712DEFA8177 /* TradeMenuViewController_Image_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_13.png; sourceTree = "<group>"; };
+		79087649B733EDF7A533E51B /* MultiAddScreenViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_3.png; sourceTree = "<group>"; };
+		79CD4F177A9BE444163C0353 /* TradeableViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_4.png; sourceTree = "<group>"; };
+		7B3C0307EB4769C893D5F735 /* TradeableViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_7.png; sourceTree = "<group>"; };
+		7C53EE90E6AD0E3EE88F0A2B /* WelcomeViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_2.png; sourceTree = "<group>"; };
+		7E1653E1D149CD685968B450 /* AreatradesViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_3.png; sourceTree = "<group>"; };
+		7FFE963303B63E3E46C5E029 /* MultiAddScreenTradeViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_2.png; sourceTree = "<group>"; };
+		82F03A2A16F610FB49A1529D /* ForSaleViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_11.png; sourceTree = "<group>"; };
+		865DDE8DD799029FCD0B494F /* MultiAddScreenTradeViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_6.png; sourceTree = "<group>"; };
+		87CDB2DDBB923670C93D2ACF /* WantMenuViewController_Image_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_15.png; sourceTree = "<group>"; };
+		89A644CF0445FEB460F5FE5A /* TradeMenuViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_7.png; sourceTree = "<group>"; };
+		89AEDF0B79D912B568A07038 /* ForSaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForSaleViewController.m; sourceTree = "<group>"; };
+		8A58EB1967C9E4A92AADF1B1 /* MultiAddScreenViewController_Image_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_13.png; sourceTree = "<group>"; };
+		8AC7A2123EB383ED3CA10CC9 /* WantViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_9.png; sourceTree = "<group>"; };
+		8B67D43CE2C057722F42A630 /* MultiAddScreenWantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenWantViewController.h; sourceTree = "<group>"; };
+		8D4FA2FF68C462A5746B8EFF /* AreatradesViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_6.png; sourceTree = "<group>"; };
+		8E61B411EB37C61903CB3FD8 /* WantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WantViewController.h; sourceTree = "<group>"; };
+		8ED5787468FDD3EED76BAFA0 /* WelcomeViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_1.png; sourceTree = "<group>"; };
+		8EFE62F1F91A8D11AD6FB13A /* ForSaleViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_10.png; sourceTree = "<group>"; };
+		9192974932824AD9E90B8DD7 /* ForSaleViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_6.png; sourceTree = "<group>"; };
+		92839A48BABA044AE035D8A3 /* MultiAddScreenWantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenWantViewController.m; sourceTree = "<group>"; };
+		94623A6F7AD97101EF42588D /* MultiAddScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiAddScreenViewController.h; sourceTree = "<group>"; };
+		99A3995C056F7A64F45F0621 /* ForSaleViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_8.png; sourceTree = "<group>"; };
+		9BBBB322321930D2692E7EA4 /* InfoViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_6.png; sourceTree = "<group>"; };
+		A29EAB9FC26B9EDEF72BA3C4 /* ForSaleViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_5.png; sourceTree = "<group>"; };
+		A370ADA7F3475E581AA85885 /* MultiAddScreenWantViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_4.png; sourceTree = "<group>"; };
+		A4A96563B90F97E7F8357E23 /* TradeableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeableViewController.m; sourceTree = "<group>"; };
+		A6A42C817806EAC0B57F931C /* WantMenuViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_5.png; sourceTree = "<group>"; };
+		A7EE3A6A5319999F3C749B7E /* ForSaleViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_9.png; sourceTree = "<group>"; };
+		A9DD9E6AD8D162D38D7902B4 /* WantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WantViewController.m; sourceTree = "<group>"; };
+		AB73C1044A151A26715BAA77 /* TradeableViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_6.png; sourceTree = "<group>"; };
+		AE3CAC1B37A92045D6DDCD06 /* AreatradesViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_5.png; sourceTree = "<group>"; };
+		AF5453517E92CF6797E09BD8 /* WantMenuViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_8.png; sourceTree = "<group>"; };
+		B26DCC77C25426711EDFE3EA /* MultiAddScreenWantViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_1.png; sourceTree = "<group>"; };
+		B351BCF4F395CA9DA30147AE /* MultiAddScreenViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_5.png; sourceTree = "<group>"; };
+		B53C22B11240534099FB84BF /* WelcomeViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_6.png; sourceTree = "<group>"; };
+		B8A47B90AC4981908F435F5B /* InfoViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_4.png; sourceTree = "<group>"; };
+		C00F6EB33EBDD7829C83F93F /* TradeMenuViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_6.png; sourceTree = "<group>"; };
+		C0404D8887E698B8EF9BBF65 /* MultiAddScreenViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_4.png; sourceTree = "<group>"; };
+		C1549DB9E16F99C66AFE759D /* ForSaleViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_1.png; sourceTree = "<group>"; };
+		C1D9AAD9AC57B590C66A17AA /* MultiAddScreenViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_9.png; sourceTree = "<group>"; };
+		C227FE0EFECB6C8D94131964 /* MultiAddScreenTradeViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_4.png; sourceTree = "<group>"; };
+		C3E6E08B4D67F313F95BCBF1 /* WantMenuViewController_Image_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_12.png; sourceTree = "<group>"; };
+		C45B27698BA5939299D68477 /* MultiAddScreenViewController_Image_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_11.png; sourceTree = "<group>"; };
+		C6A60CBCBCA7DF65B2896C82 /* InfoViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_5.png; sourceTree = "<group>"; };
+		C6CF71799029D182168CAC4E /* TradeMenuViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_5.png; sourceTree = "<group>"; };
+		C885F67856E101B27CDC06D6 /* MultiAddScreenTradeViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_5.png; sourceTree = "<group>"; };
+		C9D21F35CDE527CB42A6AE9C /* WantMenuViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_10.png; sourceTree = "<group>"; };
+		CAE847CAC57B35694EB967BB /* MultiAddScreenWantViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenWantViewController_Image_5.png; sourceTree = "<group>"; };
+		CDE0ECFA6CF1E0A37E9F1BB9 /* WantViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_1.png; sourceTree = "<group>"; };
+		CEF95552972377CD2DF71015 /* WantViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_8.png; sourceTree = "<group>"; };
+		D195F4154AF9E713AF87DAAA /* WantMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WantMenuViewController.h; sourceTree = "<group>"; };
+		D41FAD65BF65358DFD1B27B5 /* MultiAddScreenTradeViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenTradeViewController_Image_7.png; sourceTree = "<group>"; };
+		D5B3A5F190243CE3843353EA /* WantMenuViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_4.png; sourceTree = "<group>"; };
+		D8A41CA6D3DE0E5816D522C6 /* WantMenuViewController_Image_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantMenuViewController_Image_9.png; sourceTree = "<group>"; };
+		DBDFE05FE72DDE461DD819DB /* WantViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_4.png; sourceTree = "<group>"; };
+		DD1B9BB8A2E254ABA06F4C31 /* ForSaleViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForSaleViewController_Image_2.png; sourceTree = "<group>"; };
+		DDDBB89AA52FE8328870FBFE /* TradeMenuViewController_Image_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_10.png; sourceTree = "<group>"; };
+		DEED24A2ECEC3990551ECCEB /* TradeMenuViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_2.png; sourceTree = "<group>"; };
+		E18E81D6D27F361FD360FC0D /* MultiAddScreenViewController_Image_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_7.png; sourceTree = "<group>"; };
+		E1F2B3379FC5DA39F20E27B9 /* MultiAddScreenViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_6.png; sourceTree = "<group>"; };
+		E35124071731F10D00C95465 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E35124081731F10D00C95465 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E35124091731F10D00C95465 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E351240A1731F10D00C95465 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		E351240B1731F10D00C95465 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		E5799FA27EFA0C63E8298C49 /* WantViewController_Image_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WantViewController_Image_6.png; sourceTree = "<group>"; };
+		E837564BE272FFA3D7B19C41 /* MultiAddScreenViewController_Image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_2.png; sourceTree = "<group>"; };
+		E95793D3C5AE3B90C9CD5634 /* TradeableViewController_Image_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_12.png; sourceTree = "<group>"; };
+		EE616891D1E37A99D9107D81 /* InfoViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewController_Image_1.png; sourceTree = "<group>"; };
+		EE93624720D316261C5FB410 /* WelcomeViewController_Image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_4.png; sourceTree = "<group>"; };
+		EEF7BE8D6242C6F086183850 /* WelcomeViewController_Image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_5.png; sourceTree = "<group>"; };
+		EFCF6CC2F11D8DF8F60EEECF /* TradeableViewController_Image_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeableViewController_Image_8.png; sourceTree = "<group>"; };
+		F02A7E691F1FA8C86E1B802D /* WelcomeViewController_Image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeViewController_Image_3.png; sourceTree = "<group>"; };
+		F291CA70C39EBF4DFDCE4B03 /* TradeMenuViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_1.png; sourceTree = "<group>"; };
+		F352AB98F435A8B86AE49C9E /* TradeMenuViewController_Image_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TradeMenuViewController_Image_12.png; sourceTree = "<group>"; };
+		F3586F6FAF48E1FE13C0490E /* MultiAddScreenTradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenTradeViewController.m; sourceTree = "<group>"; };
+		F5972E3203EE85E91AC53ADA /* MultiAddScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAddScreenViewController.m; sourceTree = "<group>"; };
+		F79F7427C73971F18EF339B8 /* AreatradesViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AreatradesViewController_Image_1.png; sourceTree = "<group>"; };
+		F800169B70602B7A7742CB41 /* ForSaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForSaleViewController.h; sourceTree = "<group>"; };
+		FFD887BCF50D418F3B8466B5 /* MultiAddScreenViewController_Image_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiAddScreenViewController_Image_12.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,11 +331,11 @@
 		02C8A2A514C97CA60021F408 = {
 			isa = PBXGroup;
 			children = (
-				E3735D58172A038D00290315 /* Default@2x.png */,
-				E3735D59172A038D00290315 /* Default.png */,
-				E3735D5A172A038D00290315 /* Default-568h@2x.png */,
-				E3735D5B172A038D00290315 /* 114x114.png */,
-				E3735D5C172A038D00290315 /* 57x57.png */,
+				E35124071731F10D00C95465 /* Default@2x.png */,
+				E35124081731F10D00C95465 /* Default.png */,
+				E35124091731F10D00C95465 /* Default-568h@2x.png */,
+				E351240A1731F10D00C95465 /* 114x114.png */,
+				E351240B1731F10D00C95465 /* 57x57.png */,
 				02C8A2BA14C97CA60021F408 /* Interface Export */,
 				02C8A2B314C97CA60021F408 /* Frameworks */,
 				02C8A2B114C97CA60021F408 /* Products */,
@@ -246,77 +368,139 @@
 			children = (
 				02C8A2C314C97CA60021F408 /* IFAppDelegate.h */,
 				02C8A2C414C97CA60021F408 /* IFAppDelegate.m */,
-				FA76DFC630F690450AA03E19 /* WelcomeViewController.h */,
-				3439CC68FFC5A90051CC86F4 /* WelcomeViewController.m */,
-				C36C63F7D8BED05DEC51770A /* InfoViewController.h */,
-				3571843F8B9C5522C8193BD9 /* InfoViewController.m */,
-				EEA7225C4F99AB8C1C28B4BD /* AreatradesViewController.h */,
-				47CC9C8EC1359931716A0BB3 /* AreatradesViewController.m */,
-				C15EB78D91D497DDD191EA43 /* MultiAddScreenViewController.h */,
-				A4754E2A520801BDAC1F2D6C /* MultiAddScreenViewController.m */,
-				6D8317DF0EBA796FBB6A9359 /* WantViewController.h */,
-				CAC71B28895A44226FD4A816 /* WantViewController.m */,
-				B7DDF18BD14C952A702B72BD /* MultiAddScreenWantViewController.h */,
-				1A81620F90EC7E24505D5E81 /* MultiAddScreenWantViewController.m */,
-				72CDC174FF9CA47CD6EEF9EB /* TradeableViewController.h */,
-				A937A431F3ECF1006CE1E476 /* TradeableViewController.m */,
-				CFFCB6AE1086721AA54E9BC2 /* MultiAddScreenTradeViewController.h */,
-				2C3509544B7B3C00BFD06B7A /* MultiAddScreenTradeViewController.m */,
-				0A917E03E576AF8E7D17DE6D /* ForSaleViewController.h */,
-				97B3AC36BDEA98089AEB50E2 /* ForSaleViewController.m */,
-				19526A89C3A2BB6F48A0DD18 /* WelcomeViewController_Image_1.png */,
-				AE4EC13ABB1F05BB34B749F6 /* WelcomeViewController_Image_2.png */,
-				CD9E7F94DEB9195F23873372 /* WelcomeViewController_Image_3.png */,
-				81F7B02D208E8D66F2A5BCCD /* WelcomeViewController_Image_4.png */,
-				B15B6F4B894F3217D308CBC5 /* WelcomeViewController_Image_5.png */,
-				2BBA3774955BB911C678EAB0 /* InfoViewController_Image_1.png */,
-				1EF326A9957509D44F18FC28 /* InfoViewController_Image_2.png */,
-				9E2F38FA179374E7BD109274 /* InfoViewController_Image_3.png */,
-				552032AE04DCE5B6F5C54A0D /* InfoViewController_Image_4.png */,
-				FE2B1BB498B6F088E62089F6 /* InfoViewController_Image_5.png */,
-				8B655952227FAEAF1C216425 /* InfoViewController_Image_6.png */,
-				93FED11F61BA735305A692CF /* AreatradesViewController_Image_1.png */,
-				280D0609580F6DAF8C026A39 /* AreatradesViewController_Image_2.png */,
-				BB321C8562ECD6EE51678DEF /* AreatradesViewController_Image_3.png */,
-				8C4F731BE96AD215F5E9124D /* AreatradesViewController_Image_4.png */,
-				7C92DA04C5E705ACF0678121 /* AreatradesViewController_Image_5.png */,
-				F89B7A93EB25A1A2076DBAB9 /* MultiAddScreenViewController_Image_1.png */,
-				23B54EF50A40479317676667 /* MultiAddScreenViewController_Image_2.png */,
-				94822635AB31422C5A7F8AF1 /* MultiAddScreenViewController_Image_3.png */,
-				DAB2FA529542C08A03578FA9 /* MultiAddScreenViewController_Image_4.png */,
-				ECDF4A184677EC4A9F09087D /* MultiAddScreenViewController_Image_5.png */,
-				3C67C74F37A25C0D4CCE787D /* MultiAddScreenViewController_Image_6.png */,
-				6B3E0BD7DB75C2CC61DB9010 /* MultiAddScreenViewController_Image_7.png */,
-				684BB676735A62424EBABEA4 /* MultiAddScreenViewController_Image_8.png */,
-				187748FF35EA691FA729633F /* MultiAddScreenViewController_Image_9.png */,
-				A8B55378182148AE4C141A21 /* MultiAddScreenViewController_Image_10.png */,
-				1EEB7E88AC0A57F3E45E0983 /* MultiAddScreenViewController_Image_11.png */,
-				D45F0D0A3870A23FE7E2D5FB /* WantViewController_Image_1.png */,
-				1F912894B745284B8B2CF26D /* WantViewController_Image_2.png */,
-				59B44E23148D128EA5A109D4 /* WantViewController_Image_3.png */,
-				F19DB8D798B2FE1A004E57DB /* WantViewController_Image_4.png */,
-				49F77AA8CBC0ABB0AA850CDB /* WantViewController_Image_5.png */,
-				7EECC1D3CBAA2D77D6BC8897 /* MultiAddScreenWantViewController_Image_1.png */,
-				C541B274A611E430AFCCEECA /* MultiAddScreenWantViewController_Image_2.png */,
-				95387E017E4B6BCBF2DE7D4C /* MultiAddScreenWantViewController_Image_3.png */,
-				8D41CB7A903A9A7EF5A984C6 /* MultiAddScreenWantViewController_Image_4.png */,
-				47DF0101D741052B1F18518B /* MultiAddScreenWantViewController_Image_5.png */,
-				25FB8D0F5A735D28F72C0756 /* TradeableViewController_Image_1.png */,
-				8A6CAF3BF111B48665E22014 /* TradeableViewController_Image_2.png */,
-				A02B513C78FBD20AD0928EB3 /* TradeableViewController_Image_3.png */,
-				B132756BB1004DC74E840FC5 /* TradeableViewController_Image_4.png */,
-				92A400E6CC7D5F929D4A728A /* TradeableViewController_Image_5.png */,
-				8E43F82D542D0F5259B05F97 /* TradeableViewController_Image_6.png */,
-				FB31400B6E5CCE007B139F5A /* MultiAddScreenTradeViewController_Image_1.png */,
-				593E7927F6B2B7C7F790F0E7 /* MultiAddScreenTradeViewController_Image_2.png */,
-				FBF6C46624B842D1AC80A71B /* MultiAddScreenTradeViewController_Image_3.png */,
-				967DEBC585916DAED603A169 /* MultiAddScreenTradeViewController_Image_4.png */,
-				CF8ED8C38CF94B35B38D5303 /* MultiAddScreenTradeViewController_Image_5.png */,
-				2ACD896DE3B40F548A05AAB9 /* ForSaleViewController_Image_1.png */,
-				D0E004613B0064C0FC6E13C8 /* ForSaleViewController_Image_2.png */,
-				249AE402036137D49559CB33 /* ForSaleViewController_Image_3.png */,
-				7AF6AE103A7E15FFF63C5A8B /* ForSaleViewController_Image_4.png */,
-				E2AB91FA82B1D56AA880943B /* ForSaleViewController_Image_5.png */,
+				2C7F340D8F57C725034013FB /* WelcomeViewController.h */,
+				049A9749EC394BE00470E087 /* WelcomeViewController.m */,
+				D195F4154AF9E713AF87DAAA /* WantMenuViewController.h */,
+				57AC4CE8857C94632F33B944 /* WantMenuViewController.m */,
+				1325FA1EA52C42FC1BB91C80 /* AreatradesViewController.h */,
+				20736E9E97B82FE344AAA5F5 /* AreatradesViewController.m */,
+				94623A6F7AD97101EF42588D /* MultiAddScreenViewController.h */,
+				F5972E3203EE85E91AC53ADA /* MultiAddScreenViewController.m */,
+				1F41F3CB3B42B827577B7271 /* TradeableViewController.h */,
+				A4A96563B90F97E7F8357E23 /* TradeableViewController.m */,
+				8B67D43CE2C057722F42A630 /* MultiAddScreenWantViewController.h */,
+				92839A48BABA044AE035D8A3 /* MultiAddScreenWantViewController.m */,
+				F800169B70602B7A7742CB41 /* ForSaleViewController.h */,
+				89AEDF0B79D912B568A07038 /* ForSaleViewController.m */,
+				0A552216642F5DEB448175B0 /* MultiAddScreenTradeViewController.h */,
+				F3586F6FAF48E1FE13C0490E /* MultiAddScreenTradeViewController.m */,
+				8E61B411EB37C61903CB3FD8 /* WantViewController.h */,
+				A9DD9E6AD8D162D38D7902B4 /* WantViewController.m */,
+				0AC904142EBB983F021225D2 /* InfoViewController.h */,
+				2913F6FFA3CE3AA4742F9E6C /* InfoViewController.m */,
+				0D2AAE8A4E59B794EFCB67CD /* TradeMenuViewController.h */,
+				63249DB1239C8B28697220B0 /* TradeMenuViewController.m */,
+				8ED5787468FDD3EED76BAFA0 /* WelcomeViewController_Image_1.png */,
+				7C53EE90E6AD0E3EE88F0A2B /* WelcomeViewController_Image_2.png */,
+				F02A7E691F1FA8C86E1B802D /* WelcomeViewController_Image_3.png */,
+				EE93624720D316261C5FB410 /* WelcomeViewController_Image_4.png */,
+				EEF7BE8D6242C6F086183850 /* WelcomeViewController_Image_5.png */,
+				B53C22B11240534099FB84BF /* WelcomeViewController_Image_6.png */,
+				174E43C05D19AE0966DBF1BF /* WelcomeViewController_Image_7.png */,
+				09AA37AF740C33C81B46CCBD /* WelcomeViewController_Image_8.png */,
+				00B5E1F1A267A737F9097D4A /* WantMenuViewController_Image_1.png */,
+				018A3446C923385DE3C7CED4 /* WantMenuViewController_Image_2.png */,
+				0D99FD16137F4871D053306B /* WantMenuViewController_Image_3.png */,
+				D5B3A5F190243CE3843353EA /* WantMenuViewController_Image_4.png */,
+				A6A42C817806EAC0B57F931C /* WantMenuViewController_Image_5.png */,
+				5AB558681A4840F0328B66F6 /* WantMenuViewController_Image_6.png */,
+				45D4D1389B338665A1ECA6ED /* WantMenuViewController_Image_7.png */,
+				AF5453517E92CF6797E09BD8 /* WantMenuViewController_Image_8.png */,
+				D8A41CA6D3DE0E5816D522C6 /* WantMenuViewController_Image_9.png */,
+				C9D21F35CDE527CB42A6AE9C /* WantMenuViewController_Image_10.png */,
+				39318105D24913C2BE6FB6FC /* WantMenuViewController_Image_11.png */,
+				C3E6E08B4D67F313F95BCBF1 /* WantMenuViewController_Image_12.png */,
+				61F404C02BA350976EAA4F41 /* WantMenuViewController_Image_13.png */,
+				3DB1F1D3DD05B96AF39E0DDC /* WantMenuViewController_Image_14.png */,
+				87CDB2DDBB923670C93D2ACF /* WantMenuViewController_Image_15.png */,
+				F79F7427C73971F18EF339B8 /* AreatradesViewController_Image_1.png */,
+				0BDF831D3374F3734D79F7A0 /* AreatradesViewController_Image_2.png */,
+				7E1653E1D149CD685968B450 /* AreatradesViewController_Image_3.png */,
+				70EDABFA014B045C4A9479AE /* AreatradesViewController_Image_4.png */,
+				AE3CAC1B37A92045D6DDCD06 /* AreatradesViewController_Image_5.png */,
+				8D4FA2FF68C462A5746B8EFF /* AreatradesViewController_Image_6.png */,
+				002EB009F40B3DB33B6F2DB0 /* MultiAddScreenViewController_Image_1.png */,
+				E837564BE272FFA3D7B19C41 /* MultiAddScreenViewController_Image_2.png */,
+				79087649B733EDF7A533E51B /* MultiAddScreenViewController_Image_3.png */,
+				C0404D8887E698B8EF9BBF65 /* MultiAddScreenViewController_Image_4.png */,
+				B351BCF4F395CA9DA30147AE /* MultiAddScreenViewController_Image_5.png */,
+				E1F2B3379FC5DA39F20E27B9 /* MultiAddScreenViewController_Image_6.png */,
+				E18E81D6D27F361FD360FC0D /* MultiAddScreenViewController_Image_7.png */,
+				17C69A9A4D4439CE55975A76 /* MultiAddScreenViewController_Image_8.png */,
+				C1D9AAD9AC57B590C66A17AA /* MultiAddScreenViewController_Image_9.png */,
+				5AC42A6A923928F6D1F0C9A6 /* MultiAddScreenViewController_Image_10.png */,
+				C45B27698BA5939299D68477 /* MultiAddScreenViewController_Image_11.png */,
+				FFD887BCF50D418F3B8466B5 /* MultiAddScreenViewController_Image_12.png */,
+				8A58EB1967C9E4A92AADF1B1 /* MultiAddScreenViewController_Image_13.png */,
+				0A578A3FC2B1AAFBBC708BCB /* MultiAddScreenViewController_Image_14.png */,
+				498CA760637949FE3F2299EA /* TradeableViewController_Image_1.png */,
+				5F4B664B1F2AE5A24A4ACE48 /* TradeableViewController_Image_2.png */,
+				70A0C38C5FC9D6864F7C4D52 /* TradeableViewController_Image_3.png */,
+				79CD4F177A9BE444163C0353 /* TradeableViewController_Image_4.png */,
+				415018D0B8F95D4CDF95EB67 /* TradeableViewController_Image_5.png */,
+				AB73C1044A151A26715BAA77 /* TradeableViewController_Image_6.png */,
+				7B3C0307EB4769C893D5F735 /* TradeableViewController_Image_7.png */,
+				EFCF6CC2F11D8DF8F60EEECF /* TradeableViewController_Image_8.png */,
+				1975C7D625730D644BB8D98E /* TradeableViewController_Image_9.png */,
+				0190B7BB1940F7E7C168B291 /* TradeableViewController_Image_10.png */,
+				285B2C5A1251A969C67A3193 /* TradeableViewController_Image_11.png */,
+				E95793D3C5AE3B90C9CD5634 /* TradeableViewController_Image_12.png */,
+				B26DCC77C25426711EDFE3EA /* MultiAddScreenWantViewController_Image_1.png */,
+				0DF196AD630C28646F3F1F08 /* MultiAddScreenWantViewController_Image_2.png */,
+				2CD93A41BAF9D2E3A3B35BB2 /* MultiAddScreenWantViewController_Image_3.png */,
+				A370ADA7F3475E581AA85885 /* MultiAddScreenWantViewController_Image_4.png */,
+				CAE847CAC57B35694EB967BB /* MultiAddScreenWantViewController_Image_5.png */,
+				2704CBF7E2040F5498BC3F77 /* MultiAddScreenWantViewController_Image_6.png */,
+				C1549DB9E16F99C66AFE759D /* ForSaleViewController_Image_1.png */,
+				DD1B9BB8A2E254ABA06F4C31 /* ForSaleViewController_Image_2.png */,
+				20F6BC1014154B41D87F4CCB /* ForSaleViewController_Image_3.png */,
+				466091B9D36C8C6AA5C38C44 /* ForSaleViewController_Image_4.png */,
+				A29EAB9FC26B9EDEF72BA3C4 /* ForSaleViewController_Image_5.png */,
+				9192974932824AD9E90B8DD7 /* ForSaleViewController_Image_6.png */,
+				5DC00E6DCAEFD4ACF3196BB0 /* ForSaleViewController_Image_7.png */,
+				99A3995C056F7A64F45F0621 /* ForSaleViewController_Image_8.png */,
+				A7EE3A6A5319999F3C749B7E /* ForSaleViewController_Image_9.png */,
+				8EFE62F1F91A8D11AD6FB13A /* ForSaleViewController_Image_10.png */,
+				82F03A2A16F610FB49A1529D /* ForSaleViewController_Image_11.png */,
+				0633A605581BBC75A70525F0 /* MultiAddScreenTradeViewController_Image_1.png */,
+				7FFE963303B63E3E46C5E029 /* MultiAddScreenTradeViewController_Image_2.png */,
+				175A5804AECF613B8BFA9DD2 /* MultiAddScreenTradeViewController_Image_3.png */,
+				C227FE0EFECB6C8D94131964 /* MultiAddScreenTradeViewController_Image_4.png */,
+				C885F67856E101B27CDC06D6 /* MultiAddScreenTradeViewController_Image_5.png */,
+				865DDE8DD799029FCD0B494F /* MultiAddScreenTradeViewController_Image_6.png */,
+				D41FAD65BF65358DFD1B27B5 /* MultiAddScreenTradeViewController_Image_7.png */,
+				CDE0ECFA6CF1E0A37E9F1BB9 /* WantViewController_Image_1.png */,
+				51F7C7D527036B0A9332EB0F /* WantViewController_Image_2.png */,
+				290B389690189657581AD410 /* WantViewController_Image_3.png */,
+				DBDFE05FE72DDE461DD819DB /* WantViewController_Image_4.png */,
+				7101E04A5E978318FC488985 /* WantViewController_Image_5.png */,
+				E5799FA27EFA0C63E8298C49 /* WantViewController_Image_6.png */,
+				67C4B66D01BA3B14045E92A8 /* WantViewController_Image_7.png */,
+				CEF95552972377CD2DF71015 /* WantViewController_Image_8.png */,
+				8AC7A2123EB383ED3CA10CC9 /* WantViewController_Image_9.png */,
+				1D7971EB2315444141C139DB /* WantViewController_Image_10.png */,
+				0655F63FFA56ED9EF420B14D /* WantViewController_Image_11.png */,
+				6A8F9DB444A1BC57A0688F8B /* WantViewController_Image_12.png */,
+				EE616891D1E37A99D9107D81 /* InfoViewController_Image_1.png */,
+				71AC2F0A8D97BC81F2B8652A /* InfoViewController_Image_2.png */,
+				1DF2D1774D8344FE051FC53C /* InfoViewController_Image_3.png */,
+				B8A47B90AC4981908F435F5B /* InfoViewController_Image_4.png */,
+				C6A60CBCBCA7DF65B2896C82 /* InfoViewController_Image_5.png */,
+				9BBBB322321930D2692E7EA4 /* InfoViewController_Image_6.png */,
+				F291CA70C39EBF4DFDCE4B03 /* TradeMenuViewController_Image_1.png */,
+				DEED24A2ECEC3990551ECCEB /* TradeMenuViewController_Image_2.png */,
+				4443D38C8A4DEE2D858EA67C /* TradeMenuViewController_Image_3.png */,
+				6078B01C0BC19BD7F15FD24C /* TradeMenuViewController_Image_4.png */,
+				C6CF71799029D182168CAC4E /* TradeMenuViewController_Image_5.png */,
+				C00F6EB33EBDD7829C83F93F /* TradeMenuViewController_Image_6.png */,
+				89A644CF0445FEB460F5FE5A /* TradeMenuViewController_Image_7.png */,
+				105C011E31DD6262EE211198 /* TradeMenuViewController_Image_8.png */,
+				65C21D52003E6E940138222B /* TradeMenuViewController_Image_9.png */,
+				DDDBB89AA52FE8328870FBFE /* TradeMenuViewController_Image_10.png */,
+				2CE558CBBA3DA5B20D0DCB80 /* TradeMenuViewController_Image_11.png */,
+				F352AB98F435A8B86AE49C9E /* TradeMenuViewController_Image_12.png */,
+				77E889C765164712DEFA8177 /* TradeMenuViewController_Image_13.png */,
+				4B4CE2B6D018950BB6F5DA0A /* TradeMenuViewController_Image_14.png */,
 				02C8A2BB14C97CA60021F408 /* Supporting Files */,
 			);
 			path = "Interface Export";
@@ -393,64 +577,122 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C8A2BF14C97CA60021F408 /* InfoPlist.strings in Resources */,
-				4BE650DC20BE61C7EC381B8F /* WelcomeViewController_Image_1.png in Resources */,
-				E716EF4E84D48E27B0F38068 /* WelcomeViewController_Image_2.png in Resources */,
-				E257CBBA972ACBA6341EC758 /* WelcomeViewController_Image_3.png in Resources */,
-				4365B1E4FD9AEB22ACE4394E /* WelcomeViewController_Image_4.png in Resources */,
-				3B3D2CB01C796BC5EC3FEA82 /* WelcomeViewController_Image_5.png in Resources */,
-				FD28033C0FC07AAC7FE9B623 /* InfoViewController_Image_1.png in Resources */,
-				2FA3F4BB4A7F6CCDA5951BF8 /* InfoViewController_Image_2.png in Resources */,
-				A3BCD9F8AF61E43BD7DF849F /* InfoViewController_Image_3.png in Resources */,
-				D85B4D38F55477FDE616909D /* InfoViewController_Image_4.png in Resources */,
-				B477F82ADA0C376532427CD3 /* InfoViewController_Image_5.png in Resources */,
-				0E67C42A7081AA041ADF035F /* InfoViewController_Image_6.png in Resources */,
-				15D9628B36F1BF3BC16BE0C6 /* AreatradesViewController_Image_1.png in Resources */,
-				CD67431BA989A1CE4B093D95 /* AreatradesViewController_Image_2.png in Resources */,
-				847C0A17C212535C6CBC0024 /* AreatradesViewController_Image_3.png in Resources */,
-				0C51344081D16D68083D12E8 /* AreatradesViewController_Image_4.png in Resources */,
-				2E37B11CF8425DB651188114 /* AreatradesViewController_Image_5.png in Resources */,
-				0664B9AA99522A4362A2E7F3 /* MultiAddScreenViewController_Image_1.png in Resources */,
-				212B242AFF1F62D34127C3C0 /* MultiAddScreenViewController_Image_2.png in Resources */,
-				3C5E34EDCD65E59E4111A1A2 /* MultiAddScreenViewController_Image_3.png in Resources */,
-				4E10344C600791689C6FD0BA /* MultiAddScreenViewController_Image_4.png in Resources */,
-				23EEB2E5FC627DDB3DCF6D97 /* MultiAddScreenViewController_Image_5.png in Resources */,
-				465A7D4329A3B96ECC9B1834 /* MultiAddScreenViewController_Image_6.png in Resources */,
-				308F0348EBDFC36F2230D155 /* MultiAddScreenViewController_Image_7.png in Resources */,
-				FCBCE245726C362544390FEC /* MultiAddScreenViewController_Image_8.png in Resources */,
-				468490029EE549E4AEFB11C5 /* MultiAddScreenViewController_Image_9.png in Resources */,
-				734AF48CE34D336E72ED461B /* MultiAddScreenViewController_Image_10.png in Resources */,
-				0EC5E7390F0F270A55C20204 /* MultiAddScreenViewController_Image_11.png in Resources */,
-				D3EB251647B1CB0A83B7834B /* WantViewController_Image_1.png in Resources */,
-				F63D7E1AD65B3274A5933D3F /* WantViewController_Image_2.png in Resources */,
-				D96394D39B8B00AA3D8E393F /* WantViewController_Image_3.png in Resources */,
-				E5F9073C3ADE3619F4E90085 /* WantViewController_Image_4.png in Resources */,
-				F72EBD4260A8F9096C8F8D78 /* WantViewController_Image_5.png in Resources */,
-				14CE2B8F8705D5B63971FE5B /* MultiAddScreenWantViewController_Image_1.png in Resources */,
-				0C75A4F6CB2024975204F87A /* MultiAddScreenWantViewController_Image_2.png in Resources */,
-				008B20B576921993CE211BE3 /* MultiAddScreenWantViewController_Image_3.png in Resources */,
-				21A7591998725591CDD7EFD7 /* MultiAddScreenWantViewController_Image_4.png in Resources */,
-				D689070BEC8E0323D880D5CA /* MultiAddScreenWantViewController_Image_5.png in Resources */,
-				DE674411E249D0705CA2426A /* TradeableViewController_Image_1.png in Resources */,
-				0B913D423836C6390FC57480 /* TradeableViewController_Image_2.png in Resources */,
-				EF2910DB0C98836C027CC5C4 /* TradeableViewController_Image_3.png in Resources */,
-				37D712D537D1938E62022958 /* TradeableViewController_Image_4.png in Resources */,
-				5393031033CC208FA241FE85 /* TradeableViewController_Image_5.png in Resources */,
-				68F0572389AE03BD8D3B3925 /* TradeableViewController_Image_6.png in Resources */,
-				1F7B87492936D5FE67D32564 /* MultiAddScreenTradeViewController_Image_1.png in Resources */,
-				F0264CC7DB0DAB14FAA0524C /* MultiAddScreenTradeViewController_Image_2.png in Resources */,
-				41E8A35D6D81ED23AAB2F45B /* MultiAddScreenTradeViewController_Image_3.png in Resources */,
-				C245955CC1A7CF0C91F668AE /* MultiAddScreenTradeViewController_Image_4.png in Resources */,
-				02BFB96FB293D019C7EE4151 /* MultiAddScreenTradeViewController_Image_5.png in Resources */,
-				6A5AD035723752840D9DA082 /* ForSaleViewController_Image_1.png in Resources */,
-				BE7291B5159711875A311009 /* ForSaleViewController_Image_2.png in Resources */,
-				9F21180E78A36638939B77B0 /* ForSaleViewController_Image_3.png in Resources */,
-				837690E37D936F4D9C57EF4F /* ForSaleViewController_Image_4.png in Resources */,
-				47B3A3822193683C19D6B69C /* ForSaleViewController_Image_5.png in Resources */,
-				E3735D5D172A038D00290315 /* Default@2x.png in Resources */,
-				E3735D5E172A038D00290315 /* Default.png in Resources */,
-				E3735D5F172A038D00290315 /* Default-568h@2x.png in Resources */,
-				E3735D60172A038D00290315 /* 114x114.png in Resources */,
-				E3735D61172A038D00290315 /* 57x57.png in Resources */,
+				321A514D62E1941939545112 /* WelcomeViewController_Image_1.png in Resources */,
+				AA8B32BE9D35B4CDCDC530EC /* WelcomeViewController_Image_2.png in Resources */,
+				6561EDA6EFD016B079E0DC5D /* WelcomeViewController_Image_3.png in Resources */,
+				215E4E3F4BA157A3BB2EC016 /* WelcomeViewController_Image_4.png in Resources */,
+				E66558D682D679A6F54DCB57 /* WelcomeViewController_Image_5.png in Resources */,
+				695FC132162E41C95FF5D9A2 /* WelcomeViewController_Image_6.png in Resources */,
+				D25EA395CC0EF3DF75F146EB /* WelcomeViewController_Image_7.png in Resources */,
+				CF0C606F521C7806DC32F606 /* WelcomeViewController_Image_8.png in Resources */,
+				0F3A243BA8C6BEB12B063DBB /* WantMenuViewController_Image_1.png in Resources */,
+				B2A1362E5F7366E881319C9B /* WantMenuViewController_Image_2.png in Resources */,
+				94370D0526D45EFFC7FF2EAD /* WantMenuViewController_Image_3.png in Resources */,
+				A2908430FCFB2FBCB318E6FC /* WantMenuViewController_Image_4.png in Resources */,
+				56B77DB04FB45A10C79770E2 /* WantMenuViewController_Image_5.png in Resources */,
+				B5E75D2BC1DF305AA186A9C2 /* WantMenuViewController_Image_6.png in Resources */,
+				B3FF1EC36232F493BE028358 /* WantMenuViewController_Image_7.png in Resources */,
+				23B126E141D518C77813A413 /* WantMenuViewController_Image_8.png in Resources */,
+				C2604771A91CC93AC064C3DE /* WantMenuViewController_Image_9.png in Resources */,
+				284C4E63DFCF3B8387E3BADD /* WantMenuViewController_Image_10.png in Resources */,
+				80C6D068BD11F23AB645915E /* WantMenuViewController_Image_11.png in Resources */,
+				9FD58A72D999625B438FF64D /* WantMenuViewController_Image_12.png in Resources */,
+				A314153526A63AEF9953690C /* WantMenuViewController_Image_13.png in Resources */,
+				075DA179519B7295EACD1670 /* WantMenuViewController_Image_14.png in Resources */,
+				DC61BAF2B5DF62645078E885 /* WantMenuViewController_Image_15.png in Resources */,
+				EB10E21FE57E8D4C45786776 /* AreatradesViewController_Image_1.png in Resources */,
+				AB693C06E83B847B3A923CDF /* AreatradesViewController_Image_2.png in Resources */,
+				4A2C9DFA2CF2C64C1DD96600 /* AreatradesViewController_Image_3.png in Resources */,
+				632A5F9EE394C1A2EDD4BC0D /* AreatradesViewController_Image_4.png in Resources */,
+				87E8432D8B77176BE6FE13A4 /* AreatradesViewController_Image_5.png in Resources */,
+				0D802794BAC0305076816C23 /* AreatradesViewController_Image_6.png in Resources */,
+				04324F26C55D9A2C28D64EE3 /* MultiAddScreenViewController_Image_1.png in Resources */,
+				0969DC83A0B6A6311A739725 /* MultiAddScreenViewController_Image_2.png in Resources */,
+				1B814F9E5F2B83C929C44B28 /* MultiAddScreenViewController_Image_3.png in Resources */,
+				D9AC09DD7949C69E941DFEE6 /* MultiAddScreenViewController_Image_4.png in Resources */,
+				356C59D4EE06E72825F2B854 /* MultiAddScreenViewController_Image_5.png in Resources */,
+				55A2F5E978C5F9D032DDACCB /* MultiAddScreenViewController_Image_6.png in Resources */,
+				3269899DAFE14CB136D2B929 /* MultiAddScreenViewController_Image_7.png in Resources */,
+				9E1BE057A4478A2951535FAE /* MultiAddScreenViewController_Image_8.png in Resources */,
+				A7EFEC9941E99A8AC407742D /* MultiAddScreenViewController_Image_9.png in Resources */,
+				7136C5D8A9BBDE3C97742296 /* MultiAddScreenViewController_Image_10.png in Resources */,
+				10F354A29EC00837862DD762 /* MultiAddScreenViewController_Image_11.png in Resources */,
+				899B7FC61BB5EBB312C9E848 /* MultiAddScreenViewController_Image_12.png in Resources */,
+				64D6FE814CB7B4CB73785FBD /* MultiAddScreenViewController_Image_13.png in Resources */,
+				1F0935096C2C186895299006 /* MultiAddScreenViewController_Image_14.png in Resources */,
+				B2FDEEED70C5965A0C49F520 /* TradeableViewController_Image_1.png in Resources */,
+				FE02BDE3B057DDF70D08B58C /* TradeableViewController_Image_2.png in Resources */,
+				304586DC425DCB6DC143BC2F /* TradeableViewController_Image_3.png in Resources */,
+				CDD50DA4AA4A9E022F9EDA76 /* TradeableViewController_Image_4.png in Resources */,
+				6B9E3316ACA4690ADF1C4C0F /* TradeableViewController_Image_5.png in Resources */,
+				5575BC9CCB9D7DF1619D0B30 /* TradeableViewController_Image_6.png in Resources */,
+				F371056E1A835F0F0EAEF86F /* TradeableViewController_Image_7.png in Resources */,
+				453DEBB3EF58F5A688FA263B /* TradeableViewController_Image_8.png in Resources */,
+				2D124B38D25E0CA16007B273 /* TradeableViewController_Image_9.png in Resources */,
+				E987AA15C11A62E5DC20BA55 /* TradeableViewController_Image_10.png in Resources */,
+				1883996F327FDEF7250312DF /* TradeableViewController_Image_11.png in Resources */,
+				F5F81CC2158D6232E500E564 /* TradeableViewController_Image_12.png in Resources */,
+				1C1DD57F716C2DBFC90E4357 /* MultiAddScreenWantViewController_Image_1.png in Resources */,
+				DE46ADC6DBA008D33A79EE9F /* MultiAddScreenWantViewController_Image_2.png in Resources */,
+				3FBA8D918334C214888A53A8 /* MultiAddScreenWantViewController_Image_3.png in Resources */,
+				1EBD64E9FA6EE9D73969AD89 /* MultiAddScreenWantViewController_Image_4.png in Resources */,
+				7A9CD1D87712E75E438B9B7C /* MultiAddScreenWantViewController_Image_5.png in Resources */,
+				1EA0CB422A19717EEAE1598E /* MultiAddScreenWantViewController_Image_6.png in Resources */,
+				32874A9B4FEE6991093CF8BD /* ForSaleViewController_Image_1.png in Resources */,
+				DC91CD4F6459310BFBE86E50 /* ForSaleViewController_Image_2.png in Resources */,
+				516892DC305E57B65956978C /* ForSaleViewController_Image_3.png in Resources */,
+				A06BD7FFDC789FAAC935B045 /* ForSaleViewController_Image_4.png in Resources */,
+				B5902C824C2E499BF76A9078 /* ForSaleViewController_Image_5.png in Resources */,
+				A3D9818C96A8B77E1505CD70 /* ForSaleViewController_Image_6.png in Resources */,
+				5B0A7D7C1B5D560F2E9B6DCF /* ForSaleViewController_Image_7.png in Resources */,
+				68219120251BEB8ED53DBCE7 /* ForSaleViewController_Image_8.png in Resources */,
+				148D4159C8FC646F31DF0EB4 /* ForSaleViewController_Image_9.png in Resources */,
+				9B35A3384831A4B7D656CAE2 /* ForSaleViewController_Image_10.png in Resources */,
+				EAED9E79AC0B2F5A09A71A91 /* ForSaleViewController_Image_11.png in Resources */,
+				6D07BAE7CFF4117D88F311EE /* MultiAddScreenTradeViewController_Image_1.png in Resources */,
+				B02AB25706F1588C947511D1 /* MultiAddScreenTradeViewController_Image_2.png in Resources */,
+				1338D84996411547380C41AA /* MultiAddScreenTradeViewController_Image_3.png in Resources */,
+				6D8165E5A2FAB8A7F9A093F6 /* MultiAddScreenTradeViewController_Image_4.png in Resources */,
+				D08BE1218CE4623F83891C40 /* MultiAddScreenTradeViewController_Image_5.png in Resources */,
+				6EA690880873FF2B9A7DC3E8 /* MultiAddScreenTradeViewController_Image_6.png in Resources */,
+				6F5ADB5DE9EEC0192EAE1D73 /* MultiAddScreenTradeViewController_Image_7.png in Resources */,
+				F620AF794FB84E08625434CB /* WantViewController_Image_1.png in Resources */,
+				A001E7AC013C5BE86E589111 /* WantViewController_Image_2.png in Resources */,
+				94320B58AC52D7227394B6C1 /* WantViewController_Image_3.png in Resources */,
+				70F766CFA91E887703C4F6DA /* WantViewController_Image_4.png in Resources */,
+				F056B641081DB70F13CB4BA4 /* WantViewController_Image_5.png in Resources */,
+				D697012E188EB8F99375B2CA /* WantViewController_Image_6.png in Resources */,
+				79B13173207C4B96D1F933BA /* WantViewController_Image_7.png in Resources */,
+				593846EFD7DF583555586B82 /* WantViewController_Image_8.png in Resources */,
+				E34C27DE49686512DB268462 /* WantViewController_Image_9.png in Resources */,
+				3AC52B89400E9B8EC4A20B6E /* WantViewController_Image_10.png in Resources */,
+				FC6539BEEF872505C6AA04A8 /* WantViewController_Image_11.png in Resources */,
+				8D3D6CE9083101C7F17323FC /* WantViewController_Image_12.png in Resources */,
+				6F5A535C78F09A4C0EA9BBB0 /* InfoViewController_Image_1.png in Resources */,
+				982EB7E18AA7F524DC8768FB /* InfoViewController_Image_2.png in Resources */,
+				F7F724F62E2958082898B581 /* InfoViewController_Image_3.png in Resources */,
+				D3BC51DE5A3A059B53A61DA5 /* InfoViewController_Image_4.png in Resources */,
+				818A57642440FE6C63595E88 /* InfoViewController_Image_5.png in Resources */,
+				1809C5694EEB062B3C428037 /* InfoViewController_Image_6.png in Resources */,
+				C7AF12E2E86B82DD37424E90 /* TradeMenuViewController_Image_1.png in Resources */,
+				AD692A42DABD901DE193EA17 /* TradeMenuViewController_Image_2.png in Resources */,
+				ECD5B17180FC23A39E3CC7C6 /* TradeMenuViewController_Image_3.png in Resources */,
+				4462D5D4F153D6B4CEB33434 /* TradeMenuViewController_Image_4.png in Resources */,
+				186D771F8C0ABA81BDA12E03 /* TradeMenuViewController_Image_5.png in Resources */,
+				E2DC4C4B9B4176AB161BCAF0 /* TradeMenuViewController_Image_6.png in Resources */,
+				229463D404F631817F705C78 /* TradeMenuViewController_Image_7.png in Resources */,
+				B8C4B2E70D989D92E11A8882 /* TradeMenuViewController_Image_8.png in Resources */,
+				A8C7921F604897030C05B729 /* TradeMenuViewController_Image_9.png in Resources */,
+				2B1A9452635FAB80CF63899B /* TradeMenuViewController_Image_10.png in Resources */,
+				2E698E17FB14FC36CD48D0A4 /* TradeMenuViewController_Image_11.png in Resources */,
+				DBF8E2E9ED1CF7A486AEB648 /* TradeMenuViewController_Image_12.png in Resources */,
+				7EF0FAD8ED0F6990E7213F07 /* TradeMenuViewController_Image_13.png in Resources */,
+				2730E1DAA1397E9DAF6C5B44 /* TradeMenuViewController_Image_14.png in Resources */,
+				E351240C1731F10D00C95465 /* Default@2x.png in Resources */,
+				E351240D1731F10D00C95465 /* Default.png in Resources */,
+				E351240E1731F10D00C95465 /* Default-568h@2x.png in Resources */,
+				E351240F1731F10D00C95465 /* 114x114.png in Resources */,
+				E35124101731F10D00C95465 /* 57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,15 +709,17 @@
 				02AA5E0C14D57AF2004CE70D /* GradientNode.m in Sources */,
 				02AA5E0D14D57AF2004CE70D /* GradientView.m in Sources */,
 				02AA5E3C14D597DB004CE70D /* MKMapView+ZoomLevel.m in Sources */,
-				6030AB1C8CF67E108305B972 /* WelcomeViewController.m in Sources */,
-				B83F3ED20BBAC3011BAABF61 /* InfoViewController.m in Sources */,
-				58928683A54055EAA269B556 /* AreatradesViewController.m in Sources */,
-				FF5EB8F6405BEEFB649C90E9 /* MultiAddScreenViewController.m in Sources */,
-				0DACC01BCC4963403621A5BF /* WantViewController.m in Sources */,
-				4CB6A336AAAC0ED4B794048A /* MultiAddScreenWantViewController.m in Sources */,
-				03962118E1D1F265C371A5DA /* TradeableViewController.m in Sources */,
-				5FCBFEB7D8820BB26B735439 /* MultiAddScreenTradeViewController.m in Sources */,
-				E168ED32D700867421758576 /* ForSaleViewController.m in Sources */,
+				FE8621FFFD8014D6A376A6D4 /* WelcomeViewController.m in Sources */,
+				6A6F0785644585BE305CA20C /* WantMenuViewController.m in Sources */,
+				846A937AE07F7DD954C3BC8B /* AreatradesViewController.m in Sources */,
+				28D8BA7C6C2D895B800373F6 /* MultiAddScreenViewController.m in Sources */,
+				25C0315BAF19BF1015E490E9 /* TradeableViewController.m in Sources */,
+				DCC7A72E534555DD23DD58CA /* MultiAddScreenWantViewController.m in Sources */,
+				1E6026AA1D9EEC080EECF349 /* ForSaleViewController.m in Sources */,
+				F3014E982EB88A4A5AEFF284 /* MultiAddScreenTradeViewController.m in Sources */,
+				94AC15125069826D25FE312B /* WantViewController.m in Sources */,
+				49DDAE806C789C4B6DAE630F /* InfoViewController.m in Sources */,
+				494B35627448BDE0CC36122C /* TradeMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

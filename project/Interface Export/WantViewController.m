@@ -8,15 +8,12 @@
 
 #import "WantViewController.h"
 #import "InfoViewController.h"
-#import "MultiAddScreenViewController.h"
-#import "ForSaleViewController.h"
-#import "AreatradesViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
 
 @implementation WantViewController
-@synthesize tableView2Data;
+@synthesize tableView1Data;
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
@@ -38,8 +35,8 @@
   // MockTextureView -> textureView1;
   // ----------------------------;
   
-  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
-  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
+  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 408)];
+  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 408)];
   textureView1ContentView.clipsToBounds = YES;
   textureView1ContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   [textureView1 addSubview:textureView1ContentView];
@@ -56,6 +53,7 @@
   textureView1.layer.shadowRadius = 5.0;
   textureView1ContentView.layer.cornerRadius = 2.0;
   textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"WantViewController_Image_2.png"]];
   [textureView1 release];
   
   
@@ -73,10 +71,21 @@
   navigationBar1.alpha = 1.0;
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
   navigationBar1.topItem.title = @"Want List";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
+  
+  // ----------------------------;
+  // Navigation Bar Right Button -> barButton1;
+  // ----------------------------;
+  
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0]];
+  barButton1.target = self;
+  barButton1.action = @selector(didTap_barButton1:forEvent:);
+  
+  navigationBar1.topItem.rightBarButtonItem = barButton1;
   [navigationBar1 release];
   
   
@@ -96,29 +105,14 @@
   
   
   // ----------------------------;
-  // UIButton -> addContactButton2;
-  // ----------------------------;
-  
-  UIButton *addContactButton2 = [UIButton buttonWithType:UIButtonTypeContactAdd];
-  CGRect addContactButton2Rect = addContactButton2.frame;
-  addContactButton2Rect.origin.x = 281;
-  addContactButton2Rect.origin.y =  3;
-  addContactButton2.frame = addContactButton2Rect;
-  [textureView1ContentView addSubview:addContactButton2];
-  addContactButton2.alpha = 1.0;
-  addContactButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [addContactButton2 addTarget:self action:@selector(didTap_addContactButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
-  
-  // ----------------------------;
   // UITableView -> tableView1;
   // ----------------------------;
   
-  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, 320, 362) style:UITableViewStylePlain];
+  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, 320, 298) style:UITableViewStylePlain];
   tableView1.tag = 1;
   tableView1.delegate = (id<UITableViewDelegate>)self;
   tableView1.dataSource = (id<UITableViewDataSource>)self;
-  self.tableView2Data = [NSMutableArray array];
+  self.tableView1Data = [NSMutableArray array];
   [textureView1ContentView addSubview:tableView1];
   tableView1.alpha = 1.0;
   tableView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -137,7 +131,7 @@
   [tableViewSection1Data setObject:@"Movies" forKey:@"headerText"];
   [tableViewSection1Data setObject:@"" forKey:@"footerText"];
   [tableViewSection1Data setObject:[NSMutableArray array] forKey:@"cells"];
-  [self.tableView2Data addObject:tableViewSection1Data];
+  [self.tableView1Data addObject:tableViewSection1Data];
   
   // ----------------------------;
   // Cell -> tableViewCell1;
@@ -148,6 +142,7 @@
   tableViewCell1.textLabel.text = @"Star Wars";
   tableViewCell1.detailTextLabel.text = @"New, Used - on Blue ray";
   tableViewCell1.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell1.imageView.image = [UIImage imageNamed:@"WantViewController_Image_3.png"];
   tableViewCell1.backgroundColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
   [tableViewCell1Data setObject:tableViewCell1 forKey:@"cell"];
   [tableViewCell1Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
@@ -165,12 +160,31 @@
   tableViewCell2.textLabel.text = @"Charlie and Chocolate Factory";
   tableViewCell2.detailTextLabel.text = @"Used - DVD ";
   tableViewCell2.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell2.imageView.image = [UIImage imageNamed:@"WantViewController_Image_4.png"];
   [tableViewCell2Data setObject:tableViewCell2 forKey:@"cell"];
   [tableViewCell2Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
   [tableViewCell2Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
   [tableViewCell2Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
   [tableViewCell2Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
   [[tableViewSection1Data objectForKey:@"cells"] addObject:tableViewCell2Data];
+  
+  // ----------------------------;
+  // Cell -> tableViewCell3;
+  // ----------------------------;
+  
+  NSMutableDictionary *tableViewCell3Data = [NSMutableDictionary dictionary];
+  UITableViewCell *tableViewCell3 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] autorelease];
+  tableViewCell3.textLabel.text = @"Star Wars";
+  tableViewCell3.detailTextLabel.text = @"New, Used - on Blue ray";
+  tableViewCell3.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell3.imageView.image = [UIImage imageNamed:@"WantViewController_Image_5.png"];
+  tableViewCell3.backgroundColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
+  [tableViewCell3Data setObject:tableViewCell3 forKey:@"cell"];
+  [tableViewCell3Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
+  [tableViewCell3Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
+  [tableViewCell3Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
+  [tableViewCell3Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
+  [[tableViewSection1Data objectForKey:@"cells"] addObject:tableViewCell3Data];
   
   // ----------------------------;
   // Table View Section -> tableViewSection2;
@@ -180,23 +194,24 @@
   [tableViewSection2Data setObject:@"Games" forKey:@"headerText"];
   [tableViewSection2Data setObject:@"" forKey:@"footerText"];
   [tableViewSection2Data setObject:[NSMutableArray array] forKey:@"cells"];
-  [self.tableView2Data addObject:tableViewSection2Data];
+  [self.tableView1Data addObject:tableViewSection2Data];
   
   // ----------------------------;
-  // Cell -> tableViewCell3;
+  // Cell -> tableViewCell4;
   // ----------------------------;
   
-  NSMutableDictionary *tableViewCell3Data = [NSMutableDictionary dictionary];
-  UITableViewCell *tableViewCell3 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] autorelease];
-  tableViewCell3.textLabel.text = @"Splinter Cell";
-  tableViewCell3.detailTextLabel.text = @"Xbox 360";
-  tableViewCell3.accessoryType = UITableViewCellAccessoryNone;
-  [tableViewCell3Data setObject:tableViewCell3 forKey:@"cell"];
-  [tableViewCell3Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
-  [tableViewCell3Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
-  [tableViewCell3Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
-  [tableViewCell3Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
-  [[tableViewSection2Data objectForKey:@"cells"] addObject:tableViewCell3Data];
+  NSMutableDictionary *tableViewCell4Data = [NSMutableDictionary dictionary];
+  UITableViewCell *tableViewCell4 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] autorelease];
+  tableViewCell4.textLabel.text = @"Splinter Cell";
+  tableViewCell4.detailTextLabel.text = @"Xbox 360";
+  tableViewCell4.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell4.imageView.image = [UIImage imageNamed:@"WantViewController_Image_6.png"];
+  [tableViewCell4Data setObject:tableViewCell4 forKey:@"cell"];
+  [tableViewCell4Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
+  [tableViewCell4Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
+  [tableViewCell4Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
+  [tableViewCell4Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
+  [[tableViewSection2Data objectForKey:@"cells"] addObject:tableViewCell4Data];
   
   // ----------------------------;
   // Table View Section -> tableViewSection3;
@@ -206,23 +221,37 @@
   [tableViewSection3Data setObject:@"CD Music" forKey:@"headerText"];
   [tableViewSection3Data setObject:@"" forKey:@"footerText"];
   [tableViewSection3Data setObject:[NSMutableArray array] forKey:@"cells"];
-  [self.tableView2Data addObject:tableViewSection3Data];
+  [self.tableView1Data addObject:tableViewSection3Data];
   
   // ----------------------------;
-  // Cell -> tableViewCell4;
+  // Cell -> tableViewCell5;
   // ----------------------------;
   
-  NSMutableDictionary *tableViewCell4Data = [NSMutableDictionary dictionary];
-  UITableViewCell *tableViewCell4 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] autorelease];
-  tableViewCell4.textLabel.text = @"Cold Play";
-  tableViewCell4.detailTextLabel.text = @"Used - CD";
-  tableViewCell4.accessoryType = UITableViewCellAccessoryNone;
-  [tableViewCell4Data setObject:tableViewCell4 forKey:@"cell"];
-  [tableViewCell4Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
-  [tableViewCell4Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
-  [tableViewCell4Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
-  [tableViewCell4Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
-  [[tableViewSection3Data objectForKey:@"cells"] addObject:tableViewCell4Data];
+  NSMutableDictionary *tableViewCell5Data = [NSMutableDictionary dictionary];
+  UITableViewCell *tableViewCell5 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] autorelease];
+  tableViewCell5.textLabel.text = @"Cold Play";
+  tableViewCell5.detailTextLabel.text = @"Used - CD";
+  tableViewCell5.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell5.imageView.image = [UIImage imageNamed:@"WantViewController_Image_7.png"];
+  [tableViewCell5Data setObject:tableViewCell5 forKey:@"cell"];
+  [tableViewCell5Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleNone] forKey:@"editingStyle"];
+  [tableViewCell5Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
+  [tableViewCell5Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
+  [tableViewCell5Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
+  [[tableViewSection3Data objectForKey:@"cells"] addObject:tableViewCell5Data];
+  
+  // ----------------------------;
+  // UIImageView -> imageView1;
+  // ----------------------------;
+  
+  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(51, 371, 218, 31)];
+  [textureView1ContentView addSubview:imageView1];
+  imageView1.alpha = 1.0;
+  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView1.image = [UIImage imageNamed:@"WantViewController_Image_8.png"];
+  imageView1.contentMode = UIViewContentModeScaleToFill;
+  [imageView1 release];
+  
   
   // ----------------------------;
   // UITabBar -> tabBar1;
@@ -241,14 +270,14 @@
   // Tab Bar Item -> tabBarItem1;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem1 = [[[UITabBarItem alloc] initWithTitle:@"Tradable" image:[UIImage imageNamed:@"WantViewController_Image_2.png"] tag:1] autorelease];
+  UITabBarItem *tabBarItem1 = [[[UITabBarItem alloc] initWithTitle:@"Tradable" image:[UIImage imageNamed:@"WantViewController_Image_9.png"] tag:1] autorelease];
   
   
   // ----------------------------;
   // Tab Bar Item -> tabBarItem2;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem2 = [[[UITabBarItem alloc] initWithTitle:@"Want" image:[UIImage imageNamed:@"WantViewController_Image_3.png"] tag:2] autorelease];
+  UITabBarItem *tabBarItem2 = [[[UITabBarItem alloc] initWithTitle:@"Want" image:[UIImage imageNamed:@"WantViewController_Image_10.png"] tag:2] autorelease];
   tabBarItem2.badgeValue = @"4";
   
   
@@ -256,14 +285,14 @@
   // Tab Bar Item -> tabBarItem3;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"WantViewController_Image_4.png"] tag:3] autorelease];
+  UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"WantViewController_Image_11.png"] tag:3] autorelease];
   
   
   // ----------------------------;
   // Tab Bar Item -> tabBarItem4;
   // ----------------------------;
   
-  UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"WantViewController_Image_5.png"] tag:4] autorelease];
+  UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"WantViewController_Image_12.png"] tag:4] autorelease];
   
   tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4, nil];
   
@@ -273,12 +302,12 @@
 }
 
 - (void)viewDidUnload {
-  self.tableView2Data = nil;
+  self.tableView1Data = nil;
   [super viewDidUnload];
 }
 
 - (void)dealloc {
-  self.tableView2Data = nil;
+  self.tableView1Data = nil;
   [super dealloc];
 }
 
@@ -294,7 +323,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
   if (tableView.tag == 1) {;
-    return self.tableView2Data.count;
+    return self.tableView1Data.count;
   };
   
   return 0;
@@ -302,7 +331,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     return [[sectionData objectForKey:@"cells"] count];
   };
   
@@ -311,7 +340,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:indexPath.section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:indexPath.section];
     NSDictionary *cellData =  [[sectionData objectForKey:@"cells"] objectAtIndex:indexPath.row];
     return [cellData objectForKey:@"cell"];
   };
@@ -321,7 +350,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     return [sectionData objectForKey:@"headerText"];
   };
   
@@ -330,7 +359,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     return [sectionData objectForKey:@"footerText"];
   };
   
@@ -339,7 +368,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:indexPath.section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:indexPath.section];
     NSDictionary *cellData =  [[sectionData objectForKey:@"cells"] objectAtIndex:indexPath.row];
     return [[cellData objectForKey:@"height"] floatValue];
   };
@@ -349,7 +378,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     if ([[sectionData objectForKey:@"customHeaderView"] boolValue]) {;
       return [sectionData objectForKey:@"headerView"];
     } else {;
@@ -362,7 +391,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     if ([[sectionData objectForKey:@"customFooterView"] boolValue]) {;
       return [sectionData objectForKey:@"footerView"];
     } else {;
@@ -375,7 +404,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     if ([[sectionData objectForKey:@"customHeaderView"] boolValue]) {;
       return [[sectionData objectForKey:@"customHeaderViewHeight"] floatValue];
     } else {;
@@ -392,7 +421,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:section];
     if ([[sectionData objectForKey:@"customFooterView"] boolValue]) {;
       return [[sectionData objectForKey:@"customFooterViewHeight"] floatValue];
     } else {;
@@ -409,7 +438,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:indexPath.section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:indexPath.section];
     NSDictionary *cellData =  [[sectionData objectForKey:@"cells"] objectAtIndex:indexPath.row];
     return [[cellData objectForKey:@"indentationLevel"] integerValue];
   };
@@ -419,7 +448,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   if (tableView.tag == 1) {;
-    NSDictionary *sectionData = [self.tableView2Data objectAtIndex:indexPath.section];
+    NSDictionary *sectionData = [self.tableView1Data objectAtIndex:indexPath.section];
     NSDictionary *cellData =  [[sectionData objectForKey:@"cells"] objectAtIndex:indexPath.row];
     NSString *actionSelector = [cellData objectForKey:@"actionSelector"];
     if (actionSelector) {;
@@ -428,23 +457,6 @@
     };
   };
   [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-
-// ----------------
-// Tab Bar
-// ----------------
-
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-  if (tabBar.tag == 1 && item.tag == 1) {;
-    [self didTap_tabBarItem1];
-  };
-  if (tabBar.tag == 1 && item.tag == 3) {;
-    [self didTap_tabBarItem3];
-  };
-  if (tabBar.tag == 1 && item.tag == 4) {;
-    [self didTap_tabBarItem4];
-  };
 }
 
 
@@ -460,32 +472,17 @@
 // Action
 // ----------------
 
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
+  [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
   InfoViewController *controller = [[InfoViewController alloc] init];
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
   [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
   navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
   [self presentModalViewController:navigationController animated:YES];
   [navigationController release];
-  [controller release];
-}
-- (void)didTap_addContactButton2:(id)sender forEvent:(UIEvent *)event {
-  MultiAddScreenViewController *controller = [[MultiAddScreenViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
-  [controller release];
-}
-- (void)didTap_tabBarItem1 {
-  [self.navigationController popViewControllerAnimated:YES];
-}
-- (void)didTap_tabBarItem3 {
-  ForSaleViewController *controller = [[ForSaleViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
-  [controller release];
-}
-- (void)didTap_tabBarItem4 {
-  AreatradesViewController *controller = [[AreatradesViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
 

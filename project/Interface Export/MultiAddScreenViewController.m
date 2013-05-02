@@ -7,11 +7,12 @@
 //
 
 #import "MultiAddScreenViewController.h"
+#import "InfoViewController.h"
+#import "MultiAddScreenWantViewController.h"
+#import "TradeMenuViewController.h"
 #import "WantViewController.h"
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
-#import "InfoViewController.h"
-#import "MultiAddScreenWantViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -35,53 +36,11 @@
   contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   
   // ----------------------------;
-  // UITabBar -> tabBar1;
-  // ----------------------------;
-  
-  UITabBar *tabBar1 = [[UITabBar alloc] initWithFrame:CGRectMake(0, 411, 320, 49)];
-  tabBar1.tag = 1;
-  tabBar1.delegate = (id<UITabBarDelegate>)self;
-  [contentView addSubview:tabBar1];
-  tabBar1.alpha = 1.0;
-  tabBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-  [tabBar1 release];
-  
-  
-  // ----------------------------;
-  // Tab Bar Item -> tabBarItem1;
-  // ----------------------------;
-  
-  UITabBarItem *tabBarItem1 = [[[UITabBarItem alloc] initWithTitle:@"Tradable" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_2.png"] tag:1] autorelease];
-  
-  
-  // ----------------------------;
-  // Tab Bar Item -> tabBarItem2;
-  // ----------------------------;
-  
-  UITabBarItem *tabBarItem2 = [[[UITabBarItem alloc] initWithTitle:@"Want" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_3.png"] tag:2] autorelease];
-  
-  
-  // ----------------------------;
-  // Tab Bar Item -> tabBarItem3;
-  // ----------------------------;
-  
-  UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_4.png"] tag:3] autorelease];
-  
-  
-  // ----------------------------;
-  // Tab Bar Item -> tabBarItem4;
-  // ----------------------------;
-  
-  UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_5.png"] tag:4] autorelease];
-  
-  tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4, nil];
-  
-  // ----------------------------;
   // MockTextureView -> textureView1;
   // ----------------------------;
   
-  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
-  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 406)];
+  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 411)];
+  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 411)];
   textureView1ContentView.clipsToBounds = YES;
   textureView1ContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   [textureView1 addSubview:textureView1ContentView];
@@ -89,7 +48,7 @@
   [contentView addSubview:textureView1];
   textureView1.alpha = 0.6470588445663452;
   textureView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  textureView1.backgroundColor = [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0];
+  textureView1.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_2.png"]];
   textureView1.layer.cornerRadius = 2.0;
   textureView1.layer.borderWidth = 0.0;
   textureView1.layer.borderColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
@@ -98,6 +57,7 @@
   textureView1.layer.shadowRadius = 5.0;
   textureView1ContentView.layer.cornerRadius = 2.0;
   textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_3.png"]];
   [textureView1 release];
   
   
@@ -115,8 +75,8 @@
   navigationBar1.alpha = 1.0;
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
-  navigationBar1.topItem.title = @"Swapmedia";
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
+  navigationBar1.topItem.title = @"Adding To List";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
   
@@ -124,7 +84,8 @@
   // Navigation Bar Right Button -> barButton1;
   // ----------------------------;
   
-  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0]];
   barButton1.target = self;
   barButton1.action = @selector(didTap_barButton1:forEvent:);
   
@@ -152,13 +113,13 @@
   // ----------------------------;
   
   UIButton *imageButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
-  imageButton2.frame = CGRectMake(0, 112, 320, 55);
+  imageButton2.frame = CGRectMake(0, 49, 320, 55);
   [textureView1ContentView addSubview:imageButton2];
   imageButton2.alpha = 1.0;
   imageButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [imageButton2 setTitle:@"Add Music" forState:UIControlStateNormal];
-  [imageButton2 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_6.png"] forState:UIControlStateNormal];
-  [imageButton2 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_7.png"] forState:UIControlStateNormal];
+  [imageButton2 setTitle:@"Add Movies" forState:UIControlStateNormal];
+  [imageButton2 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_4.png"] forState:UIControlStateNormal];
+  [imageButton2 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_5.png"] forState:UIControlStateNormal];
   imageButton2.enabled = YES;
   [imageButton2 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
   [imageButton2 addTarget:self action:@selector(didTap_imageButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -169,13 +130,13 @@
   // ----------------------------;
   
   UIButton *imageButton3 = [UIButton buttonWithType:UIButtonTypeCustom];
-  imageButton3.frame = CGRectMake(0, 49, 320, 55);
+  imageButton3.frame = CGRectMake(0, 112, 320, 55);
   [textureView1ContentView addSubview:imageButton3];
   imageButton3.alpha = 1.0;
   imageButton3.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [imageButton3 setTitle:@"Add Movie" forState:UIControlStateNormal];
-  [imageButton3 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_8.png"] forState:UIControlStateNormal];
-  [imageButton3 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_9.png"] forState:UIControlStateNormal];
+  [imageButton3 setTitle:@"Add Music" forState:UIControlStateNormal];
+  [imageButton3 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_6.png"] forState:UIControlStateNormal];
+  [imageButton3 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_7.png"] forState:UIControlStateNormal];
   imageButton3.enabled = YES;
   [imageButton3 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
   [imageButton3 addTarget:self action:@selector(didTap_imageButton3:forEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -191,12 +152,67 @@
   imageButton4.alpha = 1.0;
   imageButton4.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   [imageButton4 setTitle:@"Add Games" forState:UIControlStateNormal];
-  [imageButton4 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_10.png"] forState:UIControlStateNormal];
-  [imageButton4 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_11.png"] forState:UIControlStateNormal];
+  [imageButton4 setImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_8.png"] forState:UIControlStateNormal];
+  [imageButton4 setBackgroundImage:[UIImage imageNamed:@"MultiAddScreenViewController_Image_9.png"] forState:UIControlStateNormal];
   imageButton4.enabled = YES;
   [imageButton4 setTitleColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0] forState:UIControlStateNormal];
   [imageButton4 addTarget:self action:@selector(didTap_imageButton4:forEvent:) forControlEvents:UIControlEventTouchUpInside];
   
+  
+  // ----------------------------;
+  // UIImageView -> imageView1;
+  // ----------------------------;
+  
+  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(51, 371, 218, 31)];
+  [textureView1ContentView addSubview:imageView1];
+  imageView1.alpha = 1.0;
+  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView1.image = [UIImage imageNamed:@"MultiAddScreenViewController_Image_10.png"];
+  imageView1.contentMode = UIViewContentModeScaleToFill;
+  [imageView1 release];
+  
+  
+  // ----------------------------;
+  // UITabBar -> tabBar1;
+  // ----------------------------;
+  
+  UITabBar *tabBar1 = [[UITabBar alloc] initWithFrame:CGRectMake(0, 411, 320, 49)];
+  tabBar1.tag = 1;
+  tabBar1.delegate = (id<UITabBarDelegate>)self;
+  [contentView addSubview:tabBar1];
+  tabBar1.alpha = 1.0;
+  tabBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+  [tabBar1 release];
+  
+  
+  // ----------------------------;
+  // Tab Bar Item -> tabBarItem1;
+  // ----------------------------;
+  
+  UITabBarItem *tabBarItem1 = [[[UITabBarItem alloc] initWithTitle:@"Tradable" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_11.png"] tag:1] autorelease];
+  
+  
+  // ----------------------------;
+  // Tab Bar Item -> tabBarItem2;
+  // ----------------------------;
+  
+  UITabBarItem *tabBarItem2 = [[[UITabBarItem alloc] initWithTitle:@"Want" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_12.png"] tag:2] autorelease];
+  
+  
+  // ----------------------------;
+  // Tab Bar Item -> tabBarItem3;
+  // ----------------------------;
+  
+  UITabBarItem *tabBarItem3 = [[[UITabBarItem alloc] initWithTitle:@"For Sale" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_13.png"] tag:3] autorelease];
+  
+  
+  // ----------------------------;
+  // Tab Bar Item -> tabBarItem4;
+  // ----------------------------;
+  
+  UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"MultiAddScreenViewController_Image_14.png"] tag:4] autorelease];
+  
+  tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4, nil];
   
   contentView.frame = self.view.bounds;
   [self.view addSubview:contentView];
@@ -223,6 +239,9 @@
 // ----------------
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+  if (tabBar.tag == 1 && item.tag == 1) {;
+    [self didTap_tabBarItem1];
+  };
   if (tabBar.tag == 1 && item.tag == 2) {;
     [self didTap_tabBarItem2];
   };
@@ -247,6 +266,45 @@
 // Action
 // ----------------
 
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
+  [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
+  InfoViewController *controller = [[InfoViewController alloc] init];
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [navigationController setNavigationBarHidden:YES animated:NO];
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentModalViewController:navigationController animated:YES];
+  [navigationController release];
+  [controller release];
+}
+- (void)didTap_imageButton2:(id)sender forEvent:(UIEvent *)event {
+  MultiAddScreenWantViewController *controller = [[MultiAddScreenWantViewController alloc] init];
+  [self.navigationController pushViewController:controller animated:YES];
+  [controller release];
+}
+- (void)didTap_imageButton3:(id)sender forEvent:(UIEvent *)event {
+  UIAlertView *alertView = [[UIAlertView alloc] init];
+  alertView.title = @"Demo only";
+  alertView.message = @"";
+  [alertView addButtonWithTitle:@"OK"];
+  [alertView show];
+  [alertView release];
+}
+- (void)didTap_imageButton4:(id)sender forEvent:(UIEvent *)event {
+  UIAlertView *alertView = [[UIAlertView alloc] init];
+  alertView.title = @"Demo only";
+  alertView.message = @"";
+  [alertView addButtonWithTitle:@"OK"];
+  [alertView show];
+  [alertView release];
+}
+- (void)didTap_tabBarItem1 {
+  TradeMenuViewController *controller = [[TradeMenuViewController alloc] init];
+  [self.navigationController pushViewController:controller animated:YES];
+  [controller release];
+}
 - (void)didTap_tabBarItem2 {
   WantViewController *controller = [[WantViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
@@ -261,40 +319,6 @@
   AreatradesViewController *controller = [[AreatradesViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
-}
-- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
-  [self.navigationController popViewControllerAnimated:YES];
-}
-- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
-  InfoViewController *controller = [[InfoViewController alloc] init];
-  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-  [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
-  [self presentModalViewController:navigationController animated:YES];
-  [navigationController release];
-  [controller release];
-}
-- (void)didTap_imageButton2:(id)sender forEvent:(UIEvent *)event {
-  UIAlertView *alertView = [[UIAlertView alloc] init];
-  alertView.title = @"Not enabled ";
-  alertView.message = @"";
-  [alertView addButtonWithTitle:@"OK"];
-  [alertView show];
-  [alertView release];
-}
-- (void)didTap_imageButton3:(id)sender forEvent:(UIEvent *)event {
-  MultiAddScreenWantViewController *controller = [[MultiAddScreenWantViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
-  [controller release];
-}
-- (void)didTap_imageButton4:(id)sender forEvent:(UIEvent *)event {
-  UIAlertView *alertView = [[UIAlertView alloc] init];
-  alertView.title = @"Not enabled";
-  alertView.message = @"";
-  [alertView addButtonWithTitle:@"OK"];
-  [alertView show];
-  [alertView release];
 }
 
 

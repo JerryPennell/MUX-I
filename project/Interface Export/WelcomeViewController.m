@@ -7,9 +7,7 @@
 //
 
 #import "WelcomeViewController.h"
-#import "InfoViewController.h"
-#import "TradeableViewController.h"
-#import "WantViewController.h"
+#import "TradeMenuViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -32,141 +30,6 @@
   self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"WelcomeViewController_Image_1.png"]];
   UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
   contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-  
-  // ----------------------------;
-  // MockTextureView -> textureView1;
-  // ----------------------------;
-  
-  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 253)];
-  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 253)];
-  textureView1ContentView.clipsToBounds = YES;
-  textureView1ContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-  [textureView1 addSubview:textureView1ContentView];
-  [textureView1ContentView release];
-  [contentView addSubview:textureView1];
-  textureView1.alpha = 0.7568627595901489;
-  textureView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  textureView1.backgroundColor = [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0];
-  textureView1.layer.cornerRadius = 2.0;
-  textureView1.layer.borderWidth = 0.0;
-  textureView1.layer.borderColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
-  textureView1.layer.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
-  textureView1.layer.shadowOpacity = 0.34117648005485535;
-  textureView1.layer.shadowRadius = 5.0;
-  textureView1ContentView.layer.cornerRadius = 2.0;
-  textureView1.layer.shadowOffset = CGSizeMake(0, -3);
-  [textureView1 release];
-  
-  
-  // ----------------------------;
-  // UINavigationBar -> navigationBar1;
-  // ----------------------------;
-  
-  UINavigationBar *navigationBar1 = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-  navigationBar1.delegate = (id<UINavigationBarDelegate>)self;
-  UINavigationItem *navigationBar1BackItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
-  UINavigationItem *navigationBar1TopItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
-  NSArray *navigationBar1Items = [NSArray arrayWithObjects:navigationBar1BackItem, navigationBar1TopItem, nil];
-  [navigationBar1 setItems:navigationBar1Items animated:NO];
-  [textureView1ContentView addSubview:navigationBar1];
-  navigationBar1.alpha = 1.0;
-  navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
-  navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
-  navigationBar1.topItem.title = @"Swapmedia";
-  [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
-  navigationBar1.topItem.hidesBackButton = YES;
-  [navigationBar1 release];
-  
-  
-  // ----------------------------;
-  // UITableView -> tableView1;
-  // ----------------------------;
-  
-  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 109, 320, 144) style:UITableViewStyleGrouped];
-  tableView1.tag = 1;
-  tableView1.delegate = (id<UITableViewDelegate>)self;
-  tableView1.dataSource = (id<UITableViewDataSource>)self;
-  self.tableView1Data = [NSMutableArray array];
-  [textureView1ContentView addSubview:tableView1];
-  tableView1.alpha = 1.0;
-  tableView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-  tableView1.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
-  tableView1.separatorColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.18];
-  [tableView1 release];
-  
-  
-  // ----------------------------;
-  // Table View Section -> tableViewSection1;
-  // ----------------------------;
-  
-  NSMutableDictionary *tableViewSection1Data = [NSMutableDictionary dictionary];
-  [tableViewSection1Data setObject:@"Login" forKey:@"headerText"];
-  [tableViewSection1Data setObject:@"" forKey:@"footerText"];
-  [tableViewSection1Data setObject:[NSMutableArray array] forKey:@"cells"];
-  [self.tableView1Data addObject:tableViewSection1Data];
-  
-  // ----------------------------;
-  // Cell -> tableViewCell1;
-  // ----------------------------;
-  
-  NSMutableDictionary *tableViewCell1Data = [NSMutableDictionary dictionary];
-  UITableViewCell *tableViewCell1 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
-  tableViewCell1.textLabel.text = @"User name";
-  tableViewCell1.detailTextLabel.text = @"Subtitle";
-  tableViewCell1.accessoryType = UITableViewCellAccessoryNone;
-  [tableViewCell1Data setObject:tableViewCell1 forKey:@"cell"];
-  [tableViewCell1Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
-  [tableViewCell1Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
-  [tableViewCell1Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
-  [tableViewCell1Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
-  [[tableViewSection1Data objectForKey:@"cells"] addObject:tableViewCell1Data];
-  
-  // ----------------------------;
-  // Cell -> tableViewCell2;
-  // ----------------------------;
-  
-  NSMutableDictionary *tableViewCell2Data = [NSMutableDictionary dictionary];
-  UITableViewCell *tableViewCell2 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
-  tableViewCell2.textLabel.text = @"Password";
-  tableViewCell2.detailTextLabel.text = @"Subtitle";
-  tableViewCell2.accessoryType = UITableViewCellAccessoryNone;
-  [tableViewCell2Data setObject:tableViewCell2 forKey:@"cell"];
-  [tableViewCell2Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
-  [tableViewCell2Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
-  [tableViewCell2Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
-  [tableViewCell2Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
-  [[tableViewSection1Data objectForKey:@"cells"] addObject:tableViewCell2Data];
-  
-  // ----------------------------;
-  // UIButton -> lightInfoButton1;
-  // ----------------------------;
-  
-  UIButton *lightInfoButton1 = [UIButton buttonWithType:UIButtonTypeInfoLight];
-  CGRect lightInfoButton1Rect = lightInfoButton1.frame;
-  lightInfoButton1Rect.origin.x = 17;
-  lightInfoButton1Rect.origin.y =  10;
-  lightInfoButton1.frame = lightInfoButton1Rect;
-  [textureView1ContentView addSubview:lightInfoButton1];
-  lightInfoButton1.alpha = 1.0;
-  lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [lightInfoButton1 addTarget:self action:@selector(didTap_lightInfoButton1:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
-  
-  // ----------------------------;
-  // UIButton -> roundedRectButton2;
-  // ----------------------------;
-  
-  UIButton *roundedRectButton2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-  roundedRectButton2.frame = CGRectMake(82, 274, 165, 56);
-  [contentView addSubview:roundedRectButton2];
-  roundedRectButton2.alpha = 1.0;
-  roundedRectButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [roundedRectButton2 setTitle:@"Login" forState:UIControlStateNormal];
-  [roundedRectButton2 setTitleColor:[UIColor colorWithRed:0.22 green:0.33 blue:0.53 alpha:1.0] forState:UIControlStateNormal];
-  roundedRectButton2.titleLabel.font = [UIFont fontWithName:@".HelveticaNeueUI-Bold" size:15.0];
-  [roundedRectButton2 addTarget:self action:@selector(didTap_roundedRectButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
   
   // ----------------------------;
   // UITabBar -> tabBar1;
@@ -209,6 +72,181 @@
   UITabBarItem *tabBarItem4 = [[[UITabBarItem alloc] initWithTitle:@"Area Trades" image:[UIImage imageNamed:@"WelcomeViewController_Image_5.png"] tag:4] autorelease];
   
   tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4, nil];
+  
+  // ----------------------------;
+  // MockTextureView -> textureView1;
+  // ----------------------------;
+  
+  UIView *textureView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 411)];
+  UIView *textureView1ContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 411)];
+  textureView1ContentView.clipsToBounds = YES;
+  textureView1ContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+  [textureView1 addSubview:textureView1ContentView];
+  [textureView1ContentView release];
+  [contentView addSubview:textureView1];
+  textureView1.alpha = 0.7568627595901489;
+  textureView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  textureView1.backgroundColor = [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0];
+  textureView1.layer.cornerRadius = 2.0;
+  textureView1.layer.borderWidth = 0.0;
+  textureView1.layer.borderColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
+  textureView1.layer.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
+  textureView1.layer.shadowOpacity = 0.34117648005485535;
+  textureView1.layer.shadowRadius = 5.0;
+  textureView1ContentView.layer.cornerRadius = 2.0;
+  textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"WelcomeViewController_Image_6.png"]];
+  [textureView1 release];
+  
+  
+  // ----------------------------;
+  // UIButton -> lightInfoButton1;
+  // ----------------------------;
+  
+  UIButton *lightInfoButton1 = [UIButton buttonWithType:UIButtonTypeInfoLight];
+  CGRect lightInfoButton1Rect = lightInfoButton1.frame;
+  lightInfoButton1Rect.origin.x = 17;
+  lightInfoButton1Rect.origin.y =  10;
+  lightInfoButton1.frame = lightInfoButton1Rect;
+  [textureView1ContentView addSubview:lightInfoButton1];
+  lightInfoButton1.alpha = 1.0;
+  lightInfoButton1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  
+  
+  // ----------------------------;
+  // UIButton -> roundedRectButton2;
+  // ----------------------------;
+  
+  UIButton *roundedRectButton2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+  roundedRectButton2.frame = CGRectMake(37, 323, 247, 56);
+  [textureView1ContentView addSubview:roundedRectButton2];
+  roundedRectButton2.alpha = 1.0;
+  roundedRectButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  [roundedRectButton2 setTitle:@"Login" forState:UIControlStateNormal];
+  [roundedRectButton2 setTitleColor:[UIColor colorWithRed:0.22 green:0.33 blue:0.53 alpha:1.0] forState:UIControlStateNormal];
+  roundedRectButton2.titleLabel.font = [UIFont fontWithName:@".HelveticaNeueUI-Bold" size:15.0];
+  [roundedRectButton2 addTarget:self action:@selector(didTap_roundedRectButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
+  
+  
+  // ----------------------------;
+  // UINavigationBar -> navigationBar1;
+  // ----------------------------;
+  
+  UINavigationBar *navigationBar1 = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+  navigationBar1.delegate = (id<UINavigationBarDelegate>)self;
+  UINavigationItem *navigationBar1BackItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
+  UINavigationItem *navigationBar1TopItem = [[[UINavigationItem alloc] initWithTitle:nil] autorelease];
+  NSArray *navigationBar1Items = [NSArray arrayWithObjects:navigationBar1BackItem, navigationBar1TopItem, nil];
+  [navigationBar1 setItems:navigationBar1Items animated:NO];
+  [textureView1ContentView addSubview:navigationBar1];
+  navigationBar1.alpha = 1.0;
+  navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
+  navigationBar1.barStyle = UIBarStyleDefault;
+  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
+  navigationBar1.topItem.title = @"";
+  [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
+  navigationBar1.topItem.hidesBackButton = YES;
+  [navigationBar1 release];
+  
+  
+  // ----------------------------;
+  // UIView -> navigationTitleView1;
+  // ----------------------------;
+  
+  UIView *navigationTitleView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+  navigationBar1.topItem.titleView = navigationTitleView1;
+  navigationTitleView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+  [navigationTitleView1 release];
+  
+  
+  // ----------------------------;
+  // UIImageView -> imageView1;
+  // ----------------------------;
+  
+  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+  [navigationTitleView1 addSubview:imageView1];
+  imageView1.alpha = 1.0;
+  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView1.image = [UIImage imageNamed:@"WelcomeViewController_Image_7.png"];
+  imageView1.contentMode = UIViewContentModeScaleAspectFill;
+  [imageView1 release];
+  
+  
+  // ----------------------------;
+  // UIImageView -> imageView2;
+  // ----------------------------;
+  
+  UIImageView *imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(64, 53, 221, 132)];
+  [textureView1ContentView addSubview:imageView2];
+  imageView2.alpha = 1.0;
+  imageView2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView2.image = [UIImage imageNamed:@"WelcomeViewController_Image_8.png"];
+  imageView2.clipsToBounds = YES;
+  imageView2.contentMode = UIViewContentModeScaleToFill;
+  [imageView2 release];
+  
+  
+  // ----------------------------;
+  // UITableView -> tableView1;
+  // ----------------------------;
+  
+  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 175, 320, 139) style:UITableViewStyleGrouped];
+  tableView1.tag = 1;
+  tableView1.delegate = (id<UITableViewDelegate>)self;
+  tableView1.dataSource = (id<UITableViewDataSource>)self;
+  self.tableView1Data = [NSMutableArray array];
+  [textureView1ContentView addSubview:tableView1];
+  tableView1.alpha = 1.0;
+  tableView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+  tableView1.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+  tableView1.separatorColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.18];
+  tableView1.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
+  [tableView1 release];
+  
+  
+  // ----------------------------;
+  // Table View Section -> tableViewSection1;
+  // ----------------------------;
+  
+  NSMutableDictionary *tableViewSection1Data = [NSMutableDictionary dictionary];
+  [tableViewSection1Data setObject:@"Login" forKey:@"headerText"];
+  [tableViewSection1Data setObject:@"" forKey:@"footerText"];
+  [tableViewSection1Data setObject:[NSMutableArray array] forKey:@"cells"];
+  [self.tableView1Data addObject:tableViewSection1Data];
+  
+  // ----------------------------;
+  // Cell -> tableViewCell1;
+  // ----------------------------;
+  
+  NSMutableDictionary *tableViewCell1Data = [NSMutableDictionary dictionary];
+  UITableViewCell *tableViewCell1 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
+  tableViewCell1.textLabel.text = @"Username";
+  tableViewCell1.detailTextLabel.text = @"Subtitle";
+  tableViewCell1.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell1.textLabel.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1.0];
+  [tableViewCell1Data setObject:tableViewCell1 forKey:@"cell"];
+  [tableViewCell1Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
+  [tableViewCell1Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
+  [tableViewCell1Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
+  [tableViewCell1Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
+  [[tableViewSection1Data objectForKey:@"cells"] addObject:tableViewCell1Data];
+  
+  // ----------------------------;
+  // Cell -> tableViewCell2;
+  // ----------------------------;
+  
+  NSMutableDictionary *tableViewCell2Data = [NSMutableDictionary dictionary];
+  UITableViewCell *tableViewCell2 = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
+  tableViewCell2.textLabel.text = @"Password";
+  tableViewCell2.detailTextLabel.text = @"Subtitle";
+  tableViewCell2.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell2.textLabel.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1.0];
+  [tableViewCell2Data setObject:tableViewCell2 forKey:@"cell"];
+  [tableViewCell2Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
+  [tableViewCell2Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
+  [tableViewCell2Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
+  [tableViewCell2Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
+  [[tableViewSection1Data objectForKey:@"cells"] addObject:tableViewCell2Data];
   
   contentView.frame = self.view.bounds;
   [self.view addSubview:contentView];
@@ -375,20 +413,6 @@
 
 
 // ----------------
-// Tab Bar
-// ----------------
-
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-  if (tabBar.tag == 1 && item.tag == 1) {;
-    [self didTap_tabBarItem1];
-  };
-  if (tabBar.tag == 1 && item.tag == 2) {;
-    [self didTap_tabBarItem2];
-  };
-}
-
-
-// ----------------
 // Navigation Bar
 // ----------------
 
@@ -400,33 +424,8 @@
 // Action
 // ----------------
 
-- (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
-  InfoViewController *controller = [[InfoViewController alloc] init];
-  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-  [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
-  [self presentModalViewController:navigationController animated:YES];
-  [navigationController release];
-  [controller release];
-}
 - (void)didTap_roundedRectButton2:(id)sender forEvent:(UIEvent *)event {
-  TradeableViewController *controller = [[TradeableViewController alloc] init];
-  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-  [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-  navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
-  [self presentModalViewController:navigationController animated:YES];
-  [navigationController release];
-  [controller release];
-}
-- (void)didTap_tabBarItem1 {
-  TradeableViewController *controller = [[TradeableViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
-  [controller release];
-}
-- (void)didTap_tabBarItem2 {
-  WantViewController *controller = [[WantViewController alloc] init];
+  TradeMenuViewController *controller = [[TradeMenuViewController alloc] init];
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }

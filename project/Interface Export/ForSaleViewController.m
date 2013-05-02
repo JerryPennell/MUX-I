@@ -9,7 +9,6 @@
 #import "ForSaleViewController.h"
 #import "AreatradesViewController.h"
 #import "InfoViewController.h"
-#import "MultiAddScreenTradeViewController.h"
 
 #import "GradientView.h"
 #import "MKMapView+ZoomLevel.h"
@@ -98,6 +97,7 @@
   textureView1.layer.shadowRadius = 5.0;
   textureView1ContentView.layer.cornerRadius = 2.0;
   textureView1.layer.shadowOffset = CGSizeMake(0, -3);
+  textureView1ContentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ForSaleViewController_Image_6.png"]];
   [textureView1 release];
   
   
@@ -115,10 +115,21 @@
   navigationBar1.alpha = 1.0;
   navigationBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
   navigationBar1.barStyle = UIBarStyleDefault;
-  navigationBar1.tintColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
+  navigationBar1.tintColor = [UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0];
   navigationBar1.topItem.title = @"For Sale List";
   [navigationBar1 setTitleVerticalPositionAdjustment:0.0 forBarMetrics:UIBarMetricsDefault];
   navigationBar1.topItem.hidesBackButton = YES;
+  
+  // ----------------------------;
+  // Navigation Bar Right Button -> barButton1;
+  // ----------------------------;
+  
+  UIBarButtonItem *barButton1 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil] autorelease];
+  [barButton1 setTintColor:[UIColor colorWithRed:0.0 green:0.25 blue:0.5 alpha:1.0]];
+  barButton1.target = self;
+  barButton1.action = @selector(didTap_barButton1:forEvent:);
+  
+  navigationBar1.topItem.rightBarButtonItem = barButton1;
   [navigationBar1 release];
   
   
@@ -138,25 +149,10 @@
   
   
   // ----------------------------;
-  // UIButton -> addContactButton2;
-  // ----------------------------;
-  
-  UIButton *addContactButton2 = [UIButton buttonWithType:UIButtonTypeContactAdd];
-  CGRect addContactButton2Rect = addContactButton2.frame;
-  addContactButton2Rect.origin.x = 281;
-  addContactButton2Rect.origin.y =  3;
-  addContactButton2.frame = addContactButton2Rect;
-  [textureView1ContentView addSubview:addContactButton2];
-  addContactButton2.alpha = 1.0;
-  addContactButton2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-  [addContactButton2 addTarget:self action:@selector(didTap_addContactButton2:forEvent:) forControlEvents:UIControlEventTouchUpInside];
-  
-  
-  // ----------------------------;
   // UITableView -> tableView1;
   // ----------------------------;
   
-  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, 320, 362) style:UITableViewStylePlain];
+  UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, 320, 298) style:UITableViewStylePlain];
   tableView1.tag = 1;
   tableView1.delegate = (id<UITableViewDelegate>)self;
   tableView1.dataSource = (id<UITableViewDataSource>)self;
@@ -189,6 +185,7 @@
   tableViewCell1.textLabel.text = @"Wizard of Oz";
   tableViewCell1.detailTextLabel.text = @"$4.00 USD";
   tableViewCell1.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell1.imageView.image = [UIImage imageNamed:@"ForSaleViewController_Image_7.png"];
   tableViewCell1.backgroundColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
   [tableViewCell1Data setObject:tableViewCell1 forKey:@"cell"];
   [tableViewCell1Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
@@ -206,6 +203,7 @@
   tableViewCell2.textLabel.text = @"Lilo and Stitch";
   tableViewCell2.detailTextLabel.text = @"$8.00 USD";
   tableViewCell2.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell2.imageView.image = [UIImage imageNamed:@"ForSaleViewController_Image_8.png"];
   [tableViewCell2Data setObject:tableViewCell2 forKey:@"cell"];
   [tableViewCell2Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
   [tableViewCell2Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
@@ -232,6 +230,7 @@
   tableViewCell3.textLabel.text = @"Mega Man";
   tableViewCell3.detailTextLabel.text = @"$9.50 USD";
   tableViewCell3.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell3.imageView.image = [UIImage imageNamed:@"ForSaleViewController_Image_9.png"];
   [tableViewCell3Data setObject:tableViewCell3 forKey:@"cell"];
   [tableViewCell3Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
   [tableViewCell3Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
@@ -258,12 +257,26 @@
   tableViewCell4.textLabel.text = @"K.I.S.S";
   tableViewCell4.detailTextLabel.text = @"$2.00 USD";
   tableViewCell4.accessoryType = UITableViewCellAccessoryNone;
+  tableViewCell4.imageView.image = [UIImage imageNamed:@"ForSaleViewController_Image_10.png"];
   [tableViewCell4Data setObject:tableViewCell4 forKey:@"cell"];
   [tableViewCell4Data setObject:[NSNumber numberWithInteger:UITableViewCellEditingStyleDelete] forKey:@"editingStyle"];
   [tableViewCell4Data setObject:[NSNumber numberWithInteger:0] forKey:@"indentationLevel"];
   [tableViewCell4Data setObject:[NSNumber numberWithFloat:44] forKey:@"height"];
   [tableViewCell4Data setObject:[NSNumber numberWithBool:YES] forKey:@"showReorderControl"];
   [[tableViewSection3Data objectForKey:@"cells"] addObject:tableViewCell4Data];
+  
+  // ----------------------------;
+  // UIImageView -> imageView1;
+  // ----------------------------;
+  
+  UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(51, 371, 218, 31)];
+  [textureView1ContentView addSubview:imageView1];
+  imageView1.alpha = 1.0;
+  imageView1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+  imageView1.image = [UIImage imageNamed:@"ForSaleViewController_Image_11.png"];
+  imageView1.contentMode = UIViewContentModeScaleToFill;
+  [imageView1 release];
+  
   
   contentView.frame = self.view.bounds;
   [self.view addSubview:contentView];
@@ -469,19 +482,22 @@
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
+- (void)didTap_barButton1:(id)sender forEvent:(UIEvent *)event {
+  UIAlertView *alertView = [[UIAlertView alloc] init];
+  alertView.title = @"Demo only";
+  alertView.message = @"";
+  [alertView addButtonWithTitle:@"OK"];
+  [alertView show];
+  [alertView release];
+}
 - (void)didTap_lightInfoButton1:(id)sender forEvent:(UIEvent *)event {
   InfoViewController *controller = [[InfoViewController alloc] init];
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
   [navigationController setNavigationBarHidden:YES animated:NO];
-  navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  navigationController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
   navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
   [self presentModalViewController:navigationController animated:YES];
   [navigationController release];
-  [controller release];
-}
-- (void)didTap_addContactButton2:(id)sender forEvent:(UIEvent *)event {
-  MultiAddScreenTradeViewController *controller = [[MultiAddScreenTradeViewController alloc] init];
-  [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
 
